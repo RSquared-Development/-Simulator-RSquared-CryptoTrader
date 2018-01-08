@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-domain-objects" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-exchange-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-exchanges" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-repository" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-rest-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-strategies" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-strategy-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-trading-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bxbot-xml-datastore" charset="UTF-8" />
+  </component>
+</project>

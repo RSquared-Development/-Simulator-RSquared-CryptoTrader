@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bxbot-app" />
+        <module name="bxbot-core" />
+        <module name="bxbot-domain-objects" />
+        <module name="bxbot-exchange-api" />
+        <module name="bxbot-exchanges" />
+        <module name="bxbot-repository" />
+        <module name="bxbot-rest-api" />
+        <module name="bxbot-services" />
+        <module name="bxbot-strategies" />
+        <module name="bxbot-strategy-api" />
+        <module name="bxbot-trading-api" />
+        <module name="bxbot-xml-datastore" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bxbot-app" target="1.8" />
+      <module name="bxbot-core" target="1.8" />
+      <module name="bxbot-domain-objects" target="1.8" />
+      <module name="bxbot-exchange-api" target="1.8" />
+      <module name="bxbot-exchanges" target="1.8" />
+      <module name="bxbot-parent" target="1.6" />
+      <module name="bxbot-repository" target="1.8" />
+      <module name="bxbot-rest-api" target="1.8" />
+      <module name="bxbot-services" target="1.8" />
+      <module name="bxbot-strategies" target="1.8" />
+      <module name="bxbot-strategy-api" target="1.8" />
+      <module name="bxbot-trading-api" target="1.8" />
+      <module name="bxbot-xml-datastore" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

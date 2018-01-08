@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bxbot-app/bxbot-app.iml" filepath="$PROJECT_DIR$/bxbot-app/bxbot-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-core/bxbot-core.iml" filepath="$PROJECT_DIR$/bxbot-core/bxbot-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-domain-objects/bxbot-domain-objects.iml" filepath="$PROJECT_DIR$/bxbot-domain-objects/bxbot-domain-objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-exchange-api/bxbot-exchange-api.iml" filepath="$PROJECT_DIR$/bxbot-exchange-api/bxbot-exchange-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-exchanges/bxbot-exchanges.iml" filepath="$PROJECT_DIR$/bxbot-exchanges/bxbot-exchanges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-parent.iml" filepath="$PROJECT_DIR$/bxbot-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-repository/bxbot-repository.iml" filepath="$PROJECT_DIR$/bxbot-repository/bxbot-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-rest-api/bxbot-rest-api.iml" filepath="$PROJECT_DIR$/bxbot-rest-api/bxbot-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-services/bxbot-services.iml" filepath="$PROJECT_DIR$/bxbot-services/bxbot-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-strategies/bxbot-strategies.iml" filepath="$PROJECT_DIR$/bxbot-strategies/bxbot-strategies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-strategy-api/bxbot-strategy-api.iml" filepath="$PROJECT_DIR$/bxbot-strategy-api/bxbot-strategy-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-trading-api/bxbot-trading-api.iml" filepath="$PROJECT_DIR$/bxbot-trading-api/bxbot-trading-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bxbot-xml-datastore/bxbot-xml-datastore.iml" filepath="$PROJECT_DIR$/bxbot-xml-datastore/bxbot-xml-datastore.iml" />
+    </modules>
+  </component>
+</project>
