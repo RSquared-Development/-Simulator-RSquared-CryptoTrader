@@ -31,12 +31,12 @@ case "$1" in
    'start')
        if [[ -e ${pid_file} ]]; then
           pid=$(cat ${pid_file});
-          echo "BX-bot is already running with PID: $pid"
+          echo -e "\033[94m[...] \033[0;34mBX-bot is already running with PID: \e[7m$pid\e[0m"
        else
           echo "Starting BX-bot..."
           java -Xmx64m -Xss256k -Dlog4j.configurationFile=file:${log4j2_config} -jar ${lib_dir}/${bxbot_jar} 2>&1 >/dev/null &
 
-          echo "BX-bot started with PID: $!"
+          echo -e "\033[94m[ + ] \033[0;34mBX-bot started with PID: \e[7m$!\e[0m"
           echo $! > ${pid_file}
        fi
        ;;
@@ -45,7 +45,7 @@ case "$1" in
        if [[ -e ${pid_file} ]]; then
           pid=$(cat ${pid_file});
        else
-          echo "BX-bot is not running. Nothing to stop."
+          echo -e "\033[100m\033[31m\e[7m[...] BX-bot is not running. Nothing to stop.\e[0m"
           exit
        fi
        echo "Stopping BX-bot instance running with PID: $pid ..."
