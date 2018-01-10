@@ -14,7 +14,15 @@
             <artifactId>xchange-bitstamp</artifactId>
             <version>4.3.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.knowm.xchange</groupId>
+            <artifactId>xchange-binance</artifactId>
+            <version>4.3.2</version>
+        </dependency>
+
     </dependencies>
+
 
 
 </project>
