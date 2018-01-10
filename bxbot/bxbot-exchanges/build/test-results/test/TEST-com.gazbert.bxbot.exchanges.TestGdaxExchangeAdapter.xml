@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" tests="38" skipped="0" failures="0" errors="0" timestamp="2018-01-08T20:56:17" hostname="ricebook" time="1.532">
+  <properties/>
+  <testcase name="testSendingPublicRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="1.222"/>
+  <testcase name="testGettingBalanceInfoHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingLatestMarketPriceHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.01"/>
+  <testcase name="testGettingMarketOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingYourOpenOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingYourOpenOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingMarketOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.006"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfPublicKeyConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testGettingLatestMarketPriceHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.005"/>
+  <testcase name="testCreateOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testCancelOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingTickerHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testCreateOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testCancelOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingTickerHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.005"/>
+  <testcase name="testExchangeAdapterInitialisesSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingBalanceInfoHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingImplNameIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testCreateOrderToBuyIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.013"/>
+  <testcase name="testCancelOrderIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingTickerSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.05"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.039"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.004"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingYourOpenOrdersSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.012"/>
+  <testcase name="testCreateOrderToSellIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingLatestMarketPriceSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingBalanceInfoSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.008"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.008"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.01"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfTimeoutConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfSecretConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.002"/>
+  <testcase name="testGettingExchangeSellingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testGettingMarketOrders" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.018"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfPassphraseConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.002"/>
+  <testcase name="testGettingExchangeBuyingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfBuyFeeIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfSellFeeIsMissing" classname="com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter" time="0.003"/>
+  <system-out><![CDATA[9830 [Test worker] 2018-01-08 14:56:18,098 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9839 [Test worker] 2018-01-08 14:56:18,107 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+9840 [Test worker] 2018-01-08 14:56:18,108 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+9841 [Test worker] 2018-01-08 14:56:18,109 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+9843 [Test worker] 2018-01-08 14:56:18,111 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+9843 [Test worker] 2018-01-08 14:56:18,111 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+9844 [Test worker] 2018-01-08 14:56:18,112 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+9844 [Test worker] 2018-01-08 14:56:18,112 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+9943 [Test worker] 2018-01-08 14:56:18,211 DEBUG GdaxExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "trade_id": 29582,
+  "price": "14744.9",
+  "size": "2.6108",
+  "bid":"14744.8",
+  "ask":"14744.81",
+  "volume": "607.54445656",
+  "time": "2017-10-14T19:19:36.604735Z"
+}
+}
+9967 [Test worker] 2018-01-08 14:56:18,235 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9968 [Test worker] 2018-01-08 14:56:18,236 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+9969 [Test worker] 2018-01-08 14:56:18,237 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+9969 [Test worker] 2018-01-08 14:56:18,237 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+9969 [Test worker] 2018-01-08 14:56:18,237 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+9969 [Test worker] 2018-01-08 14:56:18,237 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+9971 [Test worker] 2018-01-08 14:56:18,239 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+9971 [Test worker] 2018-01-08 14:56:18,239 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+9972 [Test worker] 2018-01-08 14:56:18,240 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9973 [Test worker] 2018-01-08 14:56:18,241 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+9973 [Test worker] 2018-01-08 14:56:18,241 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+9973 [Test worker] 2018-01-08 14:56:18,241 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+9974 [Test worker] 2018-01-08 14:56:18,242 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+9974 [Test worker] 2018-01-08 14:56:18,242 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+9975 [Test worker] 2018-01-08 14:56:18,243 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+9975 [Test worker] 2018-01-08 14:56:18,243 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+9976 [Test worker] 2018-01-08 14:56:18,244 ERROR GdaxExchangeAdapter getLatestMarketPrice() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalArgumentException: Come with me if you want to live.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendPublicRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.getLatestMarketPrice(GdaxExchangeAdapter.java:446) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$getLatestMarketPrice$9(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.getLatestMarketPrice(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testGettingLatestMarketPriceHandlesUnexpectedException(TestGdaxExchangeAdapter.java:537) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+9984 [Test worker] 2018-01-08 14:56:18,252 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9985 [Test worker] 2018-01-08 14:56:18,253 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+9985 [Test worker] 2018-01-08 14:56:18,253 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+9986 [Test worker] 2018-01-08 14:56:18,254 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+9986 [Test worker] 2018-01-08 14:56:18,254 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+9987 [Test worker] 2018-01-08 14:56:18,255 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+9987 [Test worker] 2018-01-08 14:56:18,255 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+9987 [Test worker] 2018-01-08 14:56:18,255 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+9988 [Test worker] 2018-01-08 14:56:18,256 ERROR GdaxExchangeAdapter getMarketOrders() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalArgumentException: Mr. Ambassador, you have nearly a hundred naval vessels operating in the North Atlantic right now. Your aircraft has dropped enough sonar buoys so that a man could walk from Greenland to Iceland to Scotland without getting his feet wet. Now, shall we dispense with the bull?
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendPublicRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.getMarketOrders(GdaxExchangeAdapter.java:364) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$getMarketOrders$3(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.getMarketOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testGettingMarketOrdersHandlesUnexpectedException(TestGdaxExchangeAdapter.java:476) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+9990 [Test worker] 2018-01-08 14:56:18,258 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9992 [Test worker] 2018-01-08 14:56:18,260 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+9992 [Test worker] 2018-01-08 14:56:18,260 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+9992 [Test worker] 2018-01-08 14:56:18,260 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+9992 [Test worker] 2018-01-08 14:56:18,260 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+9993 [Test worker] 2018-01-08 14:56:18,261 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+9993 [Test worker] 2018-01-08 14:56:18,261 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+9993 [Test worker] 2018-01-08 14:56:18,261 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+9994 [Test worker] 2018-01-08 14:56:18,262 ERROR GdaxExchangeAdapter getYourOpenOrders() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalStateException: All those moments will be lost in time... like tears in rain.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendAuthenticatedRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.getYourOpenOrders(GdaxExchangeAdapter.java:301) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$getYourOpenOrders$8(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.getYourOpenOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testGettingYourOpenOrdersHandlesUnexpectedException(TestGdaxExchangeAdapter.java:380) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+9998 [Test worker] 2018-01-08 14:56:18,266 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+9999 [Test worker] 2018-01-08 14:56:18,267 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10000 [Test worker] 2018-01-08 14:56:18,268 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10000 [Test worker] 2018-01-08 14:56:18,268 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10001 [Test worker] 2018-01-08 14:56:18,269 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10002 [Test worker] 2018-01-08 14:56:18,270 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10002 [Test worker] 2018-01-08 14:56:18,270 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10003 [Test worker] 2018-01-08 14:56:18,271 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10005 [Test worker] 2018-01-08 14:56:18,273 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10006 [Test worker] 2018-01-08 14:56:18,274 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10006 [Test worker] 2018-01-08 14:56:18,274 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10007 [Test worker] 2018-01-08 14:56:18,275 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10007 [Test worker] 2018-01-08 14:56:18,275 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10008 [Test worker] 2018-01-08 14:56:18,276 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10008 [Test worker] 2018-01-08 14:56:18,276 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10009 [Test worker] 2018-01-08 14:56:18,277 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10012 [Test worker] 2018-01-08 14:56:18,280 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10012 [Test worker] 2018-01-08 14:56:18,280 ERROR AbstractExchangeAdapter assertItemExists() - key cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+10014 [Test worker] 2018-01-08 14:56:18,282 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10014 [Test worker] 2018-01-08 14:56:18,282 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10014 [Test worker] 2018-01-08 14:56:18,282 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10015 [Test worker] 2018-01-08 14:56:18,283 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10015 [Test worker] 2018-01-08 14:56:18,283 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10015 [Test worker] 2018-01-08 14:56:18,283 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10016 [Test worker] 2018-01-08 14:56:18,284 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10016 [Test worker] 2018-01-08 14:56:18,284 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10019 [Test worker] 2018-01-08 14:56:18,287 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10019 [Test worker] 2018-01-08 14:56:18,287 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10020 [Test worker] 2018-01-08 14:56:18,288 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10020 [Test worker] 2018-01-08 14:56:18,288 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10021 [Test worker] 2018-01-08 14:56:18,289 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10021 [Test worker] 2018-01-08 14:56:18,289 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10022 [Test worker] 2018-01-08 14:56:18,290 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10023 [Test worker] 2018-01-08 14:56:18,291 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10024 [Test worker] 2018-01-08 14:56:18,292 ERROR GdaxExchangeAdapter createOrder() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalArgumentException:  We all see what we want to see. Coffey looks and he sees Russians. He sees hate and fear. You have to look with better eyes than that
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendAuthenticatedRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.createOrder(GdaxExchangeAdapter.java:239) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$createOrder$5(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.createOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testCreateOrderHandlesUnexpectedException(TestGdaxExchangeAdapter.java:242) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10027 [Test worker] 2018-01-08 14:56:18,295 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10028 [Test worker] 2018-01-08 14:56:18,296 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10029 [Test worker] 2018-01-08 14:56:18,297 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10032 [Test worker] 2018-01-08 14:56:18,300 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10034 [Test worker] 2018-01-08 14:56:18,302 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10035 [Test worker] 2018-01-08 14:56:18,303 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10039 [Test worker] 2018-01-08 14:56:18,307 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10039 [Test worker] 2018-01-08 14:56:18,307 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10039 [Test worker] 2018-01-08 14:56:18,307 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10040 [Test worker] 2018-01-08 14:56:18,308 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10040 [Test worker] 2018-01-08 14:56:18,308 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10040 [Test worker] 2018-01-08 14:56:18,308 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10041 [Test worker] 2018-01-08 14:56:18,309 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10041 [Test worker] 2018-01-08 14:56:18,309 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10043 [Test worker] 2018-01-08 14:56:18,311 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10044 [Test worker] 2018-01-08 14:56:18,312 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10044 [Test worker] 2018-01-08 14:56:18,312 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10044 [Test worker] 2018-01-08 14:56:18,312 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10044 [Test worker] 2018-01-08 14:56:18,312 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10044 [Test worker] 2018-01-08 14:56:18,312 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10045 [Test worker] 2018-01-08 14:56:18,313 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10045 [Test worker] 2018-01-08 14:56:18,313 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10045 [Test worker] 2018-01-08 14:56:18,313 ERROR GdaxExchangeAdapter cancelOrder() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalStateException: Fluid breathing system, we just got it. You use it when you go really deep.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendAuthenticatedRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.cancelOrder(GdaxExchangeAdapter.java:274) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$cancelOrder$4(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.cancelOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testCancelOrderHandlesUnexpectedException(TestGdaxExchangeAdapter.java:309) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+10049 [Test worker] 2018-01-08 14:56:18,317 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10049 [Test worker] 2018-01-08 14:56:18,317 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10050 [Test worker] 2018-01-08 14:56:18,318 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10050 [Test worker] 2018-01-08 14:56:18,318 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10050 [Test worker] 2018-01-08 14:56:18,318 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10050 [Test worker] 2018-01-08 14:56:18,318 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10051 [Test worker] 2018-01-08 14:56:18,319 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10051 [Test worker] 2018-01-08 14:56:18,319 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10051 [Test worker] 2018-01-08 14:56:18,319 ERROR GdaxExchangeAdapter getTicker() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalArgumentException: Indiana Jones. I always knew some day you'd come walking back through my door. I never doubted that. Something made it inevitable. So, what are you doing here in Nepal?
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendPublicRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.getTicker(GdaxExchangeAdapter.java:494) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$getTicker$2(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.getTicker(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testGettingTickerHandlesUnexpectedException(TestGdaxExchangeAdapter.java:685) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+10055 [Test worker] 2018-01-08 14:56:18,323 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10055 [Test worker] 2018-01-08 14:56:18,323 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10055 [Test worker] 2018-01-08 14:56:18,323 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10055 [Test worker] 2018-01-08 14:56:18,323 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10056 [Test worker] 2018-01-08 14:56:18,324 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10056 [Test worker] 2018-01-08 14:56:18,324 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10056 [Test worker] 2018-01-08 14:56:18,324 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10057 [Test worker] 2018-01-08 14:56:18,325 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10058 [Test worker] 2018-01-08 14:56:18,326 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10058 [Test worker] 2018-01-08 14:56:18,326 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10059 [Test worker] 2018-01-08 14:56:18,327 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10059 [Test worker] 2018-01-08 14:56:18,327 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10059 [Test worker] 2018-01-08 14:56:18,327 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10059 [Test worker] 2018-01-08 14:56:18,327 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10060 [Test worker] 2018-01-08 14:56:18,328 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10060 [Test worker] 2018-01-08 14:56:18,328 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10060 [Test worker] 2018-01-08 14:56:18,328 ERROR GdaxExchangeAdapter getBalanceInfo() - Unexpected error has occurred in GDAX Exchange Adapter. 
+java.lang.IllegalStateException: There is a time for many words, and there is also a time for sleep.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.sendAuthenticatedRequestToExchange(GdaxExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter.getBalanceInfo(GdaxExchangeAdapter.java:411) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.CGLIB$getBalanceInfo$1(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5$$FastClassByCGLIB$$9062cf66.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GdaxExchangeAdapter$$EnhancerByCGLIB$$52d09ec5.getBalanceInfo(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGdaxExchangeAdapter.testGettingBalanceInfoHandlesUnexpectedException(TestGdaxExchangeAdapter.java:606) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+10062 [Test worker] 2018-01-08 14:56:18,330 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10063 [Test worker] 2018-01-08 14:56:18,331 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10063 [Test worker] 2018-01-08 14:56:18,331 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10063 [Test worker] 2018-01-08 14:56:18,331 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10063 [Test worker] 2018-01-08 14:56:18,331 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10064 [Test worker] 2018-01-08 14:56:18,332 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10064 [Test worker] 2018-01-08 14:56:18,332 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10064 [Test worker] 2018-01-08 14:56:18,332 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10067 [Test worker] 2018-01-08 14:56:18,335 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10067 [Test worker] 2018-01-08 14:56:18,335 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10068 [Test worker] 2018-01-08 14:56:18,336 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10068 [Test worker] 2018-01-08 14:56:18,336 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10068 [Test worker] 2018-01-08 14:56:18,336 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10069 [Test worker] 2018-01-08 14:56:18,337 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10069 [Test worker] 2018-01-08 14:56:18,337 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10069 [Test worker] 2018-01-08 14:56:18,337 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10070 [Test worker] 2018-01-08 14:56:18,338 DEBUG GdaxExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "id": "193d2ad9-e671-4d66-9211-7f75f6380231",
+  "price": "280.18000000",
+  "size": "0.01000000",
+  "product_id": "BTC-GBP",
+  "side": "buy",
+  "stp": "dc",
+  "type": "limit",
+  "time_in_force": "GTC",
+  "post_only": false,
+  "created_at": "2015-10-17T14:48:18.873Z",
+  "fill_fees": "0.0000000000000000",
+  "filled_size": "0.00000000",
+  "status": "pending",
+  "settled": false
+}}
+10079 [Test worker] 2018-01-08 14:56:18,347 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10080 [Test worker] 2018-01-08 14:56:18,348 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10080 [Test worker] 2018-01-08 14:56:18,348 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10080 [Test worker] 2018-01-08 14:56:18,348 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10081 [Test worker] 2018-01-08 14:56:18,349 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10081 [Test worker] 2018-01-08 14:56:18,349 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10082 [Test worker] 2018-01-08 14:56:18,350 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10082 [Test worker] 2018-01-08 14:56:18,350 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10084 [Test worker] 2018-01-08 14:56:18,352 DEBUG GdaxExchangeAdapter cancelOrder() - Cancel Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload=["3ecf7a12-fc89-4d3d-baef-f158f80b3bd3"]}
+10086 [Test worker] 2018-01-08 14:56:18,354 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10087 [Test worker] 2018-01-08 14:56:18,355 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10087 [Test worker] 2018-01-08 14:56:18,355 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10087 [Test worker] 2018-01-08 14:56:18,355 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10088 [Test worker] 2018-01-08 14:56:18,356 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10088 [Test worker] 2018-01-08 14:56:18,356 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10088 [Test worker] 2018-01-08 14:56:18,356 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10089 [Test worker] 2018-01-08 14:56:18,357 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10090 [Test worker] 2018-01-08 14:56:18,358 DEBUG GdaxExchangeAdapter getTicker() - Ticker response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "trade_id": 29582,
+  "price": "14744.9",
+  "size": "2.6108",
+  "bid":"14744.8",
+  "ask":"14744.81",
+  "volume": "607.54445656",
+  "time": "2017-10-14T19:19:36.604735Z"
+}
+}
+10133 [Test worker] 2018-01-08 14:56:18,401 DEBUG GdaxExchangeAdapter getTicker() - Stats response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "open": "13609.53000000",
+  "high": "14899.00000000",
+  "low": "13409.97000000",
+  "volume": "607.54445656",
+  "last": "14744.81000000",
+  "volume_30day": "22412.37849136"
+}}
+10167 [Test worker] 2018-01-08 14:56:18,435 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10168 [Test worker] 2018-01-08 14:56:18,436 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10168 [Test worker] 2018-01-08 14:56:18,436 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10169 [Test worker] 2018-01-08 14:56:18,437 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10169 [Test worker] 2018-01-08 14:56:18,437 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10169 [Test worker] 2018-01-08 14:56:18,437 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10170 [Test worker] 2018-01-08 14:56:18,438 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10170 [Test worker] 2018-01-08 14:56:18,438 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10172 [Test worker] 2018-01-08 14:56:18,440 DEBUG GdaxExchangeAdapter sendAuthenticatedRequestToExchange() - Building secure POST request...
+10174 [Test worker] 2018-01-08 14:56:18,442 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10175 [Test worker] 2018-01-08 14:56:18,443 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10175 [Test worker] 2018-01-08 14:56:18,443 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10175 [Test worker] 2018-01-08 14:56:18,443 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10176 [Test worker] 2018-01-08 14:56:18,444 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10176 [Test worker] 2018-01-08 14:56:18,444 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10176 [Test worker] 2018-01-08 14:56:18,444 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10177 [Test worker] 2018-01-08 14:56:18,445 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10179 [Test worker] 2018-01-08 14:56:18,447 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10179 [Test worker] 2018-01-08 14:56:18,447 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10180 [Test worker] 2018-01-08 14:56:18,448 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10180 [Test worker] 2018-01-08 14:56:18,448 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10180 [Test worker] 2018-01-08 14:56:18,448 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10180 [Test worker] 2018-01-08 14:56:18,448 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10181 [Test worker] 2018-01-08 14:56:18,449 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10181 [Test worker] 2018-01-08 14:56:18,449 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10181 [Test worker] 2018-01-08 14:56:18,449 DEBUG GdaxExchangeAdapter sendAuthenticatedRequestToExchange() - Building secure POST request...
+10185 [Test worker] 2018-01-08 14:56:18,453 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10186 [Test worker] 2018-01-08 14:56:18,454 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10186 [Test worker] 2018-01-08 14:56:18,454 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10186 [Test worker] 2018-01-08 14:56:18,454 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10187 [Test worker] 2018-01-08 14:56:18,455 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10187 [Test worker] 2018-01-08 14:56:18,455 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10188 [Test worker] 2018-01-08 14:56:18,456 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10188 [Test worker] 2018-01-08 14:56:18,456 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10189 [Test worker] 2018-01-08 14:56:18,457 DEBUG GdaxExchangeAdapter getYourOpenOrders() - Open Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload=[
+  {
+    "id": "cdad7602-f290-41e5-a64d-42a1a20fd02",
+    "price": "275.00000000",
+    "size": "0.01000000",
+    "product_id": "BTC-GBP",
+    "side": "sell",
+    "stp": "dc",
+    "type": "limit",
+    "time_in_force": "GTC",
+    "post_only": false,
+    "created_at": "2015-10-15T21:10:38.193Z",
+    "fill_fees": "0.0000000000000000",
+    "filled_size": "0.00500000",
+    "status": "open",
+    "settled": false
+  },
+  {
+    "id": "09cac657-df6c-40ef-97b9-4e64b181dec1",
+    "price": "270.00000000",
+    "size": "0.01000000",
+    "product_id": "BTC-GBP",
+    "side": "sell",
+    "stp": "dc",
+    "type": "limit",
+    "time_in_force": "GTC",
+    "post_only": false,
+    "created_at": "2015-10-15T21:10:10.569Z",
+    "fill_fees": "0.0000000000000000",
+    "filled_size": "0.00000000",
+    "status": "open",
+    "settled": false
+  },
+  {
+    "id": "09cac657-df6c-10ef-97b9-4e64b181dec1",
+    "price": "2001.02",
+    "size": "0.01000000",
+    "product_id": "BTC-USD",
+    "side": "sell",
+    "stp": "dc",
+    "type": "limit",
+    "time_in_force": "GTC",
+    "post_only": false,
+    "created_at": "2015-10-15T21:10:10.569Z",
+    "fill_fees": "0.0000000000000000",
+    "filled_size": "0.00000000",
+    "status": "open",
+    "settled": false
+  },
+  {
+    "id": "09ca1657-df6c-10ef-97b9-4e64b181dec1",
+    "price": "341.42000000",
+    "size": "2.01000000",
+    "product_id": "ETH-USD",
+    "side": "sell",
+    "stp": "dc",
+    "type": "limit",
+    "time_in_force": "GTC",
+    "post_only": false,
+    "created_at": "2015-10-15T21:10:10.569Z",
+    "fill_fees": "0.0000000000000000",
+    "filled_size": "0.00000000",
+    "status": "open",
+    "settled": false
+  }
+]}
+10197 [Test worker] 2018-01-08 14:56:18,465 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10198 [Test worker] 2018-01-08 14:56:18,466 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10198 [Test worker] 2018-01-08 14:56:18,466 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10199 [Test worker] 2018-01-08 14:56:18,467 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10199 [Test worker] 2018-01-08 14:56:18,467 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10199 [Test worker] 2018-01-08 14:56:18,467 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10200 [Test worker] 2018-01-08 14:56:18,468 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10200 [Test worker] 2018-01-08 14:56:18,468 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10201 [Test worker] 2018-01-08 14:56:18,469 DEBUG GdaxExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "id": "693d7ad9-e671-4d66-9911-7f75f6380134",
+  "price": "290.18000000",
+  "size": "0.01000000",
+  "product_id": "BTC-GBP",
+  "side": "sell",
+  "stp": "dc",
+  "type": "limit",
+  "time_in_force": "GTC",
+  "post_only": false,
+  "created_at": "2015-10-17T14:43:18.873Z",
+  "fill_fees": "0.0000000000000000",
+  "filled_size": "0.00000000",
+  "status": "pending",
+  "settled": false
+}}
+10204 [Test worker] 2018-01-08 14:56:18,472 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10204 [Test worker] 2018-01-08 14:56:18,472 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10205 [Test worker] 2018-01-08 14:56:18,473 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10205 [Test worker] 2018-01-08 14:56:18,473 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10206 [Test worker] 2018-01-08 14:56:18,474 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10207 [Test worker] 2018-01-08 14:56:18,475 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10207 [Test worker] 2018-01-08 14:56:18,475 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10208 [Test worker] 2018-01-08 14:56:18,476 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10208 [Test worker] 2018-01-08 14:56:18,476 DEBUG GdaxExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "trade_id": 29582,
+  "price": "14744.9",
+  "size": "2.6108",
+  "bid":"14744.8",
+  "ask":"14744.81",
+  "volume": "607.54445656",
+  "time": "2017-10-14T19:19:36.604735Z"
+}
+}
+10212 [Test worker] 2018-01-08 14:56:18,480 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10213 [Test worker] 2018-01-08 14:56:18,481 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10214 [Test worker] 2018-01-08 14:56:18,482 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10214 [Test worker] 2018-01-08 14:56:18,482 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10215 [Test worker] 2018-01-08 14:56:18,483 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10215 [Test worker] 2018-01-08 14:56:18,483 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10215 [Test worker] 2018-01-08 14:56:18,483 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10216 [Test worker] 2018-01-08 14:56:18,484 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10216 [Test worker] 2018-01-08 14:56:18,484 DEBUG GdaxExchangeAdapter getBalanceInfo() - Balance Info response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload=[
+  {
+    "id": "7262ae65-fbc3-4d11-b959-25f1befc7a21",
+    "currency": "BTC",
+    "balance": "200.000000000000009",
+    "hold": "100.0000000000000005",
+    "available": "100.0000000000000004",
+    "profile_id": "5624aa4a-85f6-462f-a4d9-bac80ea184c7"
+  },
+  {
+    "id": "de2b5848-533e-4374-9004-cd8ea985f8cc",
+    "currency": "GBP",
+    "balance": "1000.0000000000000003",
+    "hold": "499.9900000000000002",
+    "available": "501.0100000000000001",
+    "profile_id": "5624aa4a-85f6-462f-a4d9-bac80ea184c2"
+  },
+  {
+    "id": "864881f5-bd18-4970-b254-e7cd2fef6b4d",
+    "currency": "EUR",
+    "balance": "0.0000000000000000",
+    "hold": "0.0000000000000000",
+    "available": "0.0000000000000000",
+    "profile_id": "5622aa4a-87f6-462f-c4d9-bac80ef184d0"
+  }
+]}
+10220 [Test worker] 2018-01-08 14:56:18,488 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10221 [Test worker] 2018-01-08 14:56:18,489 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10221 [Test worker] 2018-01-08 14:56:18,489 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10222 [Test worker] 2018-01-08 14:56:18,490 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10222 [Test worker] 2018-01-08 14:56:18,490 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10222 [Test worker] 2018-01-08 14:56:18,490 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10223 [Test worker] 2018-01-08 14:56:18,491 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10223 [Test worker] 2018-01-08 14:56:18,491 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10224 [Test worker] 2018-01-08 14:56:18,492 DEBUG GdaxExchangeAdapter sendAuthenticatedRequestToExchange() - Building secure POST request...
+10226 [Test worker] 2018-01-08 14:56:18,494 DEBUG GdaxExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "id": "693d7ad9-e671-4d66-9911-7f75f6380134",
+  "price": "290.18000000",
+  "size": "0.01000000",
+  "product_id": "BTC-GBP",
+  "side": "sell",
+  "stp": "dc",
+  "type": "limit",
+  "time_in_force": "GTC",
+  "post_only": false,
+  "created_at": "2015-10-17T14:43:18.873Z",
+  "fill_fees": "0.0000000000000000",
+  "filled_size": "0.00000000",
+  "status": "pending",
+  "settled": false
+}}
+10228 [Test worker] 2018-01-08 14:56:18,496 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10229 [Test worker] 2018-01-08 14:56:18,497 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10229 [Test worker] 2018-01-08 14:56:18,497 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10229 [Test worker] 2018-01-08 14:56:18,497 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10230 [Test worker] 2018-01-08 14:56:18,498 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10230 [Test worker] 2018-01-08 14:56:18,498 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10231 [Test worker] 2018-01-08 14:56:18,499 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10231 [Test worker] 2018-01-08 14:56:18,499 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10238 [Test worker] 2018-01-08 14:56:18,506 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10239 [Test worker] 2018-01-08 14:56:18,507 ERROR AbstractExchangeAdapter setNetworkConfig() - connection-timeout cannot be 0 value.EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10241 [Test worker] 2018-01-08 14:56:18,509 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10241 [Test worker] 2018-01-08 14:56:18,509 ERROR AbstractExchangeAdapter assertItemExists() - secret cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+10242 [Test worker] 2018-01-08 14:56:18,510 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10243 [Test worker] 2018-01-08 14:56:18,511 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10243 [Test worker] 2018-01-08 14:56:18,511 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10243 [Test worker] 2018-01-08 14:56:18,511 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10244 [Test worker] 2018-01-08 14:56:18,512 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10244 [Test worker] 2018-01-08 14:56:18,512 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10244 [Test worker] 2018-01-08 14:56:18,512 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10245 [Test worker] 2018-01-08 14:56:18,513 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10246 [Test worker] 2018-01-08 14:56:18,514 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10247 [Test worker] 2018-01-08 14:56:18,515 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10247 [Test worker] 2018-01-08 14:56:18,515 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10247 [Test worker] 2018-01-08 14:56:18,515 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10248 [Test worker] 2018-01-08 14:56:18,516 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10248 [Test worker] 2018-01-08 14:56:18,516 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10248 [Test worker] 2018-01-08 14:56:18,516 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10249 [Test worker] 2018-01-08 14:56:18,517 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10250 [Test worker] 2018-01-08 14:56:18,518 DEBUG GdaxExchangeAdapter getMarketOrders() - Market Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "sequence": 95643108,
+  "bids": [
+    [
+      "165.87",
+      "16.2373",
+      10
+    ],
+    [
+      "165.86",
+      "21.645",
+      3
+    ],
+    [
+      "165.85",
+      "0.357",
+      3
+    ],
+    [
+      "165.84",
+      "15.4652",
+      1
+    ],
+    [
+      "165.83",
+      "0.08",
+      2
+    ],
+    [
+      "165.82",
+      "0.207",
+      4
+    ],
+    [
+      "165.8",
+      "3.46334",
+      1
+    ],
+    [
+      "165.78",
+      "43.355346",
+      6
+    ],
+    [
+      "165.77",
+      "3.157",
+      2
+    ],
+    [
+      "165.76",
+      "32.6",
+      4
+    ],
+    [
+      "165.75",
+      "0.02042",
+      1
+    ],
+    [
+      "165.74",
+      "0.3264",
+      3
+    ],
+    [
+      "165.73",
+      "0.902",
+      4
+    ],
+    [
+      "165.72",
+      "0.07",
+      1
+    ],
+    [
+      "165.71",
+      "0.38466",
+      6
+    ],
+    [
+      "165.7",
+      "23.32458",
+      12
+    ],
+    [
+      "165.69",
+      "13.6215",
+      1
+    ],
+    [
+      "165.68",
+      "0.08",
+      2
+    ],
+    [
+      "165.66",
+      "0.03",
+      1
+    ],
+    [
+      "165.65",
+      "0.02",
+      2
+    ],
+    [
+      "165.63",
+      "0.051",
+      1
+    ],
+    [
+      "165.52",
+      "18.39",
+      1
+    ],
+    [
+      "165.31",
+      "0.016",
+      1
+    ],
+    [
+      "165.3",
+      "0.0183",
+      1
+    ],
+    [
+      "165.28",
+      "0.088",
+      1
+    ],
+    [
+      "165.26",
+      "0.053",
+      2
+    ],
+    [
+      "165.24",
+      "0.02",
+      1
+    ],
+    [
+      "165.23",
+      "3.65",
+      3
+    ],
+    [
+      "165.22",
+      "0.01",
+      1
+    ],
+    [
+      "165.18",
+      "3.3559",
+      2
+    ],
+    [
+      "165.16",
+      "0.031",
+      1
+    ],
+    [
+      "165.12",
+      "2.01",
+      1
+    ],
+    [
+      "165.07",
+      "3.15",
+      1
+    ],
+    [
+      "165",
+      "2.5",
+      3
+    ],
+    [
+      "164.91",
+      "3.5",
+      1
+    ],
+    [
+      "164.62",
+      "3.64",
+      1
+    ],
+    [
+      "164.56",
+      "1.676",
+      1
+    ],
+    [
+      "164.5",
+      "1.66",
+      1
+    ],
+    [
+      "164.49",
+      "7.82071",
+      1
+    ],
+    [
+      "164.44",
+      "3",
+      1
+    ],
+    [
+      "164.38",
+      "2.06",
+      1
+    ],
+    [
+      "164.2",
+      "1.21",
+      1
+    ],
+    [
+      "164.13",
+      "0.02",
+      1
+    ],
+    [
+      "164.05",
+      "1.7",
+      1
+    ],
+    [
+      "164.03",
+      "3.906",
+      1
+    ],
+    [
+      "163.97",
+      "0.6281",
+      1
+    ],
+    [
+      "163.91",
+      "2.6",
+      1
+    ],
+    [
+      "163.84",
+      "4.7602",
+      1
+    ],
+    [
+      "163.75",
+      "2.314",
+      1
+    ],
+    [
+      "163.73",
+      "0.3",
+      1
+    ]
+  ],
+  "asks": [
+    [
+      "165.96",
+      "24.31",
+      1
+    ],
+    [
+      "166.05",
+      "0.01",
+      1
+    ],
+    [
+      "166.08",
+      "0.027",
+      1
+    ],
+    [
+      "166.1",
+      "3.98718",
+      1
+    ],
+    [
+      "166.12",
+      "0.0815",
+      2
+    ],
+    [
+      "166.13",
+      "0.1404",
+      2
+    ],
+    [
+      "166.14",
+      "0.108",
+      3
+    ],
+    [
+      "166.16",
+      "0.784",
+      3
+    ],
+    [
+      "166.17",
+      "1.41472",
+      3
+    ],
+    [
+      "166.18",
+      "1.3774",
+      5
+    ],
+    [
+      "166.19",
+      "0.3284",
+      6
+    ],
+    [
+      "166.2",
+      "0.02",
+      1
+    ],
+    [
+      "166.21",
+      "0.1",
+      1
+    ],
+    [
+      "166.22",
+      "0.203",
+      6
+    ],
+    [
+      "166.23",
+      "0.152",
+      2
+    ],
+    [
+      "166.24",
+      "3.0575",
+      11
+    ],
+    [
+      "166.26",
+      "0.0656",
+      2
+    ],
+    [
+      "166.27",
+      "0.01",
+      1
+    ],
+    [
+      "166.29",
+      "17.43",
+      2
+    ],
+    [
+      "166.3",
+      "0.86",
+      1
+    ],
+    [
+      "166.33",
+      "0.6327395",
+      10
+    ],
+    [
+      "166.46",
+      "132.536",
+      5
+    ],
+    [
+      "166.91",
+      "0.19",
+      1
+    ],
+    [
+      "167.37",
+      "0.13",
+      1
+    ],
+    [
+      "167.6",
+      "2.214",
+      1
+    ],
+    [
+      "167.63",
+      "0.2142",
+      1
+    ],
+    [
+      "167.66",
+      "2.64",
+      1
+    ],
+    [
+      "167.72",
+      "3.12",
+      1
+    ],
+    [
+      "167.76",
+      "0.01",
+      1
+    ],
+    [
+      "167.78",
+      "4.2",
+      2
+    ],
+    [
+      "167.88",
+      "4.387",
+      1
+    ],
+    [
+      "167.98",
+      "4.1482",
+      1
+    ],
+    [
+      "168.08",
+      "3.234",
+      1
+    ],
+    [
+      "168.1",
+      "1.8",
+      1
+    ],
+    [
+      "168.54",
+      "0.013",
+      1
+    ],
+    [
+      "170.3",
+      "0.026",
+      1
+    ],
+    [
+      "171.16",
+      "0.8",
+      1
+    ],
+    [
+      "171.25",
+      "0.11",
+      1
+    ],
+    [
+      "171.38",
+      "0.051",
+      1
+    ],
+    [
+      "171.55",
+      "0.0138",
+      1
+    ],
+    [
+      "171.85",
+      "0.1",
+      1
+    ],
+    [
+      "174.24",
+      "3",
+      1
+    ],
+    [
+      "175.11",
+      "0.017",
+      1
+    ],
+    [
+      "179.29",
+      "0.57",
+      1
+    ],
+    [
+      "182.58",
+      "0.09",
+      1
+    ],
+    [
+      "183.73",
+      "0.2",
+      1
+    ],
+    [
+      "186.28",
+      "0.3",
+      1
+    ],
+    [
+      "186.39",
+      "0.39",
+      1
+    ],
+    [
+      "186.65",
+      "8",
+      1
+    ],
+    [
+      "186.83",
+      "1.25",
+      1
+    ]
+  ]
+}}
+10264 [Test worker] 2018-01-08 14:56:18,532 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10265 [Test worker] 2018-01-08 14:56:18,533 ERROR AbstractExchangeAdapter assertItemExists() - passphrase cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+10266 [Test worker] 2018-01-08 14:56:18,534 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10267 [Test worker] 2018-01-08 14:56:18,535 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10267 [Test worker] 2018-01-08 14:56:18,535 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10267 [Test worker] 2018-01-08 14:56:18,535 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10268 [Test worker] 2018-01-08 14:56:18,536 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10268 [Test worker] 2018-01-08 14:56:18,536 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10268 [Test worker] 2018-01-08 14:56:18,536 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+10269 [Test worker] 2018-01-08 14:56:18,537 INFO  GdaxExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+10270 [Test worker] 2018-01-08 14:56:18,538 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10271 [Test worker] 2018-01-08 14:56:18,539 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10271 [Test worker] 2018-01-08 14:56:18,539 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10271 [Test worker] 2018-01-08 14:56:18,539 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10272 [Test worker] 2018-01-08 14:56:18,540 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 
+10272 [Test worker] 2018-01-08 14:56:18,540 ERROR AbstractExchangeAdapter assertItemExists() - buy-fee cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+10273 [Test worker] 2018-01-08 14:56:18,541 INFO  GdaxExchangeAdapter init() - About to initialise GDAX ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+10274 [Test worker] 2018-01-08 14:56:18,542 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+10274 [Test worker] 2018-01-08 14:56:18,542 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+10274 [Test worker] 2018-01-08 14:56:18,542 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+10275 [Test worker] 2018-01-08 14:56:18,543 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+10275 [Test worker] 2018-01-08 14:56:18,543 INFO  GdaxExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+10275 [Test worker] 2018-01-08 14:56:18,543 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 
+10276 [Test worker] 2018-01-08 14:56:18,544 ERROR AbstractExchangeAdapter assertItemExists() - sell-fee cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

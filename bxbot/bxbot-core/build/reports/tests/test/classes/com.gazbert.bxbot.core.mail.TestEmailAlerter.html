@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.gazbert.bxbot.core.mail.TestEmailAlerter</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.gazbert.bxbot.core.mail.TestEmailAlerter</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.gazbert.bxbot.core.mail.html">com.gazbert.bxbot.core.mail</a> &gt; TestEmailAlerter</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.143s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testEmailAlerterInitialisationFailsWhenAlertsEnabledButNoSmtpConfigSupplied</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmailAlerterInitialisedSuccessfully</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmailAlerterInitialisedSuccessfullyWhenAlertsDisabledAndNoSmtpConfigSupplied</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmailAlerterSendsMailSuccessfullyUsingMockTransport</td>
+<td>1.139s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22433 [pool-5-thread-1] 2018-01-08 14:56:31,308 INFO  TradingEngine runMainControlLoop() - *** Starting next trade cycle... ***
+22433 [pool-5-thread-1] 2018-01-08 14:56:31,308 INFO  TradingEngine isEmergencyStopLimitBreached() - Performing Emergency Stop check...
+23742 [Test worker] 2018-01-08 14:56:32,617 INFO  EmailAlerter initialise() - Email Alert for emergency bot shutdown is enabled. Loading SMTP config...
+23745 [Test worker] 2018-01-08 14:56:32,620 INFO  EmailAlerter initialise() - SMTP host: smtp.gmail.com
+23746 [Test worker] 2018-01-08 14:56:32,621 INFO  EmailAlerter initialise() - SMTP TLS Port: 587
+23747 [Test worker] 2018-01-08 14:56:32,622 INFO  EmailAlerter initialise() - Account username: your.account.username@gmail.com
+23747 [Test worker] 2018-01-08 14:56:32,622 INFO  EmailAlerter initialise() - From address: bxbot.alerts@gmail.com
+23748 [Test worker] 2018-01-08 14:56:32,623 INFO  EmailAlerter initialise() - To address: some-destination@gmail.com
+23838 [Test worker] 2018-01-08 14:56:32,713 INFO  EmailAlerter sendMessage() - About to send following Email Alert with message content: The exchange has blown up!
+23840 [Test worker] 2018-01-08 14:56:32,715 INFO  EmailAlerter initialise() - Email Alert for emergency bot shutdown is enabled. Loading SMTP config...
+23843 [Test worker] 2018-01-08 14:56:32,718 WARN  EmailAlerter initialise() - Email Alerts are disabled. Are you sure you want to configure this?
+23844 [Test worker] 2018-01-08 14:56:32,719 INFO  EmailAlerter initialise() - Email Alert for emergency bot shutdown is enabled. Loading SMTP config...
+23845 [Test worker] 2018-01-08 14:56:32,720 INFO  EmailAlerter initialise() - SMTP host: smtp.gmail.com
+23845 [Test worker] 2018-01-08 14:56:32,720 INFO  EmailAlerter initialise() - SMTP TLS Port: 587
+23845 [Test worker] 2018-01-08 14:56:32,720 INFO  EmailAlerter initialise() - Account username: your.account.username@gmail.com
+23845 [Test worker] 2018-01-08 14:56:32,720 INFO  EmailAlerter initialise() - From address: bxbot.alerts@gmail.com
+23845 [Test worker] 2018-01-08 14:56:32,720 INFO  EmailAlerter initialise() - To address: some-destination@gmail.com
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Exception in thread &quot;pool-5-thread-1&quot; java.lang.AssertionError: 
+  Unexpected method call ExchangeAdapter.getBalanceInfo():
+    ExchangeAdapter.getBalanceInfo(): expected: 1, actual: 2
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:44)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:94)
+	at com.sun.proxy.$Proxy12.getBalanceInfo(Unknown Source)
+	at com.gazbert.bxbot.core.engine.TradingEngine.isEmergencyStopLimitBreached(TradingEngine.java:348)
+	at com.gazbert.bxbot.core.engine.TradingEngine.runMainControlLoop(TradingEngine.java:221)
+	at com.gazbert.bxbot.core.engine.TradingEngine.start(TradingEngine.java:191)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.4.1</a> at Jan 8, 2018 2:56:32 PM</p>
+</div>
+</div>
+</body>
+</html>

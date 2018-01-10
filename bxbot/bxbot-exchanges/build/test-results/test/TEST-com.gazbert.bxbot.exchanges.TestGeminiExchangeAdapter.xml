@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" tests="32" skipped="0" failures="0" errors="0" timestamp="2018-01-08T20:56:19" hostname="ricebook" time="1.658">
+  <properties/>
+  <testcase name="testSendingPublicRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="1.375"/>
+  <testcase name="testGettingBalanceInfoHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.009"/>
+  <testcase name="testGettingLatestMarketPriceHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.019"/>
+  <testcase name="testGettingMarketOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingYourOpenOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingYourOpenOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingMarketOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.006"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfPublicKeyConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.002"/>
+  <testcase name="testGettingLatestMarketPriceHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <testcase name="testCreateOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.016"/>
+  <testcase name="testCancelOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.005"/>
+  <testcase name="testCreateOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.007"/>
+  <testcase name="testCancelOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.007"/>
+  <testcase name="testExchangeAdapterInitialisesSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingBalanceInfoHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingImplNameIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <testcase name="testCreateOrderToBuyIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.013"/>
+  <testcase name="testCancelOrderIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.008"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.028"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.009"/>
+  <testcase name="testGettingMarketOrdersSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.033"/>
+  <testcase name="testGettingYourOpenOrdersSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.012"/>
+  <testcase name="testCreateOrderToSellIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingLatestMarketPriceSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.01"/>
+  <testcase name="testGettingBalanceInfoSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.014"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.015"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfTimeoutConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.001"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfSecretConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.001"/>
+  <testcase name="testGettingExchangeSellingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingExchangeBuyingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter" time="0.004"/>
+  <system-out><![CDATA[12012 [Test worker] 2018-01-08 14:56:20,280 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12023 [Test worker] 2018-01-08 14:56:20,291 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12024 [Test worker] 2018-01-08 14:56:20,292 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12024 [Test worker] 2018-01-08 14:56:20,292 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12025 [Test worker] 2018-01-08 14:56:20,293 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12025 [Test worker] 2018-01-08 14:56:20,293 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12026 [Test worker] 2018-01-08 14:56:20,294 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12026 [Test worker] 2018-01-08 14:56:20,294 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12123 [Test worker] 2018-01-08 14:56:20,391 DEBUG GeminiExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "bid": "566.60",
+  "ask": "566.90",
+  "volume": {
+    "BTC": "3440.338543298",
+    "USD": "1853736.979377875778",
+    "timestamp": 1470250800000
+  },
+  "last": "567.22"
+}}
+12149 [Test worker] 2018-01-08 14:56:20,417 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12150 [Test worker] 2018-01-08 14:56:20,418 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12150 [Test worker] 2018-01-08 14:56:20,418 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12151 [Test worker] 2018-01-08 14:56:20,419 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12151 [Test worker] 2018-01-08 14:56:20,419 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12152 [Test worker] 2018-01-08 14:56:20,420 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12152 [Test worker] 2018-01-08 14:56:20,420 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12152 [Test worker] 2018-01-08 14:56:20,420 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12155 [Test worker] 2018-01-08 14:56:20,423 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12155 [Test worker] 2018-01-08 14:56:20,423 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12156 [Test worker] 2018-01-08 14:56:20,424 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12156 [Test worker] 2018-01-08 14:56:20,424 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12157 [Test worker] 2018-01-08 14:56:20,425 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12157 [Test worker] 2018-01-08 14:56:20,425 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12158 [Test worker] 2018-01-08 14:56:20,426 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12159 [Test worker] 2018-01-08 14:56:20,427 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12162 [Test worker] 2018-01-08 14:56:20,430 ERROR GeminiExchangeAdapter getLatestMarketPrice() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalArgumentException:  In brightest day, in blackest night, no evil shall escape my sight, Let those who worship evil's might, beware of my power, Green Lantern's light!
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendPublicRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.getLatestMarketPrice(GeminiExchangeAdapter.java:426) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$getLatestMarketPrice$8(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.getLatestMarketPrice(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testGettingLatestMarketPriceHandlesUnexpectedException(TestGeminiExchangeAdapter.java:534) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12173 [Test worker] 2018-01-08 14:56:20,441 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12174 [Test worker] 2018-01-08 14:56:20,442 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12174 [Test worker] 2018-01-08 14:56:20,442 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12175 [Test worker] 2018-01-08 14:56:20,443 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12175 [Test worker] 2018-01-08 14:56:20,443 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12176 [Test worker] 2018-01-08 14:56:20,444 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12176 [Test worker] 2018-01-08 14:56:20,444 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12176 [Test worker] 2018-01-08 14:56:20,444 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12177 [Test worker] 2018-01-08 14:56:20,445 ERROR GeminiExchangeAdapter getMarketOrders() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalArgumentException: Why are you wearing that stupid bunny suit?
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendPublicRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.getMarketOrders(GeminiExchangeAdapter.java:386) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$getMarketOrders$2(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.getMarketOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testGettingMarketOrdersHandlesUnexpectedException(TestGeminiExchangeAdapter.java:217) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12180 [Test worker] 2018-01-08 14:56:20,448 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12181 [Test worker] 2018-01-08 14:56:20,449 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12182 [Test worker] 2018-01-08 14:56:20,450 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12182 [Test worker] 2018-01-08 14:56:20,450 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12183 [Test worker] 2018-01-08 14:56:20,451 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12183 [Test worker] 2018-01-08 14:56:20,451 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12183 [Test worker] 2018-01-08 14:56:20,451 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12184 [Test worker] 2018-01-08 14:56:20,452 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12184 [Test worker] 2018-01-08 14:56:20,452 ERROR GeminiExchangeAdapter getYourOpenOrders() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalStateException: I know one thing, Major, I drew down and fired straight at it. Capped off two hundred rounds in the minigun, full pack. Nothing... Nothing on Earth could've lived. Not at that range.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendAuthenticatedRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.getYourOpenOrders(GeminiExchangeAdapter.java:333) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$getYourOpenOrders$7(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.getYourOpenOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testGettingYourOpenOrdersHandlesUnexpectedException(TestGeminiExchangeAdapter.java:606) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12187 [Test worker] 2018-01-08 14:56:20,455 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12187 [Test worker] 2018-01-08 14:56:20,455 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12188 [Test worker] 2018-01-08 14:56:20,456 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12188 [Test worker] 2018-01-08 14:56:20,456 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12189 [Test worker] 2018-01-08 14:56:20,457 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12190 [Test worker] 2018-01-08 14:56:20,458 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12190 [Test worker] 2018-01-08 14:56:20,458 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12191 [Test worker] 2018-01-08 14:56:20,459 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12194 [Test worker] 2018-01-08 14:56:20,462 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12194 [Test worker] 2018-01-08 14:56:20,462 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12195 [Test worker] 2018-01-08 14:56:20,463 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12195 [Test worker] 2018-01-08 14:56:20,463 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12196 [Test worker] 2018-01-08 14:56:20,464 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12196 [Test worker] 2018-01-08 14:56:20,464 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12197 [Test worker] 2018-01-08 14:56:20,465 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12198 [Test worker] 2018-01-08 14:56:20,466 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12199 [Test worker] 2018-01-08 14:56:20,467 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12200 [Test worker] 2018-01-08 14:56:20,468 ERROR AbstractExchangeAdapter assertItemExists() - key cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+12201 [Test worker] 2018-01-08 14:56:20,469 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12202 [Test worker] 2018-01-08 14:56:20,470 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12202 [Test worker] 2018-01-08 14:56:20,470 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12202 [Test worker] 2018-01-08 14:56:20,470 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12203 [Test worker] 2018-01-08 14:56:20,471 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12203 [Test worker] 2018-01-08 14:56:20,471 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12204 [Test worker] 2018-01-08 14:56:20,472 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12204 [Test worker] 2018-01-08 14:56:20,472 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12207 [Test worker] 2018-01-08 14:56:20,475 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12208 [Test worker] 2018-01-08 14:56:20,476 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12209 [Test worker] 2018-01-08 14:56:20,477 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12209 [Test worker] 2018-01-08 14:56:20,477 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12210 [Test worker] 2018-01-08 14:56:20,478 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12210 [Test worker] 2018-01-08 14:56:20,478 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12211 [Test worker] 2018-01-08 14:56:20,479 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12212 [Test worker] 2018-01-08 14:56:20,480 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12220 [Test worker] 2018-01-08 14:56:20,488 ERROR GeminiExchangeAdapter createOrder() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalArgumentException: You know, you should wear your seatbelt.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendAuthenticatedRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.createOrder(GeminiExchangeAdapter.java:278) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$createOrder$4(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.createOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testCreateOrderHandlesUnexpectedException(TestGeminiExchangeAdapter.java:328) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12223 [Test worker] 2018-01-08 14:56:20,491 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12224 [Test worker] 2018-01-08 14:56:20,492 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12224 [Test worker] 2018-01-08 14:56:20,492 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12224 [Test worker] 2018-01-08 14:56:20,492 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12225 [Test worker] 2018-01-08 14:56:20,493 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12225 [Test worker] 2018-01-08 14:56:20,493 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12225 [Test worker] 2018-01-08 14:56:20,493 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12226 [Test worker] 2018-01-08 14:56:20,494 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12228 [Test worker] 2018-01-08 14:56:20,496 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12229 [Test worker] 2018-01-08 14:56:20,497 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12229 [Test worker] 2018-01-08 14:56:20,497 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12229 [Test worker] 2018-01-08 14:56:20,497 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12230 [Test worker] 2018-01-08 14:56:20,498 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12231 [Test worker] 2018-01-08 14:56:20,499 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12232 [Test worker] 2018-01-08 14:56:20,500 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12233 [Test worker] 2018-01-08 14:56:20,501 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12236 [Test worker] 2018-01-08 14:56:20,504 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12237 [Test worker] 2018-01-08 14:56:20,505 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12237 [Test worker] 2018-01-08 14:56:20,505 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12238 [Test worker] 2018-01-08 14:56:20,506 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12238 [Test worker] 2018-01-08 14:56:20,506 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12238 [Test worker] 2018-01-08 14:56:20,506 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12239 [Test worker] 2018-01-08 14:56:20,507 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12239 [Test worker] 2018-01-08 14:56:20,507 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12240 [Test worker] 2018-01-08 14:56:20,508 ERROR GeminiExchangeAdapter cancelOrder() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalStateException: Try not. Do... or do not. There is no try.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendAuthenticatedRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.cancelOrder(GeminiExchangeAdapter.java:307) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$cancelOrder$3(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.cancelOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testCancelOrderHandlesUnexpectedException(TestGeminiExchangeAdapter.java:403) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12243 [Test worker] 2018-01-08 14:56:20,511 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12243 [Test worker] 2018-01-08 14:56:20,511 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12244 [Test worker] 2018-01-08 14:56:20,512 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12244 [Test worker] 2018-01-08 14:56:20,512 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12244 [Test worker] 2018-01-08 14:56:20,512 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12245 [Test worker] 2018-01-08 14:56:20,513 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12245 [Test worker] 2018-01-08 14:56:20,513 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12245 [Test worker] 2018-01-08 14:56:20,513 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12247 [Test worker] 2018-01-08 14:56:20,515 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12248 [Test worker] 2018-01-08 14:56:20,516 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12248 [Test worker] 2018-01-08 14:56:20,516 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12248 [Test worker] 2018-01-08 14:56:20,516 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12249 [Test worker] 2018-01-08 14:56:20,517 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12249 [Test worker] 2018-01-08 14:56:20,517 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12250 [Test worker] 2018-01-08 14:56:20,518 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12250 [Test worker] 2018-01-08 14:56:20,518 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12251 [Test worker] 2018-01-08 14:56:20,519 ERROR GeminiExchangeAdapter getBalanceInfo() - Unexpected error has occurred in Gemini Exchange Adapter. 
+java.lang.IllegalStateException: 28 days, 6 hours, 42 minutes, 12 seconds. That is when the world will end.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.sendAuthenticatedRequestToExchange(GeminiExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter.getBalanceInfo(GeminiExchangeAdapter.java:445) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.CGLIB$getBalanceInfo$1(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176$$FastClassByCGLIB$$69f48f84.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.GeminiExchangeAdapter$$EnhancerByCGLIB$$2d9af176.getBalanceInfo(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestGeminiExchangeAdapter.testGettingBalanceInfoHandlesUnexpectedException(TestGeminiExchangeAdapter.java:472) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+12255 [Test worker] 2018-01-08 14:56:20,523 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12255 [Test worker] 2018-01-08 14:56:20,523 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12255 [Test worker] 2018-01-08 14:56:20,523 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12256 [Test worker] 2018-01-08 14:56:20,524 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12256 [Test worker] 2018-01-08 14:56:20,524 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12256 [Test worker] 2018-01-08 14:56:20,524 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12257 [Test worker] 2018-01-08 14:56:20,525 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12257 [Test worker] 2018-01-08 14:56:20,525 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12264 [Test worker] 2018-01-08 14:56:20,532 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12265 [Test worker] 2018-01-08 14:56:20,533 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12265 [Test worker] 2018-01-08 14:56:20,533 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12266 [Test worker] 2018-01-08 14:56:20,534 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12266 [Test worker] 2018-01-08 14:56:20,534 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12266 [Test worker] 2018-01-08 14:56:20,534 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12267 [Test worker] 2018-01-08 14:56:20,535 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12267 [Test worker] 2018-01-08 14:56:20,535 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12269 [Test worker] 2018-01-08 14:56:20,537 DEBUG GeminiExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "order_id": "196693745",
+  "id": "196693745",
+  "symbol": "ethbtc",
+  "exchange": "gemini",
+  "price": "0.00001",
+  "avg_execution_price": "0",
+  "side": "buy",
+  "type": "exchange limit",
+  "timestamp": "1470423858",
+  "timestampms": 1470423858732,
+  "is_live": true,
+  "is_cancelled": false,
+  "is_hidden": false,
+  "was_forced": false,
+  "executed_amount": "0",
+  "remaining_amount": "0.001",
+  "original_amount": "0.001"
+}}
+12272 [Test worker] 2018-01-08 14:56:20,540 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12273 [Test worker] 2018-01-08 14:56:20,541 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12274 [Test worker] 2018-01-08 14:56:20,542 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12274 [Test worker] 2018-01-08 14:56:20,542 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12274 [Test worker] 2018-01-08 14:56:20,542 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12275 [Test worker] 2018-01-08 14:56:20,543 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12276 [Test worker] 2018-01-08 14:56:20,544 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12276 [Test worker] 2018-01-08 14:56:20,544 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12277 [Test worker] 2018-01-08 14:56:20,545 DEBUG GeminiExchangeAdapter cancelOrder() - Cancel Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "order_id": "196104365",
+  "id": "196104365",
+  "symbol": "ethbtc",
+  "exchange": "gemini",
+  "price": "0.00001",
+  "avg_execution_price": "0",
+  "side": "buy",
+  "type": "exchange limit",
+  "timestamp": "1470424524",
+  "timestampms": 1470424524984,
+  "is_live": false,
+  "is_cancelled": true,
+  "is_hidden": false,
+  "was_forced": false,
+  "executed_amount": "0",
+  "remaining_amount": "0.001",
+  "original_amount": "0.001"
+}}
+12282 [Test worker] 2018-01-08 14:56:20,550 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12282 [Test worker] 2018-01-08 14:56:20,550 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12283 [Test worker] 2018-01-08 14:56:20,551 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12283 [Test worker] 2018-01-08 14:56:20,551 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12284 [Test worker] 2018-01-08 14:56:20,552 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12284 [Test worker] 2018-01-08 14:56:20,552 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12284 [Test worker] 2018-01-08 14:56:20,552 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12286 [Test worker] 2018-01-08 14:56:20,554 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12308 [Test worker] 2018-01-08 14:56:20,576 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12308 [Test worker] 2018-01-08 14:56:20,576 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12309 [Test worker] 2018-01-08 14:56:20,577 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12309 [Test worker] 2018-01-08 14:56:20,577 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12309 [Test worker] 2018-01-08 14:56:20,577 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12309 [Test worker] 2018-01-08 14:56:20,577 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12310 [Test worker] 2018-01-08 14:56:20,578 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12310 [Test worker] 2018-01-08 14:56:20,578 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12313 [Test worker] 2018-01-08 14:56:20,581 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12314 [Test worker] 2018-01-08 14:56:20,582 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12314 [Test worker] 2018-01-08 14:56:20,582 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12314 [Test worker] 2018-01-08 14:56:20,582 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12315 [Test worker] 2018-01-08 14:56:20,583 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12315 [Test worker] 2018-01-08 14:56:20,583 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12315 [Test worker] 2018-01-08 14:56:20,583 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12316 [Test worker] 2018-01-08 14:56:20,584 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12322 [Test worker] 2018-01-08 14:56:20,590 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12322 [Test worker] 2018-01-08 14:56:20,590 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12323 [Test worker] 2018-01-08 14:56:20,591 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12323 [Test worker] 2018-01-08 14:56:20,591 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12323 [Test worker] 2018-01-08 14:56:20,591 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12324 [Test worker] 2018-01-08 14:56:20,592 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12324 [Test worker] 2018-01-08 14:56:20,592 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12325 [Test worker] 2018-01-08 14:56:20,593 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12325 [Test worker] 2018-01-08 14:56:20,593 DEBUG GeminiExchangeAdapter getMarketOrders() - Market Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "bids": [
+    {
+      "price": "603.01",
+      "amount": "104.56720978",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "603.00",
+      "amount": "2.3261",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.99",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.97",
+      "amount": "3.34",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.96",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.93",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.92",
+      "amount": "2.5042",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.81",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.80",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.71",
+      "amount": "0.28491435",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.66",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.62",
+      "amount": "2.4359",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.57",
+      "amount": "3.34",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.51",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.38",
+      "amount": "27.8865",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.34",
+      "amount": "2.4633",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.25",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.24",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.10",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "602.01",
+      "amount": "2.3362",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.96",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.82",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.74",
+      "amount": "2.4862",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.67",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.53",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.50",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.40",
+      "amount": "2.3373",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.33",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.10",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "601.09",
+      "amount": "2.6144",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.96",
+      "amount": "0.17",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.93",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.84",
+      "amount": "2.3955",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.57",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.51",
+      "amount": "2.4943",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.41",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.22",
+      "amount": "2.399",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "600.11",
+      "amount": "0.03332722",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.93",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.92",
+      "amount": "2.4331",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.65",
+      "amount": "2.5297",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.47",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.35",
+      "amount": "2.6545",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.06",
+      "amount": "2.4998",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "599.01",
+      "amount": "25.1",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "598.75",
+      "amount": "2.5762",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "598.54",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "598.47",
+      "amount": "2.3142",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "598.17",
+      "amount": "1.59501318",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "598.16",
+      "amount": "2.3693",
+      "timestamp": "1470135988"
+    }
+  ],
+  "asks": [
+    {
+      "price": "603.02",
+      "amount": "24.5498",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.15",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.21",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.30",
+      "amount": "5.16",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.44",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.57",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.66",
+      "amount": "5",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "604.68",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.06",
+      "amount": "12.7758",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.07",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.34",
+      "amount": "1.6234",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.42",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.47",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.63",
+      "amount": "2.6174",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.81",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "605.94",
+      "amount": "2.2537",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.09",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.23",
+      "amount": "2.4503",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.33",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.49",
+      "amount": "2.2395",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.54",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.69",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.72",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.81",
+      "amount": "2.5743",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "606.89",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.05",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.12",
+      "amount": "2.3226",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.20",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.34",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.40",
+      "amount": "2.6192",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.48",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.62",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.64",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.69",
+      "amount": "0.8869",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.76",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "607.92",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.02",
+      "amount": "2.3069",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.05",
+      "amount": "1.74718916",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.06",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.21",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.36",
+      "amount": "25.8335",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.38",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.56",
+      "amount": "15",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.62",
+      "amount": "2.4663",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.96",
+      "amount": "2.5113",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "608.97",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "609.24",
+      "amount": "2.5168",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "609.50",
+      "amount": "25",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "609.55",
+      "amount": "2.2981",
+      "timestamp": "1470135988"
+    },
+    {
+      "price": "609.87",
+      "amount": "2.541",
+      "timestamp": "1470135988"
+    }
+  ]
+}}
+12355 [Test worker] 2018-01-08 14:56:20,623 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12356 [Test worker] 2018-01-08 14:56:20,624 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12356 [Test worker] 2018-01-08 14:56:20,624 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12357 [Test worker] 2018-01-08 14:56:20,625 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12357 [Test worker] 2018-01-08 14:56:20,625 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12358 [Test worker] 2018-01-08 14:56:20,626 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12358 [Test worker] 2018-01-08 14:56:20,626 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12359 [Test worker] 2018-01-08 14:56:20,627 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12360 [Test worker] 2018-01-08 14:56:20,628 DEBUG GeminiExchangeAdapter getYourOpenOrders() - Open Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload=[
+  {
+    "order_id": "196267999",
+    "id": "196267999",
+    "symbol": "ethbtc",
+    "exchange": "gemini",
+    "price": "0.00002",
+    "avg_execution_price": "0",
+    "side": "buy",
+    "type": "exchange limit",
+    "timestamp": "1470419470",
+    "timestampms": 1470419470223,
+    "is_live": true,
+    "is_cancelled": false,
+    "is_hidden": false,
+    "was_forced": false,
+    "executed_amount": "0.0001",
+    "remaining_amount": "0.0009",
+    "original_amount": "0.001"
+  },
+  {
+    "order_id": "191667696",
+    "id": "191667696",
+    "symbol": "ethbtc",
+    "exchange": "gemini",
+    "price": "0.00001",
+    "avg_execution_price": "0",
+    "side": "buy",
+    "type": "exchange limit",
+    "timestamp": "1470419420",
+    "timestampms": 1470419420408,
+    "is_live": true,
+    "is_cancelled": false,
+    "is_hidden": false,
+    "was_forced": false,
+    "executed_amount": "0",
+    "remaining_amount": "0.001",
+    "original_amount": "0.001"
+  },
+  {
+    "order_id": "192667196",
+    "id": "192667196",
+    "symbol": "btcusd",
+    "exchange": "gemini",
+    "price": "2000.01",
+    "avg_execution_price": "0",
+    "side": "buy",
+    "type": "exchange limit",
+    "timestamp": "1470419420",
+    "timestampms": 1470419420408,
+    "is_live": true,
+    "is_cancelled": false,
+    "is_hidden": false,
+    "was_forced": false,
+    "executed_amount": "0",
+    "remaining_amount": "0.1",
+    "original_amount": "0.1"
+  },
+  {
+    "order_id": "191567696",
+    "id": "191567696",
+    "symbol": "ethusd",
+    "exchange": "gemini",
+    "price": "343.24",
+    "avg_execution_price": "0",
+    "side": "buy",
+    "type": "exchange limit",
+    "timestamp": "1470419420",
+    "timestampms": 1470419420408,
+    "is_live": true,
+    "is_cancelled": false,
+    "is_hidden": false,
+    "was_forced": false,
+    "executed_amount": "0",
+    "remaining_amount": "1.2",
+    "original_amount": "1.2"
+  }
+]}
+12366 [Test worker] 2018-01-08 14:56:20,634 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12367 [Test worker] 2018-01-08 14:56:20,635 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12367 [Test worker] 2018-01-08 14:56:20,635 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12368 [Test worker] 2018-01-08 14:56:20,636 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12368 [Test worker] 2018-01-08 14:56:20,636 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12369 [Test worker] 2018-01-08 14:56:20,637 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12369 [Test worker] 2018-01-08 14:56:20,637 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12370 [Test worker] 2018-01-08 14:56:20,638 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12371 [Test worker] 2018-01-08 14:56:20,639 DEBUG GeminiExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "order_id": "196193745",
+  "id": "196193745",
+  "symbol": "ethbtc",
+  "exchange": "gemini",
+  "price": "0.00002",
+  "avg_execution_price": "0",
+  "side": "sell",
+  "type": "exchange limit",
+  "timestamp": "1470423859",
+  "timestampms": 1470423859732,
+  "is_live": true,
+  "is_cancelled": false,
+  "is_hidden": false,
+  "was_forced": false,
+  "executed_amount": "0",
+  "remaining_amount": "0.002",
+  "original_amount": "0.002"
+}}
+12374 [Test worker] 2018-01-08 14:56:20,642 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12374 [Test worker] 2018-01-08 14:56:20,642 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12375 [Test worker] 2018-01-08 14:56:20,643 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12376 [Test worker] 2018-01-08 14:56:20,644 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12376 [Test worker] 2018-01-08 14:56:20,644 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12377 [Test worker] 2018-01-08 14:56:20,645 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12378 [Test worker] 2018-01-08 14:56:20,646 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12379 [Test worker] 2018-01-08 14:56:20,647 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12380 [Test worker] 2018-01-08 14:56:20,648 DEBUG GeminiExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "bid": "566.60",
+  "ask": "566.90",
+  "volume": {
+    "BTC": "3440.338543298",
+    "USD": "1853736.979377875778",
+    "timestamp": 1470250800000
+  },
+  "last": "567.22"
+}}
+12385 [Test worker] 2018-01-08 14:56:20,653 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12385 [Test worker] 2018-01-08 14:56:20,653 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12386 [Test worker] 2018-01-08 14:56:20,654 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12387 [Test worker] 2018-01-08 14:56:20,655 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12387 [Test worker] 2018-01-08 14:56:20,655 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12388 [Test worker] 2018-01-08 14:56:20,656 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12389 [Test worker] 2018-01-08 14:56:20,657 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12390 [Test worker] 2018-01-08 14:56:20,658 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12391 [Test worker] 2018-01-08 14:56:20,659 DEBUG GeminiExchangeAdapter getBalanceInfo() - Balance Info response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload=[
+  {
+    "type": "exchange",
+    "currency": "BTC",
+    "amount": "4",
+    "available": "7.2682949",
+    "availableForWithdrawal": "0"
+  },
+  {
+    "type": "exchange",
+    "currency": "USD",
+    "amount": "1010.99",
+    "available": "512.28",
+    "availableForWithdrawal": "0.00"
+  },
+  {
+    "type": "exchange",
+    "currency": "ETH",
+    "amount": "0",
+    "available": "0",
+    "availableForWithdrawal": "0"
+  }
+]}
+12400 [Test worker] 2018-01-08 14:56:20,668 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12401 [Test worker] 2018-01-08 14:56:20,669 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12401 [Test worker] 2018-01-08 14:56:20,669 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12402 [Test worker] 2018-01-08 14:56:20,670 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12402 [Test worker] 2018-01-08 14:56:20,670 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12403 [Test worker] 2018-01-08 14:56:20,671 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12403 [Test worker] 2018-01-08 14:56:20,671 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12404 [Test worker] 2018-01-08 14:56:20,672 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12410 [Test worker] 2018-01-08 14:56:20,678 DEBUG GeminiExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "order_id": "196193745",
+  "id": "196193745",
+  "symbol": "ethbtc",
+  "exchange": "gemini",
+  "price": "0.00002",
+  "avg_execution_price": "0",
+  "side": "sell",
+  "type": "exchange limit",
+  "timestamp": "1470423859",
+  "timestampms": 1470423859732,
+  "is_live": true,
+  "is_cancelled": false,
+  "is_hidden": false,
+  "was_forced": false,
+  "executed_amount": "0",
+  "remaining_amount": "0.002",
+  "original_amount": "0.002"
+}}
+12413 [Test worker] 2018-01-08 14:56:20,681 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12413 [Test worker] 2018-01-08 14:56:20,681 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12413 [Test worker] 2018-01-08 14:56:20,681 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12414 [Test worker] 2018-01-08 14:56:20,682 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12414 [Test worker] 2018-01-08 14:56:20,682 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12414 [Test worker] 2018-01-08 14:56:20,682 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12415 [Test worker] 2018-01-08 14:56:20,683 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12415 [Test worker] 2018-01-08 14:56:20,683 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12416 [Test worker] 2018-01-08 14:56:20,684 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12417 [Test worker] 2018-01-08 14:56:20,685 ERROR AbstractExchangeAdapter setNetworkConfig() - connection-timeout cannot be 0 value.EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12419 [Test worker] 2018-01-08 14:56:20,687 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12419 [Test worker] 2018-01-08 14:56:20,687 ERROR AbstractExchangeAdapter assertItemExists() - secret cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+12420 [Test worker] 2018-01-08 14:56:20,688 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12420 [Test worker] 2018-01-08 14:56:20,688 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12421 [Test worker] 2018-01-08 14:56:20,689 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12421 [Test worker] 2018-01-08 14:56:20,689 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12421 [Test worker] 2018-01-08 14:56:20,689 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12422 [Test worker] 2018-01-08 14:56:20,690 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12422 [Test worker] 2018-01-08 14:56:20,690 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12422 [Test worker] 2018-01-08 14:56:20,690 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+12423 [Test worker] 2018-01-08 14:56:20,691 INFO  GeminiExchangeAdapter init() - About to initialise Gemini ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+12424 [Test worker] 2018-01-08 14:56:20,692 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+12424 [Test worker] 2018-01-08 14:56:20,692 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+12425 [Test worker] 2018-01-08 14:56:20,693 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+12425 [Test worker] 2018-01-08 14:56:20,693 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.25
+12426 [Test worker] 2018-01-08 14:56:20,694 INFO  GeminiExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00250000
+12426 [Test worker] 2018-01-08 14:56:20,694 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.25
+12426 [Test worker] 2018-01-08 14:56:20,694 INFO  GeminiExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00250000
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

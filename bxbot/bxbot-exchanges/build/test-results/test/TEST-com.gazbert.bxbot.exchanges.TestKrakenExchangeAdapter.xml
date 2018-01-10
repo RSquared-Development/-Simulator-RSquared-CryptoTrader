@@ -1,0 +1,2451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" tests="42" skipped="0" failures="0" errors="0" timestamp="2018-01-08T20:56:26" hostname="ricebook" time="1.794">
+  <properties/>
+  <testcase name="testSendingPublicRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="1.474"/>
+  <testcase name="testGettingBalanceInfoHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingLatestMarketPriceHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.012"/>
+  <testcase name="testGettingMarketOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingYourOpenOrdersHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingYourOpenOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingMarketOrdersHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.004"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfPublicKeyConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.001"/>
+  <testcase name="testGettingLatestMarketPriceHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.005"/>
+  <testcase name="testCreateOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testCancelOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.012"/>
+  <testcase name="testGettingTickerHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.005"/>
+  <testcase name="testCreateOrderHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testCancelOrderHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.005"/>
+  <testcase name="testGettingTickerHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.004"/>
+  <testcase name="testExchangeAdapterInitialisesSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingBalanceInfoHandlesUnexpectedException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingImplNameIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.003"/>
+  <testcase name="testCreateOrderToBuyIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.012"/>
+  <testcase name="testCancelOrderIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.009"/>
+  <testcase name="testGettingTickerSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.009"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesExchangeNetworkException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingMarketOrdersSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.035"/>
+  <testcase name="testGettingYourOpenOrdersSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.013"/>
+  <testcase name="testCreateOrderToSellIsSuccessful" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingLatestMarketPriceSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.007"/>
+  <testcase name="testGettingBalanceInfoSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.009"/>
+  <testcase name="testSendingAuthenticatedRequestToExchangeSuccessfully" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.01"/>
+  <testcase name="testSendingPublicRequestToExchangeHandlesTradingApiException" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.005"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfTimeoutConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.001"/>
+  <testcase name="testExchangeAdapterThrowsExceptionIfSecretConfigIsMissing" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.002"/>
+  <testcase name="testGettingExchangeSellingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testCreateOrderExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.009"/>
+  <testcase name="testCancelOrderExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingExchangeBuyingFeeIsAsExpected" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.004"/>
+  <testcase name="testGettingYourOpenOrdersExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.01"/>
+  <testcase name="testGettingTickerHandlesExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingMarketOrdersHandlesErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.006"/>
+  <testcase name="testGettingLatestMarketPriceHandlesExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.008"/>
+  <testcase name="testGettingBalanceInfoHandlesExchangeErrorResponse" classname="com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter" time="0.009"/>
+  <system-out><![CDATA[19410 [Test worker] 2018-01-08 14:56:27,678 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19420 [Test worker] 2018-01-08 14:56:27,688 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19421 [Test worker] 2018-01-08 14:56:27,689 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19422 [Test worker] 2018-01-08 14:56:27,690 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19422 [Test worker] 2018-01-08 14:56:27,690 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19424 [Test worker] 2018-01-08 14:56:27,692 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19424 [Test worker] 2018-01-08 14:56:27,692 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19425 [Test worker] 2018-01-08 14:56:27,693 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19425 [Test worker] 2018-01-08 14:56:27,693 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19425 [Test worker] 2018-01-08 14:56:27,693 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19609 [Test worker] 2018-01-08 14:56:27,877 DEBUG KrakenExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "XXBTZUSD": {
+      "a": [
+        "657.99900",
+        "3",
+        "3.000"
+      ],
+      "b": [
+        "655.20100",
+        "2",
+        "2.000"
+      ],
+      "c": [
+        "657.99900",
+        "0.50000000"
+      ],
+      "v": [
+        "1009.55847143",
+        "1152.99666422"
+      ],
+      "p": [
+        "652.40642",
+        "652.64807"
+      ],
+      "t": [
+        1537,
+        1754
+      ],
+      "l": [
+        "642.50000",
+        "642.50000"
+      ],
+      "h": [
+        "659.10000",
+        "659.13000"
+      ],
+      "o": "651.73600"
+    }
+  }
+}}
+19667 [Test worker] 2018-01-08 14:56:27,935 WARN  KrakenExchangeAdapter deserialize() - Received unexpected Ticker param - ignoring: t
+19670 [Test worker] 2018-01-08 14:56:27,938 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19670 [Test worker] 2018-01-08 14:56:27,938 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19671 [Test worker] 2018-01-08 14:56:27,939 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19671 [Test worker] 2018-01-08 14:56:27,939 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19671 [Test worker] 2018-01-08 14:56:27,939 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19672 [Test worker] 2018-01-08 14:56:27,940 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19672 [Test worker] 2018-01-08 14:56:27,940 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19672 [Test worker] 2018-01-08 14:56:27,940 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19672 [Test worker] 2018-01-08 14:56:27,940 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19673 [Test worker] 2018-01-08 14:56:27,941 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19676 [Test worker] 2018-01-08 14:56:27,944 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19677 [Test worker] 2018-01-08 14:56:27,945 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19677 [Test worker] 2018-01-08 14:56:27,945 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19677 [Test worker] 2018-01-08 14:56:27,945 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19678 [Test worker] 2018-01-08 14:56:27,946 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19678 [Test worker] 2018-01-08 14:56:27,946 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19678 [Test worker] 2018-01-08 14:56:27,946 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19679 [Test worker] 2018-01-08 14:56:27,947 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19679 [Test worker] 2018-01-08 14:56:27,947 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19679 [Test worker] 2018-01-08 14:56:27,947 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19680 [Test worker] 2018-01-08 14:56:27,948 ERROR KrakenExchangeAdapter getLatestMarketPrice() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalArgumentException: Yes, you have information. You can find out all about a man, track him down, keep an eye on him. But you have to look him in the eye. All the tech you have can't help you with that. A license to kill also means a license NOT to kill.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendPublicRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getLatestMarketPrice(KrakenExchangeAdapter.java:603) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getLatestMarketPrice$9(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getLatestMarketPrice(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingLatestMarketPriceHandlesUnexpectedException(TestKrakenExchangeAdapter.java:767) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19687 [Test worker] 2018-01-08 14:56:27,955 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19688 [Test worker] 2018-01-08 14:56:27,956 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19688 [Test worker] 2018-01-08 14:56:27,956 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19689 [Test worker] 2018-01-08 14:56:27,957 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19689 [Test worker] 2018-01-08 14:56:27,957 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19689 [Test worker] 2018-01-08 14:56:27,957 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19689 [Test worker] 2018-01-08 14:56:27,957 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19690 [Test worker] 2018-01-08 14:56:27,958 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19691 [Test worker] 2018-01-08 14:56:27,959 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19691 [Test worker] 2018-01-08 14:56:27,959 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19692 [Test worker] 2018-01-08 14:56:27,960 ERROR KrakenExchangeAdapter getMarketOrders() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalArgumentException: Down time is the worst, isnâ€™t it? Adrenaline leaves and the mind starts to wander...
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendPublicRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getMarketOrders(KrakenExchangeAdapter.java:288) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getMarketOrders$3(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getMarketOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingMarketOrdersHandlesUnexpectedException(TestKrakenExchangeAdapter.java:266) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19696 [Test worker] 2018-01-08 14:56:27,964 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19696 [Test worker] 2018-01-08 14:56:27,964 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19697 [Test worker] 2018-01-08 14:56:27,965 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19697 [Test worker] 2018-01-08 14:56:27,965 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19698 [Test worker] 2018-01-08 14:56:27,966 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19698 [Test worker] 2018-01-08 14:56:27,966 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19699 [Test worker] 2018-01-08 14:56:27,967 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19699 [Test worker] 2018-01-08 14:56:27,967 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19699 [Test worker] 2018-01-08 14:56:27,967 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19700 [Test worker] 2018-01-08 14:56:27,968 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19701 [Test worker] 2018-01-08 14:56:27,969 ERROR KrakenExchangeAdapter getYourOpenOrders() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalStateException: Ah! Curse your sudden but inevitable betrayal!
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendAuthenticatedRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getYourOpenOrders(KrakenExchangeAdapter.java:363) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getYourOpenOrders$8(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getYourOpenOrders(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingYourOpenOrdersHandlesUnexpectedException(TestKrakenExchangeAdapter.java:360) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19703 [Test worker] 2018-01-08 14:56:27,971 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19704 [Test worker] 2018-01-08 14:56:27,972 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19705 [Test worker] 2018-01-08 14:56:27,973 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19705 [Test worker] 2018-01-08 14:56:27,973 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19706 [Test worker] 2018-01-08 14:56:27,974 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19706 [Test worker] 2018-01-08 14:56:27,974 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19707 [Test worker] 2018-01-08 14:56:27,975 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19707 [Test worker] 2018-01-08 14:56:27,975 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19707 [Test worker] 2018-01-08 14:56:27,975 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19708 [Test worker] 2018-01-08 14:56:27,976 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19709 [Test worker] 2018-01-08 14:56:27,977 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19709 [Test worker] 2018-01-08 14:56:27,977 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19710 [Test worker] 2018-01-08 14:56:27,978 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19710 [Test worker] 2018-01-08 14:56:27,978 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19710 [Test worker] 2018-01-08 14:56:27,978 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19711 [Test worker] 2018-01-08 14:56:27,979 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19711 [Test worker] 2018-01-08 14:56:27,979 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19711 [Test worker] 2018-01-08 14:56:27,979 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19711 [Test worker] 2018-01-08 14:56:27,979 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19712 [Test worker] 2018-01-08 14:56:27,980 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19713 [Test worker] 2018-01-08 14:56:27,981 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19713 [Test worker] 2018-01-08 14:56:27,981 ERROR AbstractExchangeAdapter assertItemExists() - key cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+19715 [Test worker] 2018-01-08 14:56:27,983 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19716 [Test worker] 2018-01-08 14:56:27,984 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19717 [Test worker] 2018-01-08 14:56:27,985 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19717 [Test worker] 2018-01-08 14:56:27,985 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19717 [Test worker] 2018-01-08 14:56:27,985 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19718 [Test worker] 2018-01-08 14:56:27,986 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19718 [Test worker] 2018-01-08 14:56:27,986 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19719 [Test worker] 2018-01-08 14:56:27,987 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19719 [Test worker] 2018-01-08 14:56:27,987 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19719 [Test worker] 2018-01-08 14:56:27,987 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19721 [Test worker] 2018-01-08 14:56:27,989 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19721 [Test worker] 2018-01-08 14:56:27,989 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19721 [Test worker] 2018-01-08 14:56:27,989 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19722 [Test worker] 2018-01-08 14:56:27,990 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19723 [Test worker] 2018-01-08 14:56:27,991 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19723 [Test worker] 2018-01-08 14:56:27,991 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19723 [Test worker] 2018-01-08 14:56:27,991 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19723 [Test worker] 2018-01-08 14:56:27,991 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19724 [Test worker] 2018-01-08 14:56:27,992 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19724 [Test worker] 2018-01-08 14:56:27,992 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19725 [Test worker] 2018-01-08 14:56:27,993 ERROR KrakenExchangeAdapter createOrder() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalArgumentException: Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the dream world and the real world?
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendAuthenticatedRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.createOrder(KrakenExchangeAdapter.java:480) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$createOrder$5(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.createOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testCreateOrderHandlesUnexpectedException(TestKrakenExchangeAdapter.java:494) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19727 [Test worker] 2018-01-08 14:56:27,995 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19727 [Test worker] 2018-01-08 14:56:27,995 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19728 [Test worker] 2018-01-08 14:56:27,996 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19728 [Test worker] 2018-01-08 14:56:27,996 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19729 [Test worker] 2018-01-08 14:56:27,997 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19729 [Test worker] 2018-01-08 14:56:27,997 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19730 [Test worker] 2018-01-08 14:56:27,998 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19736 [Test worker] 2018-01-08 14:56:28,004 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19736 [Test worker] 2018-01-08 14:56:28,004 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19737 [Test worker] 2018-01-08 14:56:28,005 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19739 [Test worker] 2018-01-08 14:56:28,007 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19740 [Test worker] 2018-01-08 14:56:28,008 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19740 [Test worker] 2018-01-08 14:56:28,008 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19740 [Test worker] 2018-01-08 14:56:28,008 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19741 [Test worker] 2018-01-08 14:56:28,009 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19741 [Test worker] 2018-01-08 14:56:28,009 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19741 [Test worker] 2018-01-08 14:56:28,009 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19742 [Test worker] 2018-01-08 14:56:28,010 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19742 [Test worker] 2018-01-08 14:56:28,010 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19743 [Test worker] 2018-01-08 14:56:28,011 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19745 [Test worker] 2018-01-08 14:56:28,013 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19745 [Test worker] 2018-01-08 14:56:28,013 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19746 [Test worker] 2018-01-08 14:56:28,014 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19746 [Test worker] 2018-01-08 14:56:28,014 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19747 [Test worker] 2018-01-08 14:56:28,015 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19747 [Test worker] 2018-01-08 14:56:28,015 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19748 [Test worker] 2018-01-08 14:56:28,016 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19748 [Test worker] 2018-01-08 14:56:28,016 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19748 [Test worker] 2018-01-08 14:56:28,016 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19748 [Test worker] 2018-01-08 14:56:28,016 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19750 [Test worker] 2018-01-08 14:56:28,018 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19751 [Test worker] 2018-01-08 14:56:28,019 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19751 [Test worker] 2018-01-08 14:56:28,019 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19751 [Test worker] 2018-01-08 14:56:28,019 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19751 [Test worker] 2018-01-08 14:56:28,019 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19752 [Test worker] 2018-01-08 14:56:28,020 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19752 [Test worker] 2018-01-08 14:56:28,020 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19752 [Test worker] 2018-01-08 14:56:28,020 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19753 [Test worker] 2018-01-08 14:56:28,021 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19753 [Test worker] 2018-01-08 14:56:28,021 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19753 [Test worker] 2018-01-08 14:56:28,021 ERROR KrakenExchangeAdapter cancelOrder() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalStateException: You know, I know this steak doesn't exist. I know that when I put it in my mouth, the Matrix is telling my brain that it is juicy and delicious. After nine years, you know what I realize? Ignorance is bliss.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendAuthenticatedRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.cancelOrder(KrakenExchangeAdapter.java:536) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$cancelOrder$4(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.cancelOrder(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testCancelOrderHandlesUnexpectedException(TestKrakenExchangeAdapter.java:586) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19756 [Test worker] 2018-01-08 14:56:28,024 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19756 [Test worker] 2018-01-08 14:56:28,024 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19756 [Test worker] 2018-01-08 14:56:28,024 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19756 [Test worker] 2018-01-08 14:56:28,024 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19757 [Test worker] 2018-01-08 14:56:28,025 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19757 [Test worker] 2018-01-08 14:56:28,025 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19757 [Test worker] 2018-01-08 14:56:28,025 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19758 [Test worker] 2018-01-08 14:56:28,026 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19758 [Test worker] 2018-01-08 14:56:28,026 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19758 [Test worker] 2018-01-08 14:56:28,026 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19758 [Test worker] 2018-01-08 14:56:28,026 ERROR KrakenExchangeAdapter getTicker() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalArgumentException: Resistance is futile.
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendPublicRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getTicker(KrakenExchangeAdapter.java:747) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getTicker$2(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getTicker(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingTickerHandlesUnexpectedException(TestKrakenExchangeAdapter.java:865) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19761 [Test worker] 2018-01-08 14:56:28,029 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19762 [Test worker] 2018-01-08 14:56:28,030 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19762 [Test worker] 2018-01-08 14:56:28,030 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19762 [Test worker] 2018-01-08 14:56:28,030 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19762 [Test worker] 2018-01-08 14:56:28,030 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19763 [Test worker] 2018-01-08 14:56:28,031 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19763 [Test worker] 2018-01-08 14:56:28,031 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19763 [Test worker] 2018-01-08 14:56:28,031 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19763 [Test worker] 2018-01-08 14:56:28,031 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19764 [Test worker] 2018-01-08 14:56:28,032 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19765 [Test worker] 2018-01-08 14:56:28,033 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19766 [Test worker] 2018-01-08 14:56:28,034 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19766 [Test worker] 2018-01-08 14:56:28,034 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19767 [Test worker] 2018-01-08 14:56:28,035 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19768 [Test worker] 2018-01-08 14:56:28,036 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19768 [Test worker] 2018-01-08 14:56:28,036 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19768 [Test worker] 2018-01-08 14:56:28,036 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19768 [Test worker] 2018-01-08 14:56:28,036 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19769 [Test worker] 2018-01-08 14:56:28,037 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19769 [Test worker] 2018-01-08 14:56:28,037 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19770 [Test worker] 2018-01-08 14:56:28,038 ERROR KrakenExchangeAdapter getBalanceInfo() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.lang.IllegalStateException: Are those friendlies? I hope they're friendlies...
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46) ~[easymock-3.5.1.jar:3.5.1]
+	at org.powermock.api.easymock.internal.invocationcontrol.EasyMockMethodInvocationControl.invoke(EasyMockMethodInvocationControl.java:90) ~[powermock-api-easymock-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:182) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:164) ~[powermock-core-1.7.3.jar:1.7.3]
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:134) ~[powermock-core-1.7.3.jar:1.7.3]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.sendAuthenticatedRequestToExchange(KrakenExchangeAdapter.java) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getBalanceInfo(KrakenExchangeAdapter.java:657) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getBalanceInfo$1(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getBalanceInfo(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingBalanceInfoHandlesUnexpectedException(TestKrakenExchangeAdapter.java:674) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19772 [Test worker] 2018-01-08 14:56:28,040 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19772 [Test worker] 2018-01-08 14:56:28,040 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19772 [Test worker] 2018-01-08 14:56:28,040 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19772 [Test worker] 2018-01-08 14:56:28,040 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19773 [Test worker] 2018-01-08 14:56:28,041 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19773 [Test worker] 2018-01-08 14:56:28,041 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19773 [Test worker] 2018-01-08 14:56:28,041 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19774 [Test worker] 2018-01-08 14:56:28,042 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19774 [Test worker] 2018-01-08 14:56:28,042 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19774 [Test worker] 2018-01-08 14:56:28,042 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19777 [Test worker] 2018-01-08 14:56:28,045 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19778 [Test worker] 2018-01-08 14:56:28,046 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19779 [Test worker] 2018-01-08 14:56:28,047 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19780 [Test worker] 2018-01-08 14:56:28,048 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19780 [Test worker] 2018-01-08 14:56:28,048 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19781 [Test worker] 2018-01-08 14:56:28,049 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19781 [Test worker] 2018-01-08 14:56:28,049 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19781 [Test worker] 2018-01-08 14:56:28,049 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19782 [Test worker] 2018-01-08 14:56:28,050 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19782 [Test worker] 2018-01-08 14:56:28,050 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19783 [Test worker] 2018-01-08 14:56:28,051 DEBUG KrakenExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "descr": {
+      "order": "buy 0.00100000 XBTUSD @ limit 758.170"
+    },
+    "txid": [
+      "OLD2Z4-L4C9H-MKH5BX"
+    ]
+  }
+}}
+19787 [Test worker] 2018-01-08 14:56:28,055 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19788 [Test worker] 2018-01-08 14:56:28,056 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19788 [Test worker] 2018-01-08 14:56:28,056 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19789 [Test worker] 2018-01-08 14:56:28,057 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19789 [Test worker] 2018-01-08 14:56:28,057 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19790 [Test worker] 2018-01-08 14:56:28,058 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19790 [Test worker] 2018-01-08 14:56:28,058 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19791 [Test worker] 2018-01-08 14:56:28,059 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19791 [Test worker] 2018-01-08 14:56:28,059 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19792 [Test worker] 2018-01-08 14:56:28,060 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19792 [Test worker] 2018-01-08 14:56:28,060 DEBUG KrakenExchangeAdapter cancelOrder() - Cancel Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "count": 1
+  }
+}}
+19796 [Test worker] 2018-01-08 14:56:28,064 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19797 [Test worker] 2018-01-08 14:56:28,065 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19797 [Test worker] 2018-01-08 14:56:28,065 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19797 [Test worker] 2018-01-08 14:56:28,065 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19798 [Test worker] 2018-01-08 14:56:28,066 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19798 [Test worker] 2018-01-08 14:56:28,066 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19798 [Test worker] 2018-01-08 14:56:28,066 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19799 [Test worker] 2018-01-08 14:56:28,067 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19799 [Test worker] 2018-01-08 14:56:28,067 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19800 [Test worker] 2018-01-08 14:56:28,068 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19800 [Test worker] 2018-01-08 14:56:28,068 DEBUG KrakenExchangeAdapter getTicker() - Ticker response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "XXBTZUSD": {
+      "a": [
+        "657.99900",
+        "3",
+        "3.000"
+      ],
+      "b": [
+        "655.20100",
+        "2",
+        "2.000"
+      ],
+      "c": [
+        "657.99900",
+        "0.50000000"
+      ],
+      "v": [
+        "1009.55847143",
+        "1152.99666422"
+      ],
+      "p": [
+        "652.40642",
+        "652.64807"
+      ],
+      "t": [
+        1537,
+        1754
+      ],
+      "l": [
+        "642.50000",
+        "642.50000"
+      ],
+      "h": [
+        "659.10000",
+        "659.13000"
+      ],
+      "o": "651.73600"
+    }
+  }
+}}
+19802 [Test worker] 2018-01-08 14:56:28,070 WARN  KrakenExchangeAdapter deserialize() - Received unexpected Ticker param - ignoring: t
+19807 [Test worker] 2018-01-08 14:56:28,075 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19807 [Test worker] 2018-01-08 14:56:28,075 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19807 [Test worker] 2018-01-08 14:56:28,075 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19808 [Test worker] 2018-01-08 14:56:28,076 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19808 [Test worker] 2018-01-08 14:56:28,076 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19808 [Test worker] 2018-01-08 14:56:28,076 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19809 [Test worker] 2018-01-08 14:56:28,077 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19809 [Test worker] 2018-01-08 14:56:28,077 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19809 [Test worker] 2018-01-08 14:56:28,077 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19809 [Test worker] 2018-01-08 14:56:28,077 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19813 [Test worker] 2018-01-08 14:56:28,081 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19814 [Test worker] 2018-01-08 14:56:28,082 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19814 [Test worker] 2018-01-08 14:56:28,082 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19815 [Test worker] 2018-01-08 14:56:28,083 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19815 [Test worker] 2018-01-08 14:56:28,083 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19816 [Test worker] 2018-01-08 14:56:28,084 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19816 [Test worker] 2018-01-08 14:56:28,084 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19816 [Test worker] 2018-01-08 14:56:28,084 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19817 [Test worker] 2018-01-08 14:56:28,085 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19817 [Test worker] 2018-01-08 14:56:28,085 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19821 [Test worker] 2018-01-08 14:56:28,089 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19821 [Test worker] 2018-01-08 14:56:28,089 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19822 [Test worker] 2018-01-08 14:56:28,090 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19822 [Test worker] 2018-01-08 14:56:28,090 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19822 [Test worker] 2018-01-08 14:56:28,090 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19823 [Test worker] 2018-01-08 14:56:28,091 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19823 [Test worker] 2018-01-08 14:56:28,091 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19823 [Test worker] 2018-01-08 14:56:28,091 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19824 [Test worker] 2018-01-08 14:56:28,092 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19824 [Test worker] 2018-01-08 14:56:28,092 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19827 [Test worker] 2018-01-08 14:56:28,095 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19827 [Test worker] 2018-01-08 14:56:28,095 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19827 [Test worker] 2018-01-08 14:56:28,095 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19828 [Test worker] 2018-01-08 14:56:28,096 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19828 [Test worker] 2018-01-08 14:56:28,096 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19828 [Test worker] 2018-01-08 14:56:28,096 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19828 [Test worker] 2018-01-08 14:56:28,096 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19829 [Test worker] 2018-01-08 14:56:28,097 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19830 [Test worker] 2018-01-08 14:56:28,098 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19830 [Test worker] 2018-01-08 14:56:28,098 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19830 [Test worker] 2018-01-08 14:56:28,098 DEBUG KrakenExchangeAdapter getMarketOrders() - Market Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "XXBTZUSD": {
+      "asks": [
+        [
+          "664.53600",
+          "0.888",
+          1468683868
+        ],
+        [
+          "664.53700",
+          "30.000",
+          1468683868
+        ],
+        [
+          "664.53800",
+          "12.076",
+          1468683865
+        ],
+        [
+          "664.77000",
+          "0.500",
+          1468672374
+        ],
+        [
+          "665.18600",
+          "6.853",
+          1468680127
+        ],
+        [
+          "665.44000",
+          "0.500",
+          1468672328
+        ],
+        [
+          "666.45000",
+          "7.551",
+          1468683833
+        ],
+        [
+          "666.46200",
+          "6.315",
+          1468672216
+        ],
+        [
+          "666.62500",
+          "2.500",
+          1468683972
+        ],
+        [
+          "666.98000",
+          "0.156",
+          1468672231
+        ],
+        [
+          "667.77200",
+          "7.623",
+          1468673230
+        ],
+        [
+          "668.18600",
+          "4.993",
+          1468683902
+        ],
+        [
+          "669.14000",
+          "3.840",
+          1468681400
+        ],
+        [
+          "669.14100",
+          "0.580",
+          1468575485
+        ],
+        [
+          "669.20600",
+          "10.000",
+          1468620774
+        ],
+        [
+          "669.21600",
+          "10.892",
+          1468671472
+        ],
+        [
+          "669.48900",
+          "0.067",
+          1468683854
+        ],
+        [
+          "669.50000",
+          "1.500",
+          1468658765
+        ],
+        [
+          "669.60100",
+          "0.680",
+          1468574826
+        ],
+        [
+          "669.93300",
+          "0.197",
+          1468440473
+        ],
+        [
+          "670.00000",
+          "17.916",
+          1468675733
+        ],
+        [
+          "670.15000",
+          "1.100",
+          1468465230
+        ],
+        [
+          "670.44900",
+          "15.249",
+          1468601790
+        ],
+        [
+          "670.96000",
+          "0.303",
+          1468590961
+        ],
+        [
+          "670.98000",
+          "0.148",
+          1468367254
+        ],
+        [
+          "671.21000",
+          "2.900",
+          1468649754
+        ],
+        [
+          "671.63000",
+          "0.148",
+          1468367161
+        ],
+        [
+          "671.68000",
+          "0.148",
+          1468367116
+        ],
+        [
+          "671.71000",
+          "0.148",
+          1468367099
+        ],
+        [
+          "671.72000",
+          "0.300",
+          1468367084
+        ],
+        [
+          "671.73000",
+          "0.148",
+          1468367073
+        ],
+        [
+          "671.83300",
+          "14.154",
+          1468601789
+        ],
+        [
+          "671.88000",
+          "0.148",
+          1468366984
+        ],
+        [
+          "671.90000",
+          "0.148",
+          1468366961
+        ],
+        [
+          "671.91000",
+          "0.500",
+          1468664870
+        ],
+        [
+          "671.96000",
+          "0.148",
+          1468407453
+        ],
+        [
+          "672.00000",
+          "1.000",
+          1468559127
+        ],
+        [
+          "672.01000",
+          "0.148",
+          1468366849
+        ],
+        [
+          "672.05000",
+          "0.296",
+          1468366772
+        ],
+        [
+          "672.06000",
+          "0.148",
+          1468533677
+        ],
+        [
+          "672.10000",
+          "0.148",
+          1468366707
+        ],
+        [
+          "672.12000",
+          "0.072",
+          1468366693
+        ],
+        [
+          "672.30000",
+          "0.300",
+          1468618469
+        ],
+        [
+          "673.50100",
+          "0.175",
+          1468655030
+        ],
+        [
+          "673.71200",
+          "7.068",
+          1468672622
+        ],
+        [
+          "674.00000",
+          "0.235",
+          1468554239
+        ],
+        [
+          "674.03000",
+          "0.148",
+          1468366544
+        ],
+        [
+          "674.06000",
+          "0.303",
+          1468661940
+        ],
+        [
+          "674.10000",
+          "0.148",
+          1468367275
+        ],
+        [
+          "674.13000",
+          "0.300",
+          1468644174
+        ],
+        [
+          "674.15000",
+          "0.303",
+          1468366439
+        ],
+        [
+          "674.16000",
+          "0.148",
+          1468397491
+        ],
+        [
+          "674.53300",
+          "0.197",
+          1468624774
+        ],
+        [
+          "674.82000",
+          "30.000",
+          1468679570
+        ],
+        [
+          "675.00000",
+          "15.856",
+          1468617948
+        ],
+        [
+          "675.00900",
+          "8.033",
+          1468683660
+        ],
+        [
+          "675.45700",
+          "0.082",
+          1468681447
+        ],
+        [
+          "676.00000",
+          "4.833",
+          1468619138
+        ],
+        [
+          "676.54000",
+          "0.137",
+          1467864562
+        ],
+        [
+          "676.64000",
+          "0.146",
+          1468671877
+        ],
+        [
+          "677.05000",
+          "0.114",
+          1467864551
+        ],
+        [
+          "678.00000",
+          "4.500",
+          1468564032
+        ],
+        [
+          "678.78500",
+          "0.082",
+          1468681430
+        ],
+        [
+          "678.90000",
+          "10.000",
+          1468041521
+        ],
+        [
+          "679.00000",
+          "1.500",
+          1468513894
+        ],
+        [
+          "679.05000",
+          "13.745",
+          1468041594
+        ],
+        [
+          "679.08000",
+          "0.500",
+          1468217230
+        ],
+        [
+          "680.00000",
+          "38.974",
+          1468656125
+        ],
+        [
+          "680.50000",
+          "4.000",
+          1467911697
+        ],
+        [
+          "680.61000",
+          "0.148",
+          1467874799
+        ],
+        [
+          "681.00000",
+          "2.735",
+          1468457231
+        ],
+        [
+          "681.00200",
+          "2.500",
+          1467883208
+        ],
+        [
+          "682.00000",
+          "0.500",
+          1468051541
+        ],
+        [
+          "683.50000",
+          "4.000",
+          1468075125
+        ],
+        [
+          "683.77600",
+          "0.082",
+          1468681431
+        ],
+        [
+          "684.00000",
+          "0.400",
+          1468356658
+        ],
+        [
+          "684.42100",
+          "0.500",
+          1468480120
+        ],
+        [
+          "684.70000",
+          "0.250",
+          1468574654
+        ],
+        [
+          "685.00000",
+          "8.160",
+          1468406236
+        ],
+        [
+          "685.76800",
+          "0.097",
+          1468621767
+        ],
+        [
+          "686.00000",
+          "0.020",
+          1468022681
+        ],
+        [
+          "686.20000",
+          "2.500",
+          1468075172
+        ],
+        [
+          "686.45300",
+          "30.000",
+          1468679569
+        ],
+        [
+          "687.00000",
+          "2.349",
+          1468651312
+        ],
+        [
+          "687.50000",
+          "0.141",
+          1468362699
+        ],
+        [
+          "688.00000",
+          "1.000",
+          1468366406
+        ],
+        [
+          "688.76700",
+          "0.082",
+          1468681444
+        ],
+        [
+          "689.00000",
+          "0.024",
+          1468592328
+        ],
+        [
+          "690.00000",
+          "21.700",
+          1468605686
+        ],
+        [
+          "690.49000",
+          "0.139",
+          1468051658
+        ],
+        [
+          "691.01000",
+          "0.500",
+          1468594785
+        ],
+        [
+          "691.75000",
+          "0.141",
+          1467664792
+        ],
+        [
+          "695.00000",
+          "1.863",
+          1468561884
+        ],
+        [
+          "695.35000",
+          "0.010",
+          1468683921
+        ],
+        [
+          "695.42200",
+          "0.041",
+          1468681435
+        ],
+        [
+          "695.82000",
+          "4.433",
+          1468202393
+        ],
+        [
+          "695.99000",
+          "0.019",
+          1467547281
+        ],
+        [
+          "697.45000",
+          "0.150",
+          1467660406
+        ],
+        [
+          "697.50000",
+          "0.282",
+          1467660158
+        ],
+        [
+          "699.00000",
+          "1.160",
+          1468576654
+        ]
+      ],
+      "bids": [
+        [
+          "662.55000",
+          "5.851",
+          1468683847
+        ],
+        [
+          "662.54000",
+          "3.257",
+          1468683843
+        ],
+        [
+          "661.49300",
+          "8.164",
+          1468683945
+        ],
+        [
+          "661.11000",
+          "7.531",
+          1468683833
+        ],
+        [
+          "661.10000",
+          "0.150",
+          1468682385
+        ],
+        [
+          "661.00000",
+          "8.511",
+          1468675699
+        ],
+        [
+          "660.22000",
+          "0.100",
+          1468682306
+        ],
+        [
+          "660.15000",
+          "7.395",
+          1468683517
+        ],
+        [
+          "660.13000",
+          "0.186",
+          1468675969
+        ],
+        [
+          "660.00000",
+          "16.442",
+          1468638150
+        ],
+        [
+          "659.12000",
+          "0.400",
+          1468627867
+        ],
+        [
+          "659.10000",
+          "0.031",
+          1468582671
+        ],
+        [
+          "658.83300",
+          "8.954",
+          1468672627
+        ],
+        [
+          "658.10000",
+          "0.031",
+          1468678756
+        ],
+        [
+          "658.00000",
+          "3.598",
+          1468642243
+        ],
+        [
+          "657.05500",
+          "13.242",
+          1468601795
+        ],
+        [
+          "657.00000",
+          "1.000",
+          1468634578
+        ],
+        [
+          "656.88000",
+          "0.146",
+          1468510908
+        ],
+        [
+          "656.36000",
+          "0.151",
+          1468580870
+        ],
+        [
+          "656.34000",
+          "0.151",
+          1468499191
+        ],
+        [
+          "656.04000",
+          "0.152",
+          1468494818
+        ],
+        [
+          "656.00000",
+          "0.430",
+          1468536394
+        ],
+        [
+          "655.99000",
+          "0.652",
+          1468610783
+        ],
+        [
+          "655.97000",
+          "0.152",
+          1468494578
+        ],
+        [
+          "655.94000",
+          "0.152",
+          1468494464
+        ],
+        [
+          "655.91000",
+          "0.152",
+          1468507554
+        ],
+        [
+          "655.83000",
+          "0.152",
+          1468535320
+        ],
+        [
+          "655.75000",
+          "0.379",
+          1468493713
+        ],
+        [
+          "655.73300",
+          "10.368",
+          1468671468
+        ],
+        [
+          "655.63000",
+          "0.151",
+          1468552576
+        ],
+        [
+          "655.50000",
+          "0.152",
+          1468682329
+        ],
+        [
+          "655.45000",
+          "0.228",
+          1468492851
+        ],
+        [
+          "655.42000",
+          "0.152",
+          1468492777
+        ],
+        [
+          "655.41000",
+          "0.228",
+          1468492740
+        ],
+        [
+          "655.39000",
+          "0.304",
+          1468492698
+        ],
+        [
+          "655.38000",
+          "0.455",
+          1468492674
+        ],
+        [
+          "655.29000",
+          "0.051",
+          1468578336
+        ],
+        [
+          "655.00000",
+          "7.604",
+          1468622383
+        ],
+        [
+          "654.50000",
+          "0.030",
+          1468510657
+        ],
+        [
+          "654.36800",
+          "10.833",
+          1468672050
+        ],
+        [
+          "654.22200",
+          "0.067",
+          1468683670
+        ],
+        [
+          "654.00000",
+          "2.852",
+          1468645715
+        ],
+        [
+          "653.80800",
+          "30.000",
+          1468679568
+        ],
+        [
+          "653.19000",
+          "0.151",
+          1468657869
+        ],
+        [
+          "653.17000",
+          "0.151",
+          1468658278
+        ],
+        [
+          "653.13000",
+          "0.151",
+          1468660856
+        ],
+        [
+          "653.11600",
+          "8.915",
+          1468672199
+        ],
+        [
+          "653.09000",
+          "0.151",
+          1468490189
+        ],
+        [
+          "652.50000",
+          "0.307",
+          1468519148
+        ],
+        [
+          "652.10000",
+          "0.031",
+          1468498615
+        ],
+        [
+          "651.83000",
+          "0.306",
+          1468484798
+        ],
+        [
+          "651.81000",
+          "0.148",
+          1468623791
+        ],
+        [
+          "651.51800",
+          "7.653",
+          1468672319
+        ],
+        [
+          "651.15000",
+          "0.147",
+          1468454610
+        ],
+        [
+          "651.00000",
+          "1.600",
+          1468675924
+        ],
+        [
+          "650.10000",
+          "25.000",
+          1468606961
+        ],
+        [
+          "650.02000",
+          "0.153",
+          1468454570
+        ],
+        [
+          "650.01000",
+          "0.500",
+          1468512947
+        ],
+        [
+          "650.00000",
+          "14.909",
+          1468681447
+        ],
+        [
+          "648.32900",
+          "4.627",
+          1468683901
+        ],
+        [
+          "648.27000",
+          "2.580",
+          1468683895
+        ],
+        [
+          "647.50000",
+          "0.040",
+          1468311177
+        ],
+        [
+          "647.27000",
+          "0.152",
+          1468672940
+        ],
+        [
+          "647.25000",
+          "0.112",
+          1468675862
+        ],
+        [
+          "647.17500",
+          "0.161",
+          1468681432
+        ],
+        [
+          "647.13000",
+          "9.300",
+          1468266547
+        ],
+        [
+          "646.40000",
+          "0.115",
+          1468250871
+        ],
+        [
+          "646.32500",
+          "8.860",
+          1468683840
+        ],
+        [
+          "646.29000",
+          "0.114",
+          1468550854
+        ],
+        [
+          "645.98000",
+          "0.115",
+          1468242874
+        ],
+        [
+          "645.89000",
+          "0.500",
+          1468394233
+        ],
+        [
+          "645.73000",
+          "0.154",
+          1468242191
+        ],
+        [
+          "645.00000",
+          "1.052",
+          1468613065
+        ],
+        [
+          "644.10000",
+          "0.032",
+          1468323519
+        ],
+        [
+          "643.88600",
+          "30.000",
+          1468679566
+        ],
+        [
+          "643.70000",
+          "1.757",
+          1468378054
+        ],
+        [
+          "642.18400",
+          "0.162",
+          1468681445
+        ],
+        [
+          "642.16000",
+          "0.660",
+          1468362368
+        ],
+        [
+          "642.00000",
+          "0.100",
+          1468513920
+        ],
+        [
+          "641.96000",
+          "0.123",
+          1468162653
+        ],
+        [
+          "641.52600",
+          "16.190",
+          1468682330
+        ],
+        [
+          "641.19900",
+          "0.110",
+          1468268871
+        ],
+        [
+          "641.00000",
+          "0.100",
+          1468518510
+        ],
+        [
+          "640.00000",
+          "8.450",
+          1468665939
+        ],
+        [
+          "639.88400",
+          "7.000",
+          1468262353
+        ],
+        [
+          "639.00000",
+          "0.250",
+          1468663556
+        ],
+        [
+          "636.20000",
+          "0.250",
+          1468217165
+        ],
+        [
+          "635.81000",
+          "0.156",
+          1468088186
+        ],
+        [
+          "635.52900",
+          "0.082",
+          1468681435
+        ],
+        [
+          "635.00000",
+          "2.222",
+          1468435124
+        ],
+        [
+          "632.44400",
+          "30.000",
+          1468679570
+        ],
+        [
+          "631.00000",
+          "0.100",
+          1468348722
+        ],
+        [
+          "630.34000",
+          "0.010",
+          1468679755
+        ],
+        [
+          "630.10000",
+          "0.032",
+          1468157329
+        ],
+        [
+          "630.00000",
+          "18.030",
+          1468571236
+        ],
+        [
+          "629.00000",
+          "0.250",
+          1468663567
+        ],
+        [
+          "628.87400",
+          "0.083",
+          1468681438
+        ],
+        [
+          "628.84600",
+          "53.645",
+          1468576015
+        ],
+        [
+          "628.07000",
+          "0.159",
+          1468082722
+        ],
+        [
+          "628.00000",
+          "0.500",
+          1468337397
+        ]
+      ]
+    }
+  }
+}}
+19861 [Test worker] 2018-01-08 14:56:28,129 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19862 [Test worker] 2018-01-08 14:56:28,130 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19862 [Test worker] 2018-01-08 14:56:28,130 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19862 [Test worker] 2018-01-08 14:56:28,130 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19863 [Test worker] 2018-01-08 14:56:28,131 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19863 [Test worker] 2018-01-08 14:56:28,131 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19863 [Test worker] 2018-01-08 14:56:28,131 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19864 [Test worker] 2018-01-08 14:56:28,132 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19864 [Test worker] 2018-01-08 14:56:28,132 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19864 [Test worker] 2018-01-08 14:56:28,132 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19865 [Test worker] 2018-01-08 14:56:28,133 DEBUG KrakenExchangeAdapter getYourOpenOrders() - Open Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "open": {
+      "OZUVVF-XEJUB-BOWOFO": {
+        "refid": null,
+        "userref": null,
+        "status": "open",
+        "opentm": 1469653618.4223,
+        "starttm": 0,
+        "expiretm": 0,
+        "descr": {
+          "pair": "XBTUSD",
+          "type": "sell",
+          "ordertype": "limit",
+          "price": "699.100",
+          "price2": "0",
+          "leverage": "none",
+          "order": "sell 0.01000000 XBTUSD @ limit 699.100"
+        },
+        "vol": "0.01000000",
+        "vol_exec": "0.00400000",
+        "cost": "0.00000",
+        "fee": "0.00000",
+        "price": "0.00000",
+        "misc": "",
+        "oflags": "fciq"
+      },
+      "OSOKNX-FAMVQ-HRUTHA": {
+        "refid": null,
+        "userref": null,
+        "status": "open",
+        "opentm": 1469653598.6778,
+        "starttm": 0,
+        "expiretm": 0,
+        "descr": {
+          "pair": "XBTUSD",
+          "type": "sell",
+          "ordertype": "limit",
+          "price": "700.099",
+          "price2": "0",
+          "leverage": "none",
+          "order": "sell 0.01500000 XBTUSD @ limit 700.099"
+        },
+        "vol": "0.01500000",
+        "vol_exec": "0.00000000",
+        "cost": "0.00000",
+        "fee": "0.00000",
+        "price": "0.00000",
+        "misc": "",
+        "oflags": "fciq"
+      },
+      "OSOKNX-FAMLQ-PRUTHA": {
+        "refid": null,
+        "userref": null,
+        "status": "open",
+        "opentm": 1469653598.6778,
+        "starttm": 0,
+        "expiretm": 0,
+        "descr": {
+          "pair": "XBTEUR",
+          "type": "sell",
+          "ordertype": "limit",
+          "price": "2415.17",
+          "price2": "0",
+          "leverage": "none",
+          "order": "sell 0.01500000 XBTEUR @ limit 2415.17"
+        },
+        "vol": "0.01500000",
+        "vol_exec": "0.00000000",
+        "cost": "0.00000",
+        "fee": "0.00000",
+        "price": "0.00000",
+        "misc": "",
+        "oflags": "fciq"
+      }
+    },
+    "OSWKNX-AAMLQ-PRUTHA": {
+      "refid": null,
+      "userref": null,
+      "status": "open",
+      "opentm": 1469653598.6778,
+      "starttm": 0,
+      "expiretm": 0,
+      "descr": {
+        "pair": "ETHGBP",
+        "type": "sell",
+        "ordertype": "limit",
+        "price": "259.99",
+        "price2": "0",
+        "leverage": "none",
+        "order": "sell 0.01500000 ETHGBP @ limit 259.99"
+      },
+      "vol": "0.01500000",
+      "vol_exec": "0.00000000",
+      "cost": "0.00000",
+      "fee": "0.00000",
+      "price": "0.00000",
+      "misc": "",
+      "oflags": "fciq"
+    }
+  }
+}}
+19875 [Test worker] 2018-01-08 14:56:28,143 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19875 [Test worker] 2018-01-08 14:56:28,143 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19876 [Test worker] 2018-01-08 14:56:28,144 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19876 [Test worker] 2018-01-08 14:56:28,144 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19877 [Test worker] 2018-01-08 14:56:28,145 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19877 [Test worker] 2018-01-08 14:56:28,145 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19878 [Test worker] 2018-01-08 14:56:28,146 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19878 [Test worker] 2018-01-08 14:56:28,146 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19878 [Test worker] 2018-01-08 14:56:28,146 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19879 [Test worker] 2018-01-08 14:56:28,147 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19880 [Test worker] 2018-01-08 14:56:28,148 DEBUG KrakenExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "descr": {
+      "order": "sell 0.00100000 XBTUSD @ limit 758.170"
+    },
+    "txid": [
+      "OLD2Z4-L4C7H-MKH5BW"
+    ]
+  }
+}}
+19882 [Test worker] 2018-01-08 14:56:28,150 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19883 [Test worker] 2018-01-08 14:56:28,151 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19883 [Test worker] 2018-01-08 14:56:28,151 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19883 [Test worker] 2018-01-08 14:56:28,151 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19884 [Test worker] 2018-01-08 14:56:28,152 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19884 [Test worker] 2018-01-08 14:56:28,152 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19884 [Test worker] 2018-01-08 14:56:28,152 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19885 [Test worker] 2018-01-08 14:56:28,153 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19885 [Test worker] 2018-01-08 14:56:28,153 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19885 [Test worker] 2018-01-08 14:56:28,153 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19886 [Test worker] 2018-01-08 14:56:28,154 DEBUG KrakenExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "XXBTZUSD": {
+      "a": [
+        "657.99900",
+        "3",
+        "3.000"
+      ],
+      "b": [
+        "655.20100",
+        "2",
+        "2.000"
+      ],
+      "c": [
+        "657.99900",
+        "0.50000000"
+      ],
+      "v": [
+        "1009.55847143",
+        "1152.99666422"
+      ],
+      "p": [
+        "652.40642",
+        "652.64807"
+      ],
+      "t": [
+        1537,
+        1754
+      ],
+      "l": [
+        "642.50000",
+        "642.50000"
+      ],
+      "h": [
+        "659.10000",
+        "659.13000"
+      ],
+      "o": "651.73600"
+    }
+  }
+}}
+19887 [Test worker] 2018-01-08 14:56:28,155 WARN  KrakenExchangeAdapter deserialize() - Received unexpected Ticker param - ignoring: t
+19890 [Test worker] 2018-01-08 14:56:28,158 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19891 [Test worker] 2018-01-08 14:56:28,159 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19891 [Test worker] 2018-01-08 14:56:28,159 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19892 [Test worker] 2018-01-08 14:56:28,160 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19892 [Test worker] 2018-01-08 14:56:28,160 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19892 [Test worker] 2018-01-08 14:56:28,160 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19892 [Test worker] 2018-01-08 14:56:28,160 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19893 [Test worker] 2018-01-08 14:56:28,161 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19893 [Test worker] 2018-01-08 14:56:28,161 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19893 [Test worker] 2018-01-08 14:56:28,161 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19894 [Test worker] 2018-01-08 14:56:28,162 DEBUG KrakenExchangeAdapter getBalanceInfo() - Balance Info response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "XXBT": "1.1000000000",
+    "ZUSD": "1000.12"
+  }
+}}
+19900 [Test worker] 2018-01-08 14:56:28,168 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19901 [Test worker] 2018-01-08 14:56:28,169 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19901 [Test worker] 2018-01-08 14:56:28,169 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19902 [Test worker] 2018-01-08 14:56:28,170 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19902 [Test worker] 2018-01-08 14:56:28,170 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19902 [Test worker] 2018-01-08 14:56:28,170 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19903 [Test worker] 2018-01-08 14:56:28,171 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19903 [Test worker] 2018-01-08 14:56:28,171 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19904 [Test worker] 2018-01-08 14:56:28,172 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19904 [Test worker] 2018-01-08 14:56:28,172 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19907 [Test worker] 2018-01-08 14:56:28,175 DEBUG KrakenExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [],
+  "result": {
+    "descr": {
+      "order": "sell 0.00100000 XBTUSD @ limit 758.170"
+    },
+    "txid": [
+      "OLD2Z4-L4C7H-MKH5BW"
+    ]
+  }
+}}
+19908 [Test worker] 2018-01-08 14:56:28,176 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19909 [Test worker] 2018-01-08 14:56:28,177 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19909 [Test worker] 2018-01-08 14:56:28,177 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19909 [Test worker] 2018-01-08 14:56:28,177 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19909 [Test worker] 2018-01-08 14:56:28,177 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19911 [Test worker] 2018-01-08 14:56:28,179 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19911 [Test worker] 2018-01-08 14:56:28,179 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19911 [Test worker] 2018-01-08 14:56:28,179 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19911 [Test worker] 2018-01-08 14:56:28,179 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19911 [Test worker] 2018-01-08 14:56:28,179 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19913 [Test worker] 2018-01-08 14:56:28,181 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19913 [Test worker] 2018-01-08 14:56:28,181 ERROR AbstractExchangeAdapter setNetworkConfig() - connection-timeout cannot be 0 value.EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19914 [Test worker] 2018-01-08 14:56:28,182 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19915 [Test worker] 2018-01-08 14:56:28,183 ERROR AbstractExchangeAdapter assertItemExists() - secret cannot be null or zero length! HINT: is the value set in the config/exchange.xml ?
+19916 [Test worker] 2018-01-08 14:56:28,184 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19917 [Test worker] 2018-01-08 14:56:28,185 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19921 [Test worker] 2018-01-08 14:56:28,189 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19922 [Test worker] 2018-01-08 14:56:28,190 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19922 [Test worker] 2018-01-08 14:56:28,190 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19922 [Test worker] 2018-01-08 14:56:28,190 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19923 [Test worker] 2018-01-08 14:56:28,191 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19923 [Test worker] 2018-01-08 14:56:28,191 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19923 [Test worker] 2018-01-08 14:56:28,191 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19923 [Test worker] 2018-01-08 14:56:28,191 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19927 [Test worker] 2018-01-08 14:56:28,195 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19927 [Test worker] 2018-01-08 14:56:28,195 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19927 [Test worker] 2018-01-08 14:56:28,195 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19927 [Test worker] 2018-01-08 14:56:28,195 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19928 [Test worker] 2018-01-08 14:56:28,196 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19928 [Test worker] 2018-01-08 14:56:28,196 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19928 [Test worker] 2018-01-08 14:56:28,196 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19929 [Test worker] 2018-01-08 14:56:28,197 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19929 [Test worker] 2018-01-08 14:56:28,197 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19930 [Test worker] 2018-01-08 14:56:28,198 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19930 [Test worker] 2018-01-08 14:56:28,198 DEBUG KrakenExchangeAdapter createOrder() - Create Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred! Doh."
+  ],
+  "result": {}
+}}
+19932 [Test worker] 2018-01-08 14:56:28,200 ERROR KrakenExchangeAdapter createOrder() - Failed to Add Order on exchange. Details: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred! Doh."
+  ],
+  "result": {}
+}}
+19934 [Test worker] 2018-01-08 14:56:28,202 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19934 [Test worker] 2018-01-08 14:56:28,202 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19934 [Test worker] 2018-01-08 14:56:28,202 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19935 [Test worker] 2018-01-08 14:56:28,203 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19935 [Test worker] 2018-01-08 14:56:28,203 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19936 [Test worker] 2018-01-08 14:56:28,204 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19936 [Test worker] 2018-01-08 14:56:28,204 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19936 [Test worker] 2018-01-08 14:56:28,204 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19937 [Test worker] 2018-01-08 14:56:28,205 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19937 [Test worker] 2018-01-08 14:56:28,205 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19938 [Test worker] 2018-01-08 14:56:28,206 DEBUG KrakenExchangeAdapter cancelOrder() - Cancel Order response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred! Gah."
+  ],
+  "result": {}
+}}
+19939 [Test worker] 2018-01-08 14:56:28,207 ERROR KrakenExchangeAdapter cancelOrder() - Failed to Cancel Order on exchange. Details: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred! Gah."
+  ],
+  "result": {}
+}}
+19940 [Test worker] 2018-01-08 14:56:28,208 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19940 [Test worker] 2018-01-08 14:56:28,208 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19941 [Test worker] 2018-01-08 14:56:28,209 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19941 [Test worker] 2018-01-08 14:56:28,209 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19942 [Test worker] 2018-01-08 14:56:28,210 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19942 [Test worker] 2018-01-08 14:56:28,210 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19942 [Test worker] 2018-01-08 14:56:28,210 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19942 [Test worker] 2018-01-08 14:56:28,210 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19943 [Test worker] 2018-01-08 14:56:28,211 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19943 [Test worker] 2018-01-08 14:56:28,211 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19946 [Test worker] 2018-01-08 14:56:28,214 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19948 [Test worker] 2018-01-08 14:56:28,216 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19948 [Test worker] 2018-01-08 14:56:28,216 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19948 [Test worker] 2018-01-08 14:56:28,216 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19948 [Test worker] 2018-01-08 14:56:28,216 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19949 [Test worker] 2018-01-08 14:56:28,217 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19950 [Test worker] 2018-01-08 14:56:28,218 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19950 [Test worker] 2018-01-08 14:56:28,218 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19950 [Test worker] 2018-01-08 14:56:28,218 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19951 [Test worker] 2018-01-08 14:56:28,219 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19952 [Test worker] 2018-01-08 14:56:28,220 DEBUG KrakenExchangeAdapter getYourOpenOrders() - Open Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred - gah!"
+  ],
+  "result": {}
+}
+}
+19954 [Test worker] 2018-01-08 14:56:28,222 ERROR KrakenExchangeAdapter getYourOpenOrders() - Failed to get Open Orders from exchange. Details: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred - gah!"
+  ],
+  "result": {}
+}
+}
+19956 [Test worker] 2018-01-08 14:56:28,224 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19957 [Test worker] 2018-01-08 14:56:28,225 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19958 [Test worker] 2018-01-08 14:56:28,226 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19959 [Test worker] 2018-01-08 14:56:28,227 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19960 [Test worker] 2018-01-08 14:56:28,228 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19960 [Test worker] 2018-01-08 14:56:28,228 DEBUG KrakenExchangeAdapter getTicker() - Ticker response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred - muh :-/"
+  ],
+  "result": {}
+}
+}
+19962 [Test worker] 2018-01-08 14:56:28,230 ERROR KrakenExchangeAdapter getTicker() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.util.NoSuchElementException: null
+	at com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator.nextNode(LinkedTreeMap.java:541) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.LinkedTreeMap$EntrySet$1.next(LinkedTreeMap.java:568) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.LinkedTreeMap$EntrySet$1.next(LinkedTreeMap.java:566) ~[gson-2.8.2.jar:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$KrakenTickerResultDeserializer.deserialize(KrakenExchangeAdapter.java:1030) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$KrakenTickerResultDeserializer.deserialize(KrakenExchangeAdapter.java:1019) ~[main/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:888) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:853) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:802) ~[gson-2.8.2.jar:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getTicker(KrakenExchangeAdapter.java:757) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getTicker$2(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getTicker(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingTickerHandlesExchangeErrorResponse(TestKrakenExchangeAdapter.java:831) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19964 [Test worker] 2018-01-08 14:56:28,232 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19966 [Test worker] 2018-01-08 14:56:28,234 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19967 [Test worker] 2018-01-08 14:56:28,235 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19967 [Test worker] 2018-01-08 14:56:28,235 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19967 [Test worker] 2018-01-08 14:56:28,235 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19968 [Test worker] 2018-01-08 14:56:28,236 DEBUG KrakenExchangeAdapter getMarketOrders() - Market Orders response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred!"
+  ],
+  "result": {}
+}
+}
+19969 [Test worker] 2018-01-08 14:56:28,237 ERROR KrakenExchangeAdapter getMarketOrders() - Failed to get Market Order Book from exchange. Details: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred!"
+  ],
+  "result": {}
+}
+}
+19971 [Test worker] 2018-01-08 14:56:28,239 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19971 [Test worker] 2018-01-08 14:56:28,239 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19972 [Test worker] 2018-01-08 14:56:28,240 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19972 [Test worker] 2018-01-08 14:56:28,240 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19972 [Test worker] 2018-01-08 14:56:28,240 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19973 [Test worker] 2018-01-08 14:56:28,241 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19974 [Test worker] 2018-01-08 14:56:28,242 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19974 [Test worker] 2018-01-08 14:56:28,242 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19974 [Test worker] 2018-01-08 14:56:28,242 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19974 [Test worker] 2018-01-08 14:56:28,242 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19975 [Test worker] 2018-01-08 14:56:28,243 DEBUG KrakenExchangeAdapter getLatestMarketPrice() - Latest Market Price response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred - muh :-/"
+  ],
+  "result": {}
+}
+}
+19977 [Test worker] 2018-01-08 14:56:28,245 ERROR KrakenExchangeAdapter getLatestMarketPrice() - Unexpected error has occurred in Kraken Exchange Adapter. 
+java.util.NoSuchElementException: null
+	at com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator.nextNode(LinkedTreeMap.java:541) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.LinkedTreeMap$EntrySet$1.next(LinkedTreeMap.java:568) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.LinkedTreeMap$EntrySet$1.next(LinkedTreeMap.java:566) ~[gson-2.8.2.jar:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$KrakenTickerResultDeserializer.deserialize(KrakenExchangeAdapter.java:1030) ~[main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$KrakenTickerResultDeserializer.deserialize(KrakenExchangeAdapter.java:1019) ~[main/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129) ~[gson-2.8.2.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:888) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:853) ~[gson-2.8.2.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:802) ~[gson-2.8.2.jar:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter.getLatestMarketPrice(KrakenExchangeAdapter.java:613) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.CGLIB$getLatestMarketPrice$9(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b$$FastClassByCGLIB$$8994032f.invoke(<generated>) [main/:?]
+	at org.easymock.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [easymock-3.5.1.jar:3.5.1]
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:92) [easymock-3.5.1.jar:3.5.1]
+	at com.gazbert.bxbot.exchanges.KrakenExchangeAdapter$$EnhancerByCGLIB$$957dc64b.getLatestMarketPrice(<generated>) [main/:?]
+	at com.gazbert.bxbot.exchanges.TestKrakenExchangeAdapter.testGettingLatestMarketPriceHandlesExchangeErrorResponse(TestKrakenExchangeAdapter.java:729) [test/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44) [junit-4.12.jar:4.12]
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:121) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57) [powermock-module-junit4-common-1.7.3.jar:1.7.3]
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59) [powermock-module-junit4-1.7.3.jar:1.7.3]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+19979 [Test worker] 2018-01-08 14:56:28,247 INFO  KrakenExchangeAdapter init() - About to initialise Kraken ExchangeConfig: EasyMock for interface com.gazbert.bxbot.exchange.api.ExchangeConfig
+19980 [Test worker] 2018-01-08 14:56:28,248 INFO  AbstractExchangeAdapter setNetworkConfig() - connection-timeout: 30
+19980 [Test worker] 2018-01-08 14:56:28,248 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-codes: [502, 503, 504]
+19980 [Test worker] 2018-01-08 14:56:28,248 INFO  AbstractExchangeAdapter setNetworkConfig() - non-fatal-error-messages: [Connection refused, Connection reset, Remote host closed connection during handshake]
+19981 [Test worker] 2018-01-08 14:56:28,249 INFO  AbstractExchangeAdapter getOptionalConfigItem() - buy-fee: 0.1
+19982 [Test worker] 2018-01-08 14:56:28,250 INFO  KrakenExchangeAdapter setOptionalConfig() - Buy fee % in BigDecimal format: 0.00100000
+19982 [Test worker] 2018-01-08 14:56:28,250 INFO  AbstractExchangeAdapter getOptionalConfigItem() - sell-fee: 0.2
+19982 [Test worker] 2018-01-08 14:56:28,250 INFO  KrakenExchangeAdapter setOptionalConfig() - Sell fee % in BigDecimal format: 0.00200000
+19984 [Test worker] 2018-01-08 14:56:28,252 INFO  AbstractExchangeAdapter getOptionalConfigItem() - keep-alive-during-maintenance: false
+19984 [Test worker] 2018-01-08 14:56:28,252 INFO  KrakenExchangeAdapter setOptionalConfig() - Keep Alive During Maintenance: false
+19985 [Test worker] 2018-01-08 14:56:28,253 DEBUG KrakenExchangeAdapter getBalanceInfo() - Balance Info response: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred!"
+  ],
+  "result": {}
+}}
+19986 [Test worker] 2018-01-08 14:56:28,254 ERROR KrakenExchangeAdapter getBalanceInfo() - Failed to get Balance from exchange. Details: ExchangeHttpResponse{statusCode=200, reasonPhrase=OK, payload={
+  "error": [
+    "An error has occurred!"
+  ],
+  "result": {}
+}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

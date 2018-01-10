@@ -1,0 +1,789 @@
+Ù1760 [Test worker] 2018-01-08 14:56:04,451 INFO  ConfigurationManager saveConfig() - Saving configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] to: src/test/config/emailalerts/saved-email-alerts.xml ...
+˜1888 [Test worker] 2018-01-08 14:56:04,579 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] from: src/test/config/emailalerts/saved-email-alerts.xml ...
+œ1980 [Test worker] 2018-01-08 14:56:04,671 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] successfully!
+˘2058 [Test worker] 2018-01-08 14:56:04,749 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] from: src/test/config/emailalerts/invalid-email-alerts.xml ...
+¯2096 [Test worker] 2018-01-08 14:56:04,787 ERROR ConfigurationManager loadConfig() - Failed to load [src/test/config/emailalerts/invalid-email-alerts.xml] file and validate it using XML Schema [com/gazbert/bxbot/datastore/config/email-alerts.xsd]
+(javax.xml.bind.UnmarshalException: null
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335) ~[?:1.8.0_144]
+ä	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249) ~[?:1.8.0_144]
+{	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:204) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:72) [main/:?]
+√	at com.gazbert.bxbot.datastore.config.emailalerts.TestEmailAlertsConfigurationManagement.testLoadingInvalidXmlConfigFileThrowsException(TestEmailAlertsConfigurationManagement.java:94) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+•Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'smtp-tls-port'. One of '{smtp-host}' is expected.
+Ö	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_144]
+ã	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[?:1.8.0_144]
+Å	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[?:1.8.0_144]
+Ç	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1790) ~[?:1.8.0_144]
+{	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740) ~[?:1.8.0_144]
+á	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.startElement(ValidatorHandlerImpl.java:570) ~[?:1.8.0_144]
+â	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.startElement(ValidatingUnmarshaller.java:86) ~[?:1.8.0_144]
+v	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:153) ~[?:1.8.0_144]
+y	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509) ~[?:1.8.0_144]
+à	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374) ~[?:1.8.0_144]
+ü	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784) ~[?:1.8.0_144]
+x	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_144]
+|	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_144]
+ê	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[?:1.8.0_144]
+b	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[?:1.8.0_144]
+u	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243) ~[?:1.8.0_144]
+	... 52 more
+ã2118 [Test worker] 2018-01-08 14:56:04,809 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] from: src/test/config/emailalerts/valid-email-alerts-without-smtp-config.xml ...
+œ2141 [Test worker] 2018-01-08 14:56:04,832 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] successfully!
+˘2141 [Test worker] 2018-01-08 14:56:04,832 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] from: src/test/config/emailalerts/missing-email-alerts.xml ...
+´2160 [Test worker] 2018-01-08 14:56:04,851 ERROR ConfigurationManager loadConfig() - Failed to find or read [src/test/config/emailalerts/missing-email-alerts.xml] config
+Äjava.io.FileNotFoundException: src\test\config\emailalerts\missing-email-alerts.xml (The system cannot find the file specified)
+@	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_144]
+J	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_144]
+L	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_144]
+K	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:71) [main/:?]
+ø	at com.gazbert.bxbot.datastore.config.emailalerts.TestEmailAlertsConfigurationManagement.testLoadingMissingXmlConfigThrowsException(TestEmailAlertsConfigurationManagement.java:89) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+˜2163 [Test worker] 2018-01-08 14:56:04,854 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] from: src/test/config/emailalerts/valid-email-alerts.xml ...
+œ2189 [Test worker] 2018-01-08 14:56:04,880 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.emailalerts.generated.EmailAlertsType] successfully!
+‰2195 [Test worker] 2018-01-08 14:56:04,886 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] from: src/test/config/engine/invalid-engine.xml ...
+Á2222 [Test worker] 2018-01-08 14:56:04,913 ERROR ConfigurationManager loadConfig() - Failed to load [src/test/config/engine/invalid-engine.xml] file and validate it using XML Schema [com/gazbert/bxbot/datastore/config/engine.xsd]
+(javax.xml.bind.UnmarshalException: null
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335) ~[?:1.8.0_144]
+ä	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249) ~[?:1.8.0_144]
+{	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:204) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:72) [main/:?]
+∞	at com.gazbert.bxbot.datastore.config.engine.TestEngineConfigurationManagement.testLoadingInvalidXmlConfigThrowsException(TestEngineConfigurationManagement.java:80) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+ΩCaused by: org.xml.sax.SAXParseException: cvc-pattern-valid: Value 'my-bitstamp-bot?1' is not facet-valid with respect to pattern '[a-zA-Z0-9/_\- ]*' for type '#AnonType_bot-idengineType'.
+Ö	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_144]
+ã	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[?:1.8.0_144]
+Å	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[?:1.8.0_144]
+á	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3145) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3055) ~[?:1.8.0_144]
+Ä	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2134) ~[?:1.8.0_144]
+y	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:853) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.endElement(ValidatorHandlerImpl.java:584) ~[?:1.8.0_144]
+á	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.endElement(ValidatingUnmarshaller.java:91) ~[?:1.8.0_144]
+t	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.endElement(SAXConnector.java:165) ~[?:1.8.0_144]
+w	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609) ~[?:1.8.0_144]
+ì	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782) ~[?:1.8.0_144]
+ü	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) ~[?:1.8.0_144]
+x	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_144]
+|	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_144]
+ê	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[?:1.8.0_144]
+b	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[?:1.8.0_144]
+u	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243) ~[?:1.8.0_144]
+	... 52 more
+	ﬂ2226 [Test worker] 2018-01-08 14:56:04,917 INFO  ConfigurationManager saveConfig() - Saving configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] to: src/test/config/engine/saved-engine.xml ...
+	‚2249 [Test worker] 2018-01-08 14:56:04,940 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] from: src/test/config/engine/saved-engine.xml ...
+	≈2267 [Test worker] 2018-01-08 14:56:04,958 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] successfully!
+
+‰2269 [Test worker] 2018-01-08 14:56:04,960 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] from: src/test/config/engine/missing-engine.xml ...
+
+†2284 [Test worker] 2018-01-08 14:56:04,975 ERROR ConfigurationManager loadConfig() - Failed to find or read [src/test/config/engine/missing-engine.xml] config
+
+ujava.io.FileNotFoundException: src\test\config\engine\missing-engine.xml (The system cannot find the file specified)
+
+@	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_144]
+
+J	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_144]
+
+L	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_144]
+
+K	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_144]
+
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:71) [main/:?]
+
+∞	at com.gazbert.bxbot.datastore.config.engine.TestEngineConfigurationManagement.testLoadingMissingXmlConfigThrowsException(TestEngineConfigurationManagement.java:75) [test/:?]
+
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+‚2289 [Test worker] 2018-01-08 14:56:04,980 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] from: src/test/config/engine/valid-engine.xml ...
+≈2311 [Test worker] 2018-01-08 14:56:05,002 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.engine.generated.EngineType] successfully!
+Ì2315 [Test worker] 2018-01-08 14:56:05,006 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] from: src/test/config/exchange-/missing-exchange.xml ...
+•2359 [Test worker] 2018-01-08 14:56:05,050 ERROR ConfigurationManager loadConfig() - Failed to find or read [src/test/config/exchange-/missing-exchange.xml] config
+zjava.io.FileNotFoundException: src\test\config\exchange-\missing-exchange.xml (The system cannot find the path specified)
+@	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_144]
+J	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_144]
+L	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_144]
+K	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:71) [main/:?]
+ª	at com.gazbert.bxbot.datastore.config.exchange.TestExchangeConfigurationManagement.testLoadingMissingXmlConfigFileThrowsException(TestExchangeConfigurationManagement.java:106) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+Á2362 [Test worker] 2018-01-08 14:56:05,053 INFO  ConfigurationManager saveConfig() - Saving configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] to: src/test/config/exchange/saved-exchange.xml ...
+Í2395 [Test worker] 2018-01-08 14:56:05,086 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] from: src/test/config/exchange/saved-exchange.xml ...
+…2429 [Test worker] 2018-01-08 14:56:05,120 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] successfully!
+Ï2431 [Test worker] 2018-01-08 14:56:05,122 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] from: src/test/config/exchange/invalid-exchange.xml ...
+Ì2458 [Test worker] 2018-01-08 14:56:05,149 ERROR ConfigurationManager loadConfig() - Failed to load [src/test/config/exchange/invalid-exchange.xml] file and validate it using XML Schema [com/gazbert/bxbot/datastore/config/exchange.xsd]
+(javax.xml.bind.UnmarshalException: null
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335) ~[?:1.8.0_144]
+ä	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249) ~[?:1.8.0_144]
+{	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:204) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:72) [main/:?]
+ª	at com.gazbert.bxbot.datastore.config.exchange.TestExchangeConfigurationManagement.testLoadingInvalidXmlConfigFileThrowsException(TestExchangeConfigurationManagement.java:112) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+´Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'authentication-config'. One of '{adapter}' is expected.
+Ö	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_144]
+ã	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[?:1.8.0_144]
+Å	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[?:1.8.0_144]
+Ç	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1790) ~[?:1.8.0_144]
+{	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740) ~[?:1.8.0_144]
+á	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.startElement(ValidatorHandlerImpl.java:570) ~[?:1.8.0_144]
+â	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.startElement(ValidatingUnmarshaller.java:86) ~[?:1.8.0_144]
+v	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:153) ~[?:1.8.0_144]
+y	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509) ~[?:1.8.0_144]
+à	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374) ~[?:1.8.0_144]
+ü	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784) ~[?:1.8.0_144]
+x	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_144]
+|	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_144]
+ê	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[?:1.8.0_144]
+b	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[?:1.8.0_144]
+u	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243) ~[?:1.8.0_144]
+	... 52 more
+Í2461 [Test worker] 2018-01-08 14:56:05,152 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] from: src/test/config/exchange/valid-exchange.xml ...
+…2490 [Test worker] 2018-01-08 14:56:05,181 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.exchange.generated.ExchangeType] successfully!
+Á2494 [Test worker] 2018-01-08 14:56:05,185 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] from: src/test/config/markets/missing-markets.xml ...
+¢2520 [Test worker] 2018-01-08 14:56:05,211 ERROR ConfigurationManager loadConfig() - Failed to find or read [src/test/config/markets/missing-markets.xml] config
+wjava.io.FileNotFoundException: src\test\config\markets\missing-markets.xml (The system cannot find the file specified)
+@	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_144]
+J	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_144]
+L	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_144]
+K	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:71) [main/:?]
+¥	at com.gazbert.bxbot.datastore.config.market.TestMarketConfigurationManagement.testLoadingMissingXmlConfigFileThrowsException(TestMarketConfigurationManagement.java:94) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+‚2522 [Test worker] 2018-01-08 14:56:05,213 INFO  ConfigurationManager saveConfig() - Saving configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] to: src/test/config/markets/saved-markets.xml ...
+Â2542 [Test worker] 2018-01-08 14:56:05,233 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] from: src/test/config/markets/saved-markets.xml ...
+∆2565 [Test worker] 2018-01-08 14:56:05,256 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] successfully!
+Á2568 [Test worker] 2018-01-08 14:56:05,259 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] from: src/test/config/markets/invalid-markets.xml ...
+Í2589 [Test worker] 2018-01-08 14:56:05,280 ERROR ConfigurationManager loadConfig() - Failed to load [src/test/config/markets/invalid-markets.xml] file and validate it using XML Schema [com/gazbert/bxbot/datastore/config/markets.xsd]
+(javax.xml.bind.UnmarshalException: null
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335) ~[?:1.8.0_144]
+ä	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249) ~[?:1.8.0_144]
+{	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:204) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:72) [main/:?]
+µ	at com.gazbert.bxbot.datastore.config.market.TestMarketConfigurationManagement.testLoadingInvalidXmlConfigFileThrowsException(TestMarketConfigurationManagement.java:101) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+ÀCaused by: org.xml.sax.SAXParseException: cvc-pattern-valid: Value 'scalping-strategy*' is not facet-valid with respect to pattern '[a-zA-Z0-9/_\- ]*' for type '#AnonType_trading-strategy-idmarketType'.
+Ö	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_144]
+ã	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[?:1.8.0_144]
+Å	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[?:1.8.0_144]
+á	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3145) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3055) ~[?:1.8.0_144]
+Ä	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2134) ~[?:1.8.0_144]
+y	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:853) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.endElement(ValidatorHandlerImpl.java:584) ~[?:1.8.0_144]
+á	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.endElement(ValidatingUnmarshaller.java:91) ~[?:1.8.0_144]
+t	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.endElement(SAXConnector.java:165) ~[?:1.8.0_144]
+w	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609) ~[?:1.8.0_144]
+ì	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782) ~[?:1.8.0_144]
+ü	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) ~[?:1.8.0_144]
+x	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_144]
+|	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_144]
+ê	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[?:1.8.0_144]
+b	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[?:1.8.0_144]
+u	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243) ~[?:1.8.0_144]
+	... 52 more
+Â2595 [Test worker] 2018-01-08 14:56:05,286 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] from: src/test/config/markets/valid-markets.xml ...
+∆2618 [Test worker] 2018-01-08 14:56:05,309 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.market.generated.MarketsType] successfully!
+˘2622 [Test worker] 2018-01-08 14:56:05,313 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] from: src/test/config/strategies/missing-strategies.xml ...
+®2652 [Test worker] 2018-01-08 14:56:05,343 ERROR ConfigurationManager loadConfig() - Failed to find or read [src/test/config/strategies/missing-strategies.xml] config
+}java.io.FileNotFoundException: src\test\config\strategies\missing-strategies.xml (The system cannot find the file specified)
+@	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_144]
+J	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_144]
+L	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_144]
+K	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:71) [main/:?]
+ª	at com.gazbert.bxbot.datastore.config.strategy.TestStrategyConfigurationManagement.testLoadingMissingXmlConfigFileThrowsException(TestStrategyConfigurationManagement.java:132) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+Ù2655 [Test worker] 2018-01-08 14:56:05,346 INFO  ConfigurationManager saveConfig() - Saving configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] to: src/test/config/strategies/saved-strategies.xml ...
+˜2680 [Test worker] 2018-01-08 14:56:05,371 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] from: src/test/config/strategies/saved-strategies.xml ...
+“2701 [Test worker] 2018-01-08 14:56:05,392 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] successfully!
+˘2703 [Test worker] 2018-01-08 14:56:05,394 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] from: src/test/config/strategies/invalid-strategies.xml ...
+Û2735 [Test worker] 2018-01-08 14:56:05,426 ERROR ConfigurationManager loadConfig() - Failed to load [src/test/config/strategies/invalid-strategies.xml] file and validate it using XML Schema [com/gazbert/bxbot/datastore/config/strategies.xsd]
+(javax.xml.bind.UnmarshalException: null
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335) ~[?:1.8.0_144]
+ä	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249) ~[?:1.8.0_144]
+{	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157) ~[?:1.8.0_144]
+p	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:204) ~[?:1.8.0_144]
+h	at com.gazbert.bxbot.datastore.ConfigurationManager.loadConfig(ConfigurationManager.java:72) [main/:?]
+ª	at com.gazbert.bxbot.datastore.config.strategy.TestStrategyConfigurationManagement.testLoadingInvalidXmlConfigFileThrowsException(TestStrategyConfigurationManagement.java:139) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+o	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+n	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+m	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+l	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+r	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.12.jar:4.12]
+X	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+l	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+V	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+\	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+Z	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+T	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+ö	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+î	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ü	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.4.1.jar:4.4.1]
+ö	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+å	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.4.1.jar:4.4.1]
+õ	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.4.1.jar:4.4.1]
+A	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [?:?]
+à	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108) [gradle-testing-base-4.4.1.jar:4.4.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.4.1.jar:4.4.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146) [gradle-messaging-4.4.1.jar:4.4.1]
+¥	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128) [gradle-messaging-4.4.1.jar:4.4.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.4.1.jar:4.4.1]
+í	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.4.1.jar:4.4.1]
+Å	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.4.1.jar:4.4.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+ë	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.4.1.jar:4.4.1]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+ΩCaused by: org.xml.sax.SAXParseException: cvc-pattern-valid: Value 'scalping-strategy*1' is not facet-valid with respect to pattern '[a-zA-Z0-9/_\- ]*' for type '#AnonType_idstrategyType'.
+Ö	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_144]
+ã	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[?:1.8.0_144]
+Å	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[?:1.8.0_144]
+á	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3145) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3055) ~[?:1.8.0_144]
+Ä	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2134) ~[?:1.8.0_144]
+y	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:853) ~[?:1.8.0_144]
+Ö	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.endElement(ValidatorHandlerImpl.java:584) ~[?:1.8.0_144]
+á	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.endElement(ValidatingUnmarshaller.java:91) ~[?:1.8.0_144]
+t	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.endElement(SAXConnector.java:165) ~[?:1.8.0_144]
+w	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609) ~[?:1.8.0_144]
+ì	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782) ~[?:1.8.0_144]
+ü	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) ~[?:1.8.0_144]
+x	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_144]
+|	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_144]
+ê	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[?:1.8.0_144]
+t	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[?:1.8.0_144]
+b	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_144]
+s	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[?:1.8.0_144]
+u	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[?:1.8.0_144]
+|	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243) ~[?:1.8.0_144]
+	... 52 more
+˜2739 [Test worker] 2018-01-08 14:56:05,430 INFO  ConfigurationManager loadConfig() - Loading configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] from: src/test/config/strategies/valid-strategies.xml ...
+“2763 [Test worker] 2018-01-08 14:56:05,454 INFO  ConfigurationManager loadConfig() - Loaded and set configuration for [class com.gazbert.bxbot.datastore.strategy.generated.TradingStrategiesType] successfully!

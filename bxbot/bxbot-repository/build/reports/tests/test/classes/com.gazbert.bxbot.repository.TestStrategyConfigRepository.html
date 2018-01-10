@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.gazbert.bxbot.repository.TestStrategyConfigRepository</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.gazbert.bxbot.repository.TestStrategyConfigRepository</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.gazbert.bxbot.repository.html">com.gazbert.bxbot.repository</a> &gt; TestStrategyConfigRepository</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.145s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">whenDeleteCalledWithKnownIdThenReturnDeletedStrategyConfig</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenDeleteCalledWithUnknownIdThenReturnEmptyStrategyConfig</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenFindAllCalledThenExpectServiceToReturnAllStrategyConfigs</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenFindByIdCalledWithKnownIdThenReturnMatchingStrategyConfig</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenFindByIdCalledWithUnknownIdThenReturnNullStrategyConfig</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenSaveCalledWithEmptyIdThenExpectCreatedStrategyConfigToBeReturned</td>
+<td>0.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenSaveCalledWithKnownIdThenReturnUpdatedStrategyConfig</td>
+<td>1.097s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenSaveCalledWithUnknownIdThenReturnEmptyStrategyConfig</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>8731 [Test worker] 2018-01-08 14:56:14,855 INFO  StrategyConfigRepositoryXmlDatastore save() - About to update StrategyConfig: StrategyConfig{id=macd-long-position, name=MACD Long Position Algo, description=Uses MACD as indicator and takes long position in base currency., className=com.gazbert.nova.algos.MacdLongBase, beanName=macdLongBase, configItems={buy-price=671.15, buy-amount=0.5}}
+8817 [Test worker] 2018-01-08 14:56:14,941 INFO  StrategyConfigRepositoryXmlDatastore save() - About to update StrategyConfig: StrategyConfig{id=unknown-or-new-strat-id, name=MACD Long Position Algo, description=Uses MACD as indicator and takes long position in base currency., className=com.gazbert.nova.algos.MacdLongBase, beanName=macdLongBase, configItems={buy-price=671.15, buy-amount=0.5}}
+8818 [Test worker] 2018-01-08 14:56:14,942 WARN  StrategyConfigRepositoryXmlDatastore save() - Trying to update StrategyConfig but id does not exist StrategyConfig: StrategyConfig{id=unknown-or-new-strat-id, name=MACD Long Position Algo, description=Uses MACD as indicator and takes long position in base currency., className=com.gazbert.nova.algos.MacdLongBase, beanName=macdLongBase, configItems={buy-price=671.15, buy-amount=0.5}} Existing StrategyConfig: [StrategyConfig{id=macd-long-position, name=MACD Long Position Algo, description=Uses MACD as indicator and takes long position in base currency., className=com.gazbert.nova.algos.MacdLongBase, beanName=null, configItems={buy-price=671.15, buy-amount=0.5}}, StrategyConfig{id=long-scalper, name=Long Position Scalper Algo, description=Scalps and goes long..., className=com.gazbert.nova.algos.LongScalper, beanName=null, configItems={buy-price=671.15, buy-amount=0.5}}]
+8847 [Test worker] 2018-01-08 14:56:14,971 INFO  StrategyConfigRepositoryXmlDatastore save() - About to create StrategyConfig: StrategyConfig{id=null, name=Short Position Scalper Algo, description=Scalps and goes short..., className=com.gazbert.nova.algos.ShortScalper, beanName=longScalper, configItems={buy-price=671.15, buy-amount=0.5}}
+8850 [Test worker] 2018-01-08 14:56:14,974 INFO  StrategyConfigRepositoryXmlDatastore findById() - Fetching config for Strategy id: macd-long-position
+8852 [Test worker] 2018-01-08 14:56:14,976 INFO  StrategyConfigRepositoryXmlDatastore findById() - Fetching config for Strategy id: unknown-or-new-strat-id
+8856 [Test worker] 2018-01-08 14:56:14,980 INFO  StrategyConfigRepositoryXmlDatastore delete() - Deleting Strategy config for id: macd-long-position
+8858 [Test worker] 2018-01-08 14:56:14,982 INFO  StrategyConfigRepositoryXmlDatastore findAll() - Fetching all Strategy configs...
+8864 [Test worker] 2018-01-08 14:56:14,988 INFO  StrategyConfigRepositoryXmlDatastore delete() - Deleting Strategy config for id: unknown-or-new-strat-id
+8864 [Test worker] 2018-01-08 14:56:14,988 WARN  StrategyConfigRepositoryXmlDatastore delete() - Trying to delete StrategyConfig but id does not exist. StrategyConfig id: unknown-or-new-strat-id Existing StrategyConfig: [StrategyConfig{id=macd-long-position, name=MACD Long Position Algo, description=Uses MACD as indicator and takes long position in base currency., className=com.gazbert.nova.algos.MacdLongBase, beanName=null, configItems={buy-price=671.15, buy-amount=0.5}}, StrategyConfig{id=long-scalper, name=Long Position Scalper Algo, description=Scalps and goes long..., className=com.gazbert.nova.algos.LongScalper, beanName=null, configItems={buy-price=671.15, buy-amount=0.5}}]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.4.1</a> at Jan 8, 2018 2:56:15 PM</p>
+</div>
+</div>
+</body>
+</html>

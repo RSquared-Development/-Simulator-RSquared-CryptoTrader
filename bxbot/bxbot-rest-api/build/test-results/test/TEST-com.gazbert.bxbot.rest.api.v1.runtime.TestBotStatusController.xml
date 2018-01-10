@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-01-08T20:56:29" hostname="ricebook" time="0.03">
+  <properties/>
+  <testcase name="testGetBotStatus" classname="com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController" time="0.009"/>
+  <testcase name="testGetBotStatusWhenUnauthorizedWithMissingCredentials" classname="com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController" time="0.006"/>
+  <testcase name="testGetBotStatusWhenUnauthorizedWithBadCredentials" classname="com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController" time="0.008"/>
+  <system-out><![CDATA[15522 [Test worker] 2018-01-08 14:56:29,124 INFO  SpringBootTestContextBootstrapper buildDefaultMergedContextConfiguration() - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController], using SpringBootContextLoader
+15523 [Test worker] 2018-01-08 14:56:29,125 INFO  AbstractContextLoader generateDefaultLocations() - Could not detect default resource locations for test class [com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController]: no resource found for suffixes {-context.xml, Context.groovy}.
+15523 [Test worker] 2018-01-08 14:56:29,125 INFO  AnnotationConfigContextLoaderUtils detectDefaultConfigurationClasses() - Could not detect default configuration classes for test class [com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController]: TestBotStatusController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15531 [Test worker] 2018-01-08 14:56:29,133 INFO  SpringBootTestContextBootstrapper getOrFindConfigurationClasses() - Found @SpringBootConfiguration com.gazbert.bxbot.BXBot for test class com.gazbert.bxbot.rest.api.v1.runtime.TestBotStatusController
+15533 [Test worker] 2018-01-08 14:56:29,135 INFO  SpringBootTestContextBootstrapper getDefaultTestExecutionListenerClassNames() - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15534 [Test worker] 2018-01-08 14:56:29,136 INFO  SpringBootTestContextBootstrapper getTestExecutionListeners() - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1905607, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@751a3a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@db890f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@386615, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1933a3b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1bd57f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16c2770, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@35fb86, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f74b59, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@18cd621, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16b29c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ad12a7]
+15539 [Test worker] 2018-01-08 14:56:29,141 INFO  SpringBootMockServletContext log() - Initializing Spring FrameworkServlet ''
+15539 [Test worker] 2018-01-08 14:56:29,141 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization started
+15541 [Test worker] 2018-01-08 14:56:29,143 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization completed in 1 ms
+15542 [Test worker] 2018-01-08 14:56:29,144 INFO  BotStatusController getStatus() - GET /status - getStatus() - caller: unit-test-user
+15543 [Test worker] 2018-01-08 14:56:29,145 INFO  BotStatusController getStatus() - Response: BotStatus{botId=avro-707_1, displayName=Avro 707, status=running}
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/runtime/status
+       Parameters = {}
+          Headers = {Authorization=[Basic dW5pdC10ZXN0LXVzZXI6dW5pdC10ZXN0LXBhc3N3b3Jk]}
+
+Handler:
+             Type = com.gazbert.bxbot.rest.api.v1.runtime.BotStatusController
+           Method = public com.gazbert.bxbot.domain.bot.BotStatus com.gazbert.bxbot.rest.api.v1.runtime.BotStatusController.getStatus(org.springframework.security.core.userdetails.User)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Strict-Transport-Security=[max-age=31536000 ; includeSubDomains], Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"botId":"avro-707_1","displayName":"Avro 707","status":"running"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+15549 [Test worker] 2018-01-08 14:56:29,151 INFO  SpringBootMockServletContext log() - Initializing Spring FrameworkServlet ''
+15549 [Test worker] 2018-01-08 14:56:29,151 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization started
+15552 [Test worker] 2018-01-08 14:56:29,154 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization completed in 2 ms
+15562 [Test worker] 2018-01-08 14:56:29,164 INFO  SpringBootMockServletContext log() - Initializing Spring FrameworkServlet ''
+15562 [Test worker] 2018-01-08 14:56:29,164 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization started
+15564 [Test worker] 2018-01-08 14:56:29,166 INFO  TestDispatcherServlet initServletBean() - FrameworkServlet '': initialization completed in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
