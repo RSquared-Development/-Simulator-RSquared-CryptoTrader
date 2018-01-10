@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class TestJava {
+public class DailyPriceChecker {
 
     private static final Currency[] portfolio = {Currency.ADA, Currency.BNB, Currency.BTC};
 
