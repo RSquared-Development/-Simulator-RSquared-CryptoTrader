@@ -6,6 +6,8 @@ public class GUITest {
     private JButton button_Account;
     private JButton button_Main;
     private JButton button_Settings;
+    private JPanel Outter;
+    private JPanel Content;
 
 
     public GUITest() {
@@ -29,6 +31,11 @@ public class GUITest {
         });
     }
 
-    
-
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("GUITest");
+        frame.setContentPane(new GUITest().Outter);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }
