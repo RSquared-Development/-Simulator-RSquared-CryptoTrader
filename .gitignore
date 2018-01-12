@@ -6,28 +6,28 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
+CryptoTrader/.idea/**/workspace.xml
+CryptoTrader/.idea/**/tasks.xml
+CryptoTrader/.idea/dictionaries
 
 # Sensitive or high-churn files:
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.xml
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
+CryptoTrader/.idea/**/dataSources/
+CryptoTrader/.idea/**/dataSources.ids
+CryptoTrader/.idea/**/dataSources.xml
+CryptoTrader/.idea/**/dataSources.local.xml
+CryptoTrader/.idea/**/sqlDataSources.xml
+CryptoTrader/.idea/**/dynamic.xml
+CryptoTrader/.idea/**/uiDesigner.xml
 
 # Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
+CryptoTrader/.idea/**/gradle.xml
+CryptoTrader/.idea/**/libraries
 
 # CMake
 cmake-build-debug/
 
 # Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
+CryptoTrader/.idea/**/mongoSettings.xml
 
 ## File-based project format:
 *.iws
@@ -38,13 +38,13 @@ cmake-build-debug/
 /out/
 
 # mpeltonen/sbt-idea plugin
-.idea_modules/
+CryptoTrader/.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-.idea/replstate.xml
+CryptoTrader/.idea/replstate.xml
 
 # Ruby plugin and RubyMine
 /.rakeTasks
@@ -64,7 +64,7 @@ fabric.properties
 # *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+CryptoTrader/.idea/sonarlint
 
 ### Java ###
 # Compiled class file
