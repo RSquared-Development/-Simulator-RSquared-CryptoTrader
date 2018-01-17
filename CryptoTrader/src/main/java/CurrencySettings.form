@@ -38,7 +38,7 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16750009"/>
+          <background color="-16729220"/>
           <font name="Verdana" size="30" style="0"/>
           <foreground color="-16777216"/>
           <text value="Home"/>
@@ -51,7 +51,7 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16729220"/>
+          <background color="-16750009"/>
           <font name="Verdana" size="30" style="0"/>
           <foreground color="-16777216"/>
           <text value="Settings"/>
