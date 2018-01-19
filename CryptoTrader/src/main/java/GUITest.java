@@ -22,7 +22,7 @@ public class GUITest {
     private JTextField accountNetWorth17TextField;
 
 
-    private String page;
+    private static String page;
 
     static JFrame frame;
 
@@ -47,7 +47,6 @@ public class GUITest {
             public void actionPerformed(ActionEvent e) {
                 //TODO: make it switch to Settings Panel
                 switchScreens("settings");
-                page = "settings";
                 out.println("Page Change Success");
             }
         });
@@ -56,7 +55,6 @@ public class GUITest {
             public void actionPerformed(ActionEvent e) {
                 //TODO: make it switch to Account Settings Panel
                 switchScreens("account");
-                page = "account";
                 out.println("Page Change Success");
             }
         });
@@ -85,7 +83,7 @@ public class GUITest {
     }
 
 
-    private void switchScreens(String screen) {
+    public static void switchScreens(String screen) {
         out.println(page);
 
         //in case of clicking the same button mor than once
@@ -96,18 +94,19 @@ public class GUITest {
             frame.setContentPane(new GUITest().Outter);
             frame.pack();
             frame.setVisible(true);
-            //colors
         } else if (screen == "settings") {
             //set which screens
             frame.setContentPane(new CurrencySettings().Settings_Outter);
             frame.pack();
             frame.setVisible(true);
-            //colors
         } else if (screen == "account") {
             //set which screens
+            frame.setContentPane(new Account().Outter);
+            frame.pack();
+            frame.setVisible(true);
 
-            //colors
         }
+        page = screen;
     }
 
     {
