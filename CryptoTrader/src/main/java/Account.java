@@ -20,6 +20,7 @@ public class Account {
     private JPasswordField field_Password;
     private JPasswordField field_BinanceKey;
     private JButton button_ok;
+    private JPasswordField field_BinanceSecret;
 
     public Account() {
         button_Main.addActionListener(new ActionListener() {
@@ -86,7 +87,7 @@ public class Account {
         content.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         Outter.add(content, new GridConstraints(1, 1, 3, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         content_Home = new JPanel();
-        content_Home.setLayout(new GridLayoutManager(13, 2, new Insets(0, 0, 0, 0), -1, -1));
+        content_Home.setLayout(new GridLayoutManager(14, 2, new Insets(0, 0, 0, 0), -1, -1));
         content_Home.setBackground(new Color(-9079691));
         content_Home.setEnabled(true);
         Font content_HomeFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, content_Home.getFont());
@@ -109,6 +110,7 @@ public class Account {
         if (field_PasswordFont != null) field_Password.setFont(field_PasswordFont);
         content_Home.add(field_Password, new GridConstraints(6, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         field_Username = new JTextField();
+        field_Username.setEditable(false);
         Font field_UsernameFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, field_Username.getFont());
         if (field_UsernameFont != null) field_Username.setFont(field_UsernameFont);
         content_Home.add(field_Username, new GridConstraints(2, 1, 3, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
@@ -129,7 +131,7 @@ public class Account {
         final JLabel label3 = new JLabel();
         Font label3Font = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, label3.getFont());
         if (label3Font != null) label3.setFont(label3Font);
-        label3.setText("Change Username");
+        label3.setText("Username");
         content_Home.add(label3, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label4 = new JLabel();
         Font label4Font = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, label4.getFont());
@@ -141,14 +143,21 @@ public class Account {
         if (field_BinanceKeyFont != null) field_BinanceKey.setFont(field_BinanceKeyFont);
         content_Home.add(field_BinanceKey, new GridConstraints(10, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final Spacer spacer4 = new Spacer();
-        content_Home.add(spacer4, new GridConstraints(11, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        content_Home.add(spacer4, new GridConstraints(12, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final Spacer spacer5 = new Spacer();
         content_Home.add(spacer5, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         button_ok = new JButton();
         Font button_okFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, button_ok.getFont());
         if (button_okFont != null) button_ok.setFont(button_okFont);
         button_ok.setText("OK");
-        content_Home.add(button_ok, new GridConstraints(12, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        content_Home.add(button_ok, new GridConstraints(13, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        final JLabel label5 = new JLabel();
+        Font label5Font = this.$$$getFont$$$("Verdana", Font.PLAIN, 26, label5.getFont());
+        if (label5Font != null) label5.setFont(label5Font);
+        label5.setText("Change Binance Secret");
+        content_Home.add(label5, new GridConstraints(11, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        field_BinanceSecret = new JPasswordField();
+        content_Home.add(field_BinanceSecret, new GridConstraints(11, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
     }
 
     /**

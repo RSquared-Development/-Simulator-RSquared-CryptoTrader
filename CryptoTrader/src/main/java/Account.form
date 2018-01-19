@@ -65,7 +65,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="ba9f1" binding="content_Home" layout-manager="GridLayoutManager" row-count="13" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="ba9f1" binding="content_Home" layout-manager="GridLayoutManager" row-count="14" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -119,6 +119,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <editable value="false"/>
                   <font name="Verdana" size="26" style="0"/>
                 </properties>
               </component>
@@ -156,7 +157,7 @@
                 </constraints>
                 <properties>
                   <font name="Verdana" size="26" style="0"/>
-                  <text value="Change Username"/>
+                  <text value="Username"/>
                 </properties>
               </component>
               <component id="50d1c" class="javax.swing.JLabel">
@@ -180,7 +181,7 @@
               </component>
               <vspacer id="2704a">
                 <constraints>
-                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
               <vspacer id="8d758">
@@ -190,12 +191,29 @@
               </vspacer>
               <component id="c6133" class="javax.swing.JButton" binding="button_ok">
                 <constraints>
-                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <font name="Verdana" size="26" style="0"/>
                   <text value="OK"/>
                 </properties>
+              </component>
+              <component id="a6772" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Verdana" size="26" style="0"/>
+                  <text value="Change Binance Secret"/>
+                </properties>
+              </component>
+              <component id="15695" class="javax.swing.JPasswordField" binding="field_BinanceSecret">
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
               </component>
             </children>
           </grid>
