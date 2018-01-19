@@ -1,6 +1,7 @@
 import org.knowm.xchange.Exchange;
 import org.knowm.xchange.ExchangeFactory;
 import org.knowm.xchange.ExchangeSpecification;
+import org.knowm.xchange.binance.BinanceAdapters;
 import org.knowm.xchange.binance.BinanceExchange;
 import org.knowm.xchange.binance.dto.account.BinanceBalance;
 import org.knowm.xchange.binance.service.BinanceAccountService;
@@ -10,6 +11,7 @@ import org.knowm.xchange.dto.account.Balance;
 import org.knowm.xchange.dto.trade.UserTrade;
 import org.knowm.xchange.examples.binance.BinanceDemoUtils;
 import org.knowm.xchange.examples.bitcoinde.ExchangeUtils;
+import org.knowm.xchange.binance.dto.account.BinanceBalance;
 import org.knowm.xchange.service.account.AccountService;
 
 import java.io.IOException;
