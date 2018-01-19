@@ -58,5 +58,10 @@ public class DataHandler {
         return true;
     }
 
+    public static String[] openAccountSettings(String username){
 
+
+
+        return null;
+    }
 }
