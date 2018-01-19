@@ -9,9 +9,12 @@ import org.knowm.xchange.dto.account.AccountInfo;
 import org.knowm.xchange.dto.account.Balance;
 import org.knowm.xchange.dto.trade.UserTrade;
 import org.knowm.xchange.examples.binance.BinanceDemoUtils;
+import org.knowm.xchange.examples.bitcoinde.ExchangeUtils;
 import org.knowm.xchange.service.account.AccountService;
 
 import java.io.IOException;
+
+import static org.junit.Assert.assertNotNull;
 
 public class BinanceAccountConnector {
     private static final String API                           = "eLChU3yNN2P6I3LNWvyyVpSL8VNWsz0aA0N0TJABgbln3A3KpLRVz0o1MJ84hvhU";
@@ -24,7 +27,7 @@ public class BinanceAccountConnector {
 
         establishInterface();
 
-        binanc
+
         generic((BinanceAccountService) binanceAS);
         //raw((BinanceAccountServiceRaw) binanceDemoAS);
 
@@ -51,6 +54,7 @@ public class BinanceAccountConnector {
 
     private static void generic(BinanceAccountService b) throws IOException {
 
+        assertNotNull(b);
         AccountInfo binanceAI = b.getAccountInfo();
         //System.out.println("Binance Account Information:\n----------\nUsername: " + binanceAI.getUsername() );
 
