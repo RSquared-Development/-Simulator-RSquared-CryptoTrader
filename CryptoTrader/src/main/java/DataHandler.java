@@ -27,14 +27,7 @@ public class DataHandler {
             //find and delete the line with the current settings
             //since we know the first word of each line will be the username, we can find it with that
             int spot = 0;
-            for(String account : accounts){
-                Scanner choppa = new Scanner(account);
-                if (choppa.next().equals(Crypt.encrypt(username))){
-                    accounts.remove(spot);
-                    break;
-                }
-                spot++;
-            }
+            spot = getSpot(username, accounts, spot);
 
             //now that we have deleted the current save, we can send add the new one to the array list
             //and push it to the account.dat file
@@ -59,9 +52,41 @@ public class DataHandler {
     }
 
     public static String[] openAccountSettings(String username){
+        try {
+            Scanner chop = new Scanner(new File("account.dat"));
 
+            //loop through the file to take in the data
+            ArrayList<String> accounts = new ArrayList();
+            while (chop.hasNextLine()) {
+                accounts.add(chop.nextLine());
+            }
 
+            //find spot of account
+            int spot = 0;
+            spot = getSpot(username, accounts, spot);
 
-        return null;
+            //decrypt the data and return it
+            String[] encrypted = accounts.get(spot).split("  ,  ");
+            String[] decrypted = new String[encrypted.length];
+            for (int i = 0; i<encrypted.length;i++){
+                decrypted[i] = Crypt.decrypt(encrypted[i]);
+            }
+
+            return decrypted;
+        } catch (IOException e){
+            return null;
+        }
+    }
+
+    private static int getSpot(String username, ArrayList<String> accounts, int spot) {
+        for (String account : accounts) {
+            Scanner choppa = new Scanner(account);
+            if (choppa.next().equals(Crypt.encrypt(username))) {
+                accounts.remove(spot);
+                break;
+            }
+            spot++;
+        }
+        return spot;
     }
 }
