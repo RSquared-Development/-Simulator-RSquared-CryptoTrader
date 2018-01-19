@@ -12,7 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-public class SampleOrderBookData {
+public class SampleDataGenerator {
 
     private static final CurrencyPair BTC_ADA = new CurrencyPair(Currency.ADA, Currency.BTC);
     private static final CurrencyPair BTC_BNB = new CurrencyPair(Currency.BNB, Currency.BTC);
