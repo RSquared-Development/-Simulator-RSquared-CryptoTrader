@@ -37,63 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1595">
-              <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="406">
+              <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#saveAccountSettings#0;class#DataHandler#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataHandlerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataHandlerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="76" lean-forward="false" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUITest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUITest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2726">
-              <caret line="103" column="49" lean-forward="false" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
-              <folding>
-                <element signature="docComment;method#$$$setupUI$$$#0;class#GUITest#0" expanded="false" />
-                <element signature="method#$$$setupUI$$$#0;class#GUITest#0" expanded="false" />
-                <element signature="docComment;method#$$$getFont$$$#0;class#GUITest#0" expanded="false" />
-                <element signature="method#$$$getFont$$$#0;class#GUITest#0" expanded="false" />
-                <element signature="docComment;method#$$$getRootComponent$$$#0;class#GUITest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrencySettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CurrencySettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="29" selection-end-column="46" />
-              <folding>
-                <element signature="docComment;method#$$$getFont$$$#0;class#CurrencySettings#0" expanded="false" />
-                <element signature="method#$$$getFont$$$#0;class#CurrencySettings#0" expanded="false" />
-                <element signature="docComment;method#$$$getRootComponent$$$#0;class#CurrencySettings#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+            <state relative-caret-position="174">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,13 +62,6 @@
       </file>
       <file leaf-file-name="CurrencySettings.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CurrencySettings.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUITest.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUITest.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
@@ -153,8 +107,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Crypt.java" />
         <option value="$PROJECT_DIR$/src/main/java/Account.form" />
         <option value="$PROJECT_DIR$/src/main/java/CryptTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataHandler.java" />
       </list>
     </option>
   </component>
@@ -255,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CryptTest">
+  <component name="RunManager" selected="Application.GUITest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -386,8 +340,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.CryptTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GUITest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GUITest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CryptTest" />
         <item index="2" class="java.lang.String" itemvalue="Application.DailyPriceChecker" />
       </list>
     </recent_temporary>
@@ -410,12 +364,12 @@
       <workItem from="1515704668596" duration="11225000" />
       <workItem from="1516205808715" duration="887000" />
       <workItem from="1516206793874" duration="6117000" />
-      <workItem from="1516373706648" duration="5638000" />
+      <workItem from="1516373706648" duration="6461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30418000" />
+    <option name="totallyTimeSpent" value="31241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="2584" height="1464" extended-state="6" />
@@ -699,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUITest.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -751,6 +697,19 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Account.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SampleOrderBookData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Crypt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -764,11 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Account.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CryptTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -777,21 +731,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1595">
-          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="174">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataHandlerTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="76" lean-forward="false" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+        <state relative-caret-position="638">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveAccountSettings#0;class#DataHandler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
