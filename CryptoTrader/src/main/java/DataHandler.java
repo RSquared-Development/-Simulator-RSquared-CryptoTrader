@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.System.out;
+
 public class DataHandler {
 
     public static boolean saveAccountSettings(String username, String password, String binanceKey, String binanceSecret){
@@ -28,6 +30,7 @@ public class DataHandler {
             //since we know the first word of each line will be the username, we can find it with that
             int spot = 0;
             spot = getSpot(username, accounts, spot);
+            accounts.remove(spot);
 
             //now that we have deleted the current save, we can send add the new one to the array list
             //and push it to the account.dat file
@@ -80,12 +83,12 @@ public class DataHandler {
 
     private static int getSpot(String username, ArrayList<String> accounts, int spot) {
         for (String account : accounts) {
-            Scanner choppa = new Scanner(account);
-            if (choppa.next().equals(Crypt.encrypt(username))) {
-                accounts.remove(spot);
+            String[] words = account.split("  ,  ");
+            if (words[0].equals(Crypt.encrypt(username))) {
                 break;
+            }else {
+                spot++;
             }
-            spot++;
         }
         return spot;
     }

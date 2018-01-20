@@ -3,6 +3,7 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 
 import javax.swing.*;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,6 +36,38 @@ public class Account {
             public void actionPerformed(ActionEvent e) {
                 //set which screens
                 GUITest.switchScreens("settings");
+            }
+        });
+        button_ok.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //check if their are changes and commit them to the account file
+                if (field_Password.getText().equals(field_RepeatPassword.getText()) && field_Password.getText().length() > 0) {
+                    DataHandler.saveAccountSettings(GUITest.username,
+                            field_Password.getText(),
+                            DataHandler.openAccountSettings(GUITest.username)[2],
+                            DataHandler.openAccountSettings(GUITest.username)[3]);
+                } else if (!field_Password.getText().equals(field_RepeatPassword.getText()) && field_Password.getText().length() > 0) {
+                    JOptionPane.showMessageDialog(Outter, "Passwords do not match");
+                }
+                if (field_BinanceKey.getText().length() > 0) {
+                    DataHandler.saveAccountSettings(GUITest.username,
+                            DataHandler.openAccountSettings(GUITest.username)[1],
+                            field_BinanceKey.getText(),
+                            DataHandler.openAccountSettings(GUITest.username)[3]);
+                }
+                if (field_BinanceSecret.getText().length() > 0) {
+                    DataHandler.saveAccountSettings(GUITest.username,
+                            DataHandler.openAccountSettings(GUITest.username)[1],
+                            DataHandler.openAccountSettings(GUITest.username)[2],
+                            field_BinanceSecret.getText());
+                }
+                //clear the fields
+                field_Password.setText("");
+                field_RepeatPassword.setText("");
+                field_BinanceKey.setText("");
+                field_BinanceSecret.setText("");
             }
         });
     }
