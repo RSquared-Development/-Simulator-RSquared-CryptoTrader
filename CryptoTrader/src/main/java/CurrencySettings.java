@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import static java.lang.System.out;
 
@@ -17,9 +18,12 @@ public class CurrencySettings {
     private JPanel content;
     private JPanel content_Home;
     private JTextField textField_CurrencySettings;
-    private JCheckBox bitCoinCheckBox;
-    private JCheckBox cardanoCheckBox;
-    private JCheckBox binanceCheckBox;
+    public JCheckBox bitCoinCheckBox;
+    public JCheckBox cardanoCheckBox;
+    public JCheckBox binanceCheckBox;
+
+    //vars that are passed to GUITest
+
 
 
     public CurrencySettings() {
@@ -37,6 +41,33 @@ public class CurrencySettings {
                 GUITest.switchScreens("account");
             }
         });
+    }
+
+    //getters and setters
+
+
+    public JCheckBox getBitCoinCheckBox() {
+        return bitCoinCheckBox;
+    }
+
+    public void setBitCoinCheckBox(JCheckBox bitCoinCheckBox) {
+        this.bitCoinCheckBox = bitCoinCheckBox;
+    }
+
+    public JCheckBox getCardanoCheckBox() {
+        return cardanoCheckBox;
+    }
+
+    public void setCardanoCheckBox(JCheckBox cardanoCheckBox) {
+        this.cardanoCheckBox = cardanoCheckBox;
+    }
+
+    public JCheckBox getBinanceCheckBox() {
+        return binanceCheckBox;
+    }
+
+    public void setBinanceCheckBox(JCheckBox binanceCheckBox) {
+        this.binanceCheckBox = binanceCheckBox;
     }
 
     {

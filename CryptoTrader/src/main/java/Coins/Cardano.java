@@ -1,17 +1,17 @@
 package Coins;
 
-public class Bitcoin {
+public class Cardano {
     boolean trading;
     String stratedgy;
     double amount;
 
-    public Bitcoin(){
+    public Cardano(){
         stratedgy = null;
         trading = false;
         amount = 0;
     }
 
-    public Bitcoin(String stratedgy){
+    public Cardano(String stratedgy){
         this.stratedgy = stratedgy;
         trading = false;
     }
