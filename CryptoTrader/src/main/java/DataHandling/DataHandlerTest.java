@@ -1,3 +1,7 @@
+package DataHandling;
+
+import DataHandling.DataHandler;
+
 import java.util.Arrays;
 
 public class DataHandlerTest {

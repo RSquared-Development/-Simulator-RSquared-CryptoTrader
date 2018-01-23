@@ -3,10 +3,12 @@ package Coins;
 public class Bitcoin {
     Boolean trading;
     String stratedgy;
+    double amount;
 
     public Bitcoin(){
         stratedgy = null;
         trading = false;
+        amount = 0;
     }
 
     public Bitcoin(String stratedgy){
