@@ -17,7 +17,8 @@
 
 
     <!-- Define logging for organization applications only -->
-    <logger name="org.knowm.xchange" level="DEBUG"/>
-    <logger name="si.mazi.rescu" level="TRACE"/>
+    <!--<logger name="org.knowm.xchange" level="DEBUG"/>
+    <logger name="si.mazi.rescu" level="TRACE"/>-->
+    <logger name="com.webcerebrium.binance.api.BinanceRequest" level="WARN"/>
 
 </configuration>
