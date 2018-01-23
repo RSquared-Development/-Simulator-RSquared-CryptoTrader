@@ -1,3 +1,5 @@
+package DataHandling;
+
 import com.google.gson.JsonObject;
 import com.webcerebrium.binance.api.BinanceApi;
 import com.webcerebrium.binance.api.BinanceApiException;
