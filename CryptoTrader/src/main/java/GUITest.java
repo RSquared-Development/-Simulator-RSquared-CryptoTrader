@@ -54,6 +54,7 @@ public class GUITest {
 
         //GUI init stuff
         button_Stop.setEnabled(false);
+        calculateNetWorth();
 
         button_Main.addActionListener(new ActionListener() {
             @Override
@@ -167,6 +168,13 @@ public class GUITest {
 
         }
         page = screen;
+    }
+
+    public void calculateNetWorth() {
+        //@TODO add in the code to read in the data from binance
+
+        double worth = 0.00;
+        accountNetWorth17TextField.setText("Account Net Worth: " + worth);
     }
 
 
