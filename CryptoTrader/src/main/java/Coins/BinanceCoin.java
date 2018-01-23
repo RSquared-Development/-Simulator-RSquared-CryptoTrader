@@ -1,17 +1,17 @@
 package Coins;
 
-public class Bitcoin {
+public class BinanceCoin {
     boolean trading;
     String stratedgy;
     double amount;
 
-    public Bitcoin(){
+    public BinanceCoin(){
         stratedgy = null;
         trading = false;
         amount = 0;
     }
 
-    public Bitcoin(String stratedgy){
+    public BinanceCoin(String stratedgy){
         this.stratedgy = stratedgy;
         trading = false;
     }
