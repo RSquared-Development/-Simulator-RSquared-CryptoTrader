@@ -6,19 +6,15 @@ import com.webcerebrium.binance.api.BinanceApiException;
 
 public class BinanceAccountInformation {
 
+    private static final String API                           = "cC1n5BogRnebbwnCmyxFoHOciDOO4C5vOgvtv3Fs4qN7gMmCFsgqgcsWqNmnKZJ6";
+    private static final String SECRET                        = "x3HwmPWGw4cYeQKpwkIRDjvspNG2ZBQt5uE3HjR7hE26A1aR8fZu6gfCevuy6hJy";
+
     public static void main(String[] args) throws BinanceApiException{
-
-
-
-        System.getenv();
-        System.setProperty("BINANCE_API_KEY","eLChU3yNN2P6I3LNWvyyVpSL8VNWsz0aA0N0TJABgbln3A3KpLRVz0o1MJ84hvhU");
-        System.setProperty("BINANCE_SECRET_KEY", "5udJXvtWlgxQWp23F62hTuP4K1untQc3XNZaQz942UQyCPYmKXEWKU6DkxRxpkk");
-        System.out.println(System.getProperty("BINANCE_API_KEY"));
-        JsonObject account = (new BinanceApi()).account();
-        System.out.println(account.get("canTrade").getAsBoolean());
-        //System.out.println((new BinanceApi()).balances());
-        //System.setProperties();
-
+;
+        JsonObject account = (new BinanceApi(API, SECRET)).account();
+        System.out.println("--\n\n");
+        System.out.println(account);
+        System.out.println((new BinanceApi(API, SECRET)).balances());
     }
 
 }
