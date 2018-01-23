@@ -1,3 +1,7 @@
+package DataHandling;
+
+import DataHandling.Crypt;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

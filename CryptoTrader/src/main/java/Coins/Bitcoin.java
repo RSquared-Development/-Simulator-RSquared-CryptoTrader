@@ -1,3 +1,5 @@
+package Coins;
+
 public class Bitcoin {
     Boolean trading;
     String stratedgy;
