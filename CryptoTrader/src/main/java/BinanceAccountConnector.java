@@ -19,8 +19,8 @@ import java.io.IOException;
 import static org.junit.Assert.assertNotNull;
 
 public class BinanceAccountConnector {
-    private static final String API                           = "eLChU3yNN2P6I3LNWvyyVpSL8VNWsz0aA0N0TJABgbln3A3KpLRVz0o1MJ84hvhU";
-    private static final String SECRET                        = "5udJXvtWlgxQWp23F62hTuP4K1untQc3XNZaQz942UQyCPYmKXEWKU6DkxRxpkk";
+    private static final String API                           = "cC1n5BogRnebbwnCmyxFoHOciDOO4C5vOgvtv3Fs4qN7gMmCFsgqgcsWqNmnKZJ6";
+    private static final String SECRET                        = "x3HwmPWGw4cYeQKpwkIRDjvspNG2ZBQt5uE3HjR7hE26A1aR8fZu6gfCevuy6hJy";
     private static final String USER                          = "";
     private static ExchangeSpecification binanceExchangeSpecs = new BinanceExchange().getDefaultExchangeSpecification();
     private static Exchange binanceExchange;
@@ -49,6 +49,7 @@ public class BinanceAccountConnector {
         //binanceExchangeSpecs.setUserName("ruben.s.ruiz@outlook.com");
         binanceExchangeSpecs.setApiKey(API);
         binanceExchangeSpecs.setSecretKey(SECRET);
+        binanceExchangeSpecs.setExchangeSpecificParametersItem("recvWindow", 60000L);
         binanceExchange = ExchangeFactory.INSTANCE.createExchange(binanceExchangeSpecs);
         binanceAS       = binanceExchange.getAccountService();
 
