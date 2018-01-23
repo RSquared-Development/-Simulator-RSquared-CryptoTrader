@@ -1,3 +1,5 @@
+package DataHandling;
+
 import org.apache.commons.codec.binary.Base64;
 
 public class Crypt {
