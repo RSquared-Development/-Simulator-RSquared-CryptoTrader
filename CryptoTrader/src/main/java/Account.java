@@ -25,6 +25,10 @@ public class Account {
     private JPasswordField field_BinanceSecret;
 
     public Account() {
+
+        //init stuff
+        field_Username.setText(GUITest.username);
+
         button_Main.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

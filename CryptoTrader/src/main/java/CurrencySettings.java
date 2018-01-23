@@ -27,6 +27,10 @@ public class CurrencySettings {
 
 
     public CurrencySettings() {
+
+        //init stuff
+
+
         button_Main.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
