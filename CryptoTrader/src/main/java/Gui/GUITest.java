@@ -78,7 +78,6 @@ public class GUITest {
         button_Main.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: make it switch to Main panel
                 switchScreens("home");
                 page = "home";
                 out.println("Page Change Success");
@@ -88,7 +87,6 @@ public class GUITest {
         button_Settings.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: make it switch to Settings Panel
                 switchScreens("settings");
                 out.println("Page Change Success");
             }
@@ -96,22 +94,13 @@ public class GUITest {
         button_Account.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: make it switch to Account Settings Panel
                 switchScreens("account");
                 out.println("Page Change Success");
-            }
-        });
-        button_Start.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //TODO: plug and chug once we get the backend done
-                out.println("start");
             }
         });
         button_Stop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: plug and chug once we get the backend done
                 out.println("stop");
                 btc.stopTrading();
                 ada.stopTrading();
