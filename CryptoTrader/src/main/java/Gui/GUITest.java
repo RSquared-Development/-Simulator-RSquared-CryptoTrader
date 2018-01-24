@@ -3,6 +3,7 @@ package Gui;
 import Coins.BinanceCoin;
 import Coins.Bitcoin;
 import Coins.Cardano;
+import DataHandling.DataHandler;
 import Exceptions.CryptoTraderException;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
@@ -192,11 +193,12 @@ public class GUITest {
 
         BinanceAccountInformation.init();
         BigDecimal worth = BigDecimal.ZERO;
-        BigDecimal[] vals = BinanceAccountInformation.getPortfolioValue();
+        BigDecimal[] vals = new BinanceAccountInformation(DataHandler.openAccountSettings(username)[2], DataHandler.openAccountSettings(username)[3]).getPortfolioValue();
         Currency[] support = BinanceAccountInformation.getSupportedCurrenciesInCurrency();
         for (int i = 0; i < support.length; i++) {
 
-            worth.add(BinancePriceDataAccessor.getValueInBTC(support[i]));
+            if (support[i].equals(Currency.BTC)) worth.add(vals[i]);
+            else worth.add(vals[i].multiply(BinancePriceDataAccessor.getValueInBTC(support[i])));
 
         }
 

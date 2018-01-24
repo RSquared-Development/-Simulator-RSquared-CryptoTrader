@@ -16,8 +16,8 @@ public class BinanceAccountInformation {
 
     // Important user data. This should never be stored in plainText
     // TODO Include a encode and decode method to encrypt the api keys
-    private static final String        API              = "cC1n5BogRnebbwnCmyxFoHOciDOO4C5vOgvtv3Fs4qN7gMmCFsgqgcsWqNmnKZJ6";
-    private static final String        SECRET           = "x3HwmPWGw4cYeQKpwkIRDjvspNG2ZBQt5uE3HjR7hE26A1aR8fZu6gfCevuy6hJy";
+    private static String        API              = "cC1n5BogRnebbwnCmyxFoHOciDOO4C5vOgvtv3Fs4qN7gMmCFsgqgcsWqNmnKZJ6";
+    private static String        SECRET           = "x3HwmPWGw4cYeQKpwkIRDjvspNG2ZBQt5uE3HjR7hE26A1aR8fZu6gfCevuy6hJy";
 
     // Variables that are specifically used to interface with the exchange
     private static BinanceApi backbone;
@@ -42,6 +42,12 @@ public class BinanceAccountInformation {
         //another comment
 
     }
+
+    public BinanceAccountInformation(String API_KEY, String API_SECRET){
+        API = API_KEY;
+        SECRET = API_SECRET;
+    }
+
 
     public static void init() throws BinanceApiException {
 
