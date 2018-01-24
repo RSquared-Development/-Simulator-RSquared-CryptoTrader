@@ -1,4 +1,4 @@
-package DataHandling;
+package DataHandling.BinanceAdapters;
 
 import com.google.gson.JsonObject;
 import com.webcerebrium.binance.api.BinanceApi;

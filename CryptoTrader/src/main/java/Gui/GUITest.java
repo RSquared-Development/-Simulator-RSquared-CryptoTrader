@@ -1,3 +1,5 @@
+package Gui;
+
 import Coins.BinanceCoin;
 import Coins.Bitcoin;
 import Coins.Cardano;
@@ -10,13 +12,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.math.BigDecimal;
 
-import DataHandling.BinanceAccountInformation;
-import DataHandling.BinancePriceDataAccessor;
+import DataHandling.BinanceAdapters.BinanceAccountInformation;
+import DataHandling.BinanceAdapters.BinancePriceDataAccessor;
 import com.webcerebrium.binance.api.BinanceApiException;
 import org.knowm.xchange.currency.Currency;
-import org.knowm.xchange.currency.CurrencyPair;
 
 import static java.lang.System.out;
 
@@ -46,11 +48,17 @@ public class GUITest {
     private BinanceCoin bnb = new BinanceCoin();
 
     //windows
-    static CurrencySettings cs = new CurrencySettings();
-    static Account as = new Account();
-    static GUITest gs = new GUITest();
+    static CurrencySettings cs;
+    static Account as;
+    static GUITest gs;
 
-    public GUITest() throws BinanceApiException, CryptoTraderException{
+    static void init() throws BinanceApiException, CryptoTraderException, IOException {
+        cs = new CurrencySettings();
+        as = new Account();
+        gs = new GUITest();
+    }
+
+    public GUITest() throws BinanceApiException, CryptoTraderException, IOException {
 
 
         //TESTING WITH THESE VARS
@@ -143,7 +151,8 @@ public class GUITest {
         });
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BinanceApiException, CryptoTraderException, IOException {
+        init();
         frame = new JFrame("RSqaured");
         frame.setContentPane(new GUITest().Outter);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -178,14 +187,14 @@ public class GUITest {
         page = screen;
     }
 
-    public void calculateNetWorth() throws BinanceApiException, CryptoTraderException{
+    public void calculateNetWorth() throws BinanceApiException, CryptoTraderException, IOException {
         //@TODO add in the code to read in the data from binance
 
         BinanceAccountInformation.init();
-        BigDecimal worth  = BigDecimal.ZERO;
+        BigDecimal worth = BigDecimal.ZERO;
         BigDecimal[] vals = BinanceAccountInformation.getPortfolioValue();
-        Currency[] support  = BinanceAccountInformation.getSupportedCurrenciesInCurrency();
-        for(int i = 0; i < support.length; i++) {
+        Currency[] support = BinanceAccountInformation.getSupportedCurrenciesInCurrency();
+        for (int i = 0; i < support.length; i++) {
 
             worth.add(BinancePriceDataAccessor.getValueInBTC(support[i]));
 

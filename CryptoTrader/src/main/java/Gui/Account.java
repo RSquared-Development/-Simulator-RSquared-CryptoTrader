@@ -1,10 +1,13 @@
+package Gui;
+
 import DataHandling.DataHandler;
+import Exceptions.CryptoTraderException;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import com.webcerebrium.binance.api.BinanceApiException;
 
 import javax.swing.*;
-import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -75,6 +78,7 @@ public class Account {
                 field_BinanceSecret.setText("");
             }
         });
+        //This has to be here to initialize the main window
     }
 
     /**

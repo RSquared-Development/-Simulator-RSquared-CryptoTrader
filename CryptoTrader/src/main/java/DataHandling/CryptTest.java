@@ -1,5 +1,7 @@
 package DataHandling;
 
+import DataHandling.Encryption.Crypt;
+
 public class CryptTest {
     public static void main(String[] args){
         //Enter string to test here

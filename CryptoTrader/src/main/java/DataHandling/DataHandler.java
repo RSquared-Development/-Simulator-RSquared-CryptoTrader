@@ -1,14 +1,12 @@
 package DataHandling;
 
-import DataHandling.Crypt;
+import DataHandling.Encryption.Crypt;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import static java.lang.System.out;
 
 public class DataHandler {
 
