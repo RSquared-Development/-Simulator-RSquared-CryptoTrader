@@ -20,6 +20,7 @@ public class CurrencySettings {
     public JCheckBox bitCoinCheckBox;
     public JCheckBox cardanoCheckBox;
     public JCheckBox binanceCheckBox;
+    public JCheckBox litecoinCheckBox;
 
     //vars that are passed to GUITest
 
@@ -46,8 +47,6 @@ public class CurrencySettings {
     }
 
     //getters and setters
-
-
     public JCheckBox getBitCoinCheckBox() {
         return bitCoinCheckBox;
     }
@@ -70,6 +69,14 @@ public class CurrencySettings {
 
     public void setBinanceCheckBox(JCheckBox binanceCheckBox) {
         this.binanceCheckBox = binanceCheckBox;
+    }
+
+    public JCheckBox getLitecoinCheckBox() {
+        return litecoinCheckBox;
+    }
+
+    public void setLitecoinCheckBox(JCheckBox litecoinCheckBox) {
+        this.litecoinCheckBox = litecoinCheckBox;
     }
 
     {
@@ -120,7 +127,7 @@ public class CurrencySettings {
         content.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         Settings_Outter.add(content, new GridConstraints(1, 1, 3, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         content_Home = new JPanel();
-        content_Home.setLayout(new GridLayoutManager(4, 2, new Insets(0, 0, 0, 0), -1, -1));
+        content_Home.setLayout(new GridLayoutManager(4, 3, new Insets(0, 0, 0, 0), -1, -1));
         content_Home.setBackground(new Color(-9079691));
         content_Home.setEnabled(true);
         content_Home.setVisible(true);
@@ -131,9 +138,9 @@ public class CurrencySettings {
         Font textField_CurrencySettingsFont = this.$$$getFont$$$("Verdana", Font.BOLD, 48, textField_CurrencySettings.getFont());
         if (textField_CurrencySettingsFont != null) textField_CurrencySettings.setFont(textField_CurrencySettingsFont);
         textField_CurrencySettings.setText("Currency Settings");
-        content_Home.add(textField_CurrencySettings, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        content_Home.add(textField_CurrencySettings, new GridConstraints(0, 0, 1, 3, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final Spacer spacer2 = new Spacer();
-        content_Home.add(spacer2, new GridConstraints(1, 1, 3, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        content_Home.add(spacer2, new GridConstraints(1, 2, 3, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         bitCoinCheckBox = new JCheckBox();
         Font bitCoinCheckBoxFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 36, bitCoinCheckBox.getFont());
         if (bitCoinCheckBoxFont != null) bitCoinCheckBox.setFont(bitCoinCheckBoxFont);
@@ -143,12 +150,17 @@ public class CurrencySettings {
         Font cardanoCheckBoxFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 36, cardanoCheckBox.getFont());
         if (cardanoCheckBoxFont != null) cardanoCheckBox.setFont(cardanoCheckBoxFont);
         cardanoCheckBox.setText("Cardano");
-        content_Home.add(cardanoCheckBox, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        content_Home.add(cardanoCheckBox, new GridConstraints(2, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         binanceCheckBox = new JCheckBox();
         Font binanceCheckBoxFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 36, binanceCheckBox.getFont());
         if (binanceCheckBoxFont != null) binanceCheckBox.setFont(binanceCheckBoxFont);
         binanceCheckBox.setText("Binance");
-        content_Home.add(binanceCheckBox, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        content_Home.add(binanceCheckBox, new GridConstraints(3, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        litecoinCheckBox = new JCheckBox();
+        Font litecoinCheckBoxFont = this.$$$getFont$$$("Verdana", Font.PLAIN, 36, litecoinCheckBox.getFont());
+        if (litecoinCheckBoxFont != null) litecoinCheckBox.setFont(litecoinCheckBoxFont);
+        litecoinCheckBox.setText("Litecoin");
+        content_Home.add(litecoinCheckBox, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

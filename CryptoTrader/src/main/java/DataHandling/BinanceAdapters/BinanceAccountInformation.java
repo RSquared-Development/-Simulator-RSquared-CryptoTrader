@@ -134,7 +134,7 @@ public class BinanceAccountInformation {
 
     public static String[] getSupportedCurrencies() {
 
-        String[] supported = {"BTC", "BNB", "ADA"};
+        String[] supported = {"BTC", "BNB", "ADA", "LTC"};
         return supported;
 
     }

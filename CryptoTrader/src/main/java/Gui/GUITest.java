@@ -3,6 +3,7 @@ package Gui;
 import Coins.BinanceCoin;
 import Coins.Bitcoin;
 import Coins.Cardano;
+import Coins.Litecoin;
 import DataHandling.DataHandler;
 import Exceptions.CryptoTraderException;
 import com.intellij.uiDesigner.core.GridConstraints;
@@ -45,8 +46,9 @@ public class GUITest {
 
     //coins
     private Bitcoin btc = new Bitcoin();
-    private Cardano cdc = new Cardano();
+    private Cardano ada = new Cardano();
     private BinanceCoin bnb = new BinanceCoin();
+    private Litecoin ltc = new Litecoin();
 
     //windows
     static CurrencySettings cs;
@@ -112,7 +114,7 @@ public class GUITest {
                 //TODO: plug and chug once we get the backend done
                 out.println("stop");
                 btc.stopTrading();
-                cdc.stopTrading();
+                ada.stopTrading();
                 bnb.stopTrading();
 
                 //enable/disable stuff
@@ -120,6 +122,7 @@ public class GUITest {
                 cs.getBitCoinCheckBox().setEnabled(true);
                 cs.cardanoCheckBox.setEnabled(true);
                 cs.binanceCheckBox.setEnabled(true);
+                cs.litecoinCheckBox.setEnabled(true);
 
                 button_Stop.setEnabled(false);
             }
@@ -132,12 +135,16 @@ public class GUITest {
                     out.println("Wow! were trading Bitcoin!");
                 }
                 if (cs.cardanoCheckBox.isSelected()) {
-                    cdc.startTrading();
+                    ada.startTrading();
                     out.println("Wow! were trading Cardano!");
                 }
                 if (cs.binanceCheckBox.isSelected()) {
-                    cdc.startTrading();
+                    ada.startTrading();
                     out.println("Wow! were trading Binance!");
+                }
+                if (cs.litecoinCheckBox.isSelected()) {
+                    ltc.startTrading();
+                    out.println("Wow! were trading Litecoin!");
                 }
 
                 // disable start button and checkboxes so things dont mess up
@@ -145,6 +152,7 @@ public class GUITest {
                 cs.bitCoinCheckBox.setEnabled(false);
                 cs.cardanoCheckBox.setEnabled(false);
                 cs.binanceCheckBox.setEnabled(false);
+                cs.litecoinCheckBox.setEnabled(false);
 
                 // enable the stop button so you can stop it of course
                 button_Stop.setEnabled(true);
