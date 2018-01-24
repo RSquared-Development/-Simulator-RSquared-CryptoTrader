@@ -1,3 +1,5 @@
+package DataHandling;
+
 import org.knowm.xchange.Exchange;
 import org.knowm.xchange.ExchangeFactory;
 import org.knowm.xchange.binance.BinanceExchange;
@@ -10,9 +12,10 @@ import org.knowm.xchange.service.marketdata.MarketDataService;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.List;
 
-public class SampleDataGenerator {
+public class BinancePriceDataAccessor {
 
     private static final CurrencyPair BTC_ADA = new CurrencyPair(Currency.ADA, Currency.BTC);
     private static final CurrencyPair BTC_BNB = new CurrencyPair(Currency.BNB, Currency.BTC);
@@ -30,9 +33,7 @@ public class SampleDataGenerator {
         return null;
 
     }
-
-    public static void main(String[] args) throws IOException, InterruptedException {
-
+    public static BigDecimal getValueInBTC(Currency c) {
 
         // This line creates a way to interface with binance
         // The Exchange factory is kind of like an easy way to instantiate this variable
@@ -45,7 +46,7 @@ public class SampleDataGenerator {
 
         // This will get the prices from the exchange for the given currencyPair
         // Can throw IOException
-        OrderBook binanceOrderBookADA   = binanceMDS.getOrderBook(getCurrencyPair(BTC_ADA, binanceExchange.getExchangeSymbols()));
+        OrderBook binanceOrderBook      = binanceMDS.getOrderBook(getCurrencyPair(BTC_ADA, binanceExchange.getExchangeSymbols()));
         OrderBook binanceOrderBookBNB   = binanceMDS.getOrderBook(getCurrencyPair(BTC_BNB, binanceExchange.getExchangeSymbols()));
         OrderBook binanceOrderBookBTC   = binanceMDS.getOrderBook(getCurrencyPair(BTC_USD, binanceExchange.getExchangeSymbols()));
 
@@ -76,13 +77,13 @@ public class SampleDataGenerator {
 
         }
 
-        FileWriter writer = new FileWriter(new File("ADAGatheredData.dat"));
-        writer.write(ADAGatheredData);
-        writer.close();
+    }
 
-        writer = new FileWriter(new File("BNBGatheredData.dat"));
-        writer.write(BNBGatheredData);
-        writer.close();
+    public static void main(String[] args) throws IOException, InterruptedException {
+
+
+
+
 
 
 

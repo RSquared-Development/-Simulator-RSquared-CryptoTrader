@@ -1,6 +1,7 @@
 import Coins.BinanceCoin;
 import Coins.Bitcoin;
 import Coins.Cardano;
+import Exceptions.CryptoTraderException;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
@@ -9,6 +10,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.math.BigDecimal;
+
+import DataHandling.BinanceAccountInformation;
+import DataHandling.BinancePriceDataAccessor;
+import com.webcerebrium.binance.api.BinanceApiException;
+import org.knowm.xchange.currency.Currency;
+import org.knowm.xchange.currency.CurrencyPair;
 
 import static java.lang.System.out;
 
@@ -42,7 +50,7 @@ public class GUITest {
     static Account as = new Account();
     static GUITest gs = new GUITest();
 
-    public GUITest() {
+    public GUITest() throws BinanceApiException, CryptoTraderException{
 
 
         //TESTING WITH THESE VARS
@@ -170,10 +178,19 @@ public class GUITest {
         page = screen;
     }
 
-    public void calculateNetWorth() {
+    public void calculateNetWorth() throws BinanceApiException, CryptoTraderException{
         //@TODO add in the code to read in the data from binance
 
-        double worth = 0.00;
+        BinanceAccountInformation.init();
+        BigDecimal worth  = BigDecimal.ZERO;
+        BigDecimal[] vals = BinanceAccountInformation.getPortfolioValue();
+        Currency[] support  = BinanceAccountInformation.getSupportedCurrenciesInCurrency();
+        for(int i = 0; i < support.length; i++) {
+
+            worth.add(BinancePriceDataAccessor.getValueInBTC(support[i]));
+
+        }
+
         accountNetWorth17TextField.setText("Account Net Worth: " + worth);
     }
 

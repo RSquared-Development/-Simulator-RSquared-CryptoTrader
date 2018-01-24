@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import Exceptions.CryptoTraderException;
+import org.knowm.xchange.currency.Currency;
 
 public class BinanceAccountInformation {
 
@@ -128,6 +129,13 @@ public class BinanceAccountInformation {
     public static String[] getSupportedCurrencies() {
 
         String[] supported = {"BTC", "BNB", "ADA"};
+        return supported;
+
+    }
+
+    public static Currency[] getSupportedCurrenciesInCurrency() {
+
+        Currency[] supported = {Currency.BTC, Currency.BNB, Currency.ADA};
         return supported;
 
     }
