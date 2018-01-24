@@ -110,6 +110,7 @@ public class BinanceAccountInformation {
             case "ADA": return 113;
             case "BNB": return 6;
             case "BTC": return 0;
+            case "LTC": return 1;
             default   :
                 for(int i = 0; i < backbone.balances().size(); i++) {
 
