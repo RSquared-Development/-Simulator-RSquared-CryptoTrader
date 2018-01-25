@@ -1,5 +1,7 @@
 package Coins;
 
+import org.knowm.xchange.currency.Currency;
+
 import static java.lang.System.out;
 
 public class Trading {
@@ -35,5 +37,4 @@ public class Trading {
         }
     }
 
-    
 }

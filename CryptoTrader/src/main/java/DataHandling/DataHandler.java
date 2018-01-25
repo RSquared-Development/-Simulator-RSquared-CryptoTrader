@@ -6,7 +6,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
+
+import static java.lang.System.out;
 
 public class DataHandler {
 
@@ -27,6 +30,8 @@ public class DataHandler {
             while (chop.hasNextLine()){
                 accounts.add(chop.nextLine());
             }
+
+
 
             //find and delete the line with the current settings
             //since we know the first word of each line will be the username, we can find it with that
@@ -66,6 +71,7 @@ public class DataHandler {
                 accounts.add(chop.nextLine());
             }
 
+
             //find spot of account
             int spot = 0;
             spot = getSpot(username, accounts, spot);
@@ -86,6 +92,7 @@ public class DataHandler {
     private static int getSpot(String username, ArrayList<String> accounts, int spot) {
         for (String account : accounts) {
             String[] words = account.split("  ,  ");
+            out.println(Arrays.toString(words));
             if (words[0].equals(Crypt.encrypt(username))) {
                 break;
             }else {
