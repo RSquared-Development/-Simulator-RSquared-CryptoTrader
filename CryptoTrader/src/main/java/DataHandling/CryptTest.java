@@ -7,9 +7,9 @@ public class CryptTest {
         //Enter string to test here
         String TEST_STRING = "rocketrice";
 
-        String enc = Crypt.encrypt(TEST_STRING);
+        String enc = Crypt.encrypt64(TEST_STRING);
         System.out.println("Unencoded: "+TEST_STRING +"\n" +
                             "Encoded: " + enc +"\n" +
-                            "Decoded: " + Crypt.decrypt(enc));
+                            "Decoded: " + Crypt.decrypt64(enc));
     }
 }

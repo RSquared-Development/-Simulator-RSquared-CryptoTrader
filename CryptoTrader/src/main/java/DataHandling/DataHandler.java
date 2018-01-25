@@ -17,7 +17,7 @@ public class DataHandler {
         //each account will have a line in the account.dat file to store their data
         //their account settings will be seperated by "  ,  ": two spaces , two spaces
         //last 2 characters of line will be \n obviously, but that will be added at the end
-        String line = Crypt.encrypt(username) + "  ,  " + Crypt.encrypt(password) + "  ,  " + Crypt.encrypt(binanceKey) + "  ,  " + Crypt.encrypt(binanceSecret);
+        String line = Crypt.encrypt64(username) + "  ,  " + Crypt.encrypt64(password) + "  ,  " + Crypt.encrypt64(binanceKey) + "  ,  " + Crypt.encrypt64(binanceSecret);
 
 
         //find and delete the line with the current settings
@@ -80,7 +80,7 @@ public class DataHandler {
             String[] encrypted = accounts.get(spot).split("  ,  ");
             String[] decrypted = new String[encrypted.length];
             for (int i = 0; i<encrypted.length;i++){
-                decrypted[i] = Crypt.decrypt(encrypted[i]);
+                decrypted[i] = Crypt.decrypt64(encrypted[i]);
             }
 
             return decrypted;
@@ -93,7 +93,7 @@ public class DataHandler {
         for (String account : accounts) {
             String[] words = account.split("  ,  ");
             out.println(Arrays.toString(words));
-            if (words[0].equals(Crypt.encrypt(username))) {
+            if (words[0].equals(Crypt.encrypt64(username))) {
                 break;
             }else {
                 spot++;
