@@ -47,10 +47,10 @@ public class GUITest {
     private static boolean stop = true;
 
     //coins
-    private Bitcoin btc = new Bitcoin();
-    private Cardano ada = new Cardano(username);
-    private BinanceCoin bnb = new BinanceCoin();
-    private Litecoin ltc = new Litecoin(username);
+    private static Bitcoin btc;
+    private static Cardano ada;
+    private static BinanceCoin bnb;
+    private static Litecoin ltc;
 
     //windows
     static CurrencySettings cs;
@@ -58,17 +58,21 @@ public class GUITest {
     static GUITest gs;
 
     static void init() throws BinanceApiException, CryptoTraderException, IOException {
-        cs = new CurrencySettings();
-        as = new Account();
-        gs = new GUITest();
-    }
-
-    public GUITest() throws BinanceApiException, CryptoTraderException, IOException {
-
 
         //TESTING WITH THESE VARS
         //@TODO when login is finished, get rid of these
         username = "rocketrice";
+        cs = new CurrencySettings();
+        as = new Account();
+        gs = new GUITest();
+        btc = new Bitcoin();
+        ada = new Cardano(username);
+        bnb = new BinanceCoin();
+        ltc = new Litecoin(username);
+
+    }
+
+    public GUITest() throws BinanceApiException, CryptoTraderException, IOException {
 
         //instaiate vars
         page = "home";

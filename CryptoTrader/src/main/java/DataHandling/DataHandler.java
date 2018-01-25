@@ -90,9 +90,12 @@ public class DataHandler {
     }
 
     private static int getSpot(String username, ArrayList<String> accounts, int spot) {
+
         for (String account : accounts) {
             String[] words = account.split("  ,  ");
+
             out.println(Arrays.toString(words));
+            out.println(username);
             if (words[0].equals(Crypt.encrypt64(username))) {
                 break;
             }else {
