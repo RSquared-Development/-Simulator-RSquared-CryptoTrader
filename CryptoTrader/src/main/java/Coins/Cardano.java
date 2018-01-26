@@ -2,7 +2,12 @@ package Coins;
 
 import DataHandling.BinanceAdapters.BinancePriceDataAccessor;
 import DataHandling.DataHandler;
+import Gui.GUITest;
 import org.knowm.xchange.currency.Currency;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Writer;
 
 import static java.lang.System.out;
 
@@ -73,17 +78,30 @@ public class Cardano {
         try {
             prevWorth = currWorth;
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr).doubleValue();
+            out.println("\n\n\n Potential buy = " + potentialBuy);
+            out.println("Potential Sell = " + potentialSell);
 
             //potential buy and the price is up
             if (potentialBuy && currWorth > prevWorth){
-                trader.buy("ada", .25);
-                amount += .25;
+                double buy = (GUITest.amountBTC*.25)/(BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue());
+                trader.buy("ada", buy);
+                amount += buy;
+                GUITest.amountBTC-= GUITest.amountBTC*.25;
+                out.println("AmountBTC: "+GUITest.amountBTC);
+                Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+                fw.append("\nAmountBTC: "+GUITest.amountBTC);
+                fw.close();
                 potentialBuy = false;
                 return;
             }
             //potential sell and the price is down
-            if (potentialSell && currWorth < prevWorth && amount > 0){
+            else if (potentialSell && currWorth < prevWorth && amount > 0){
                 trader.sell("ada", amount);
+                GUITest.amountBTC+=BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*amount;
+                out.println("AmountBTC: "+GUITest.amountBTC);
+                Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+                fw.append("\nAmountBTC: "+GUITest.amountBTC);
+                fw.close();
                 amount = 0;
                 potentialSell = false;
                 return;
@@ -94,7 +112,7 @@ public class Cardano {
                 return;
             }
             //price is down
-            if (currWorth < prevWorth){
+            else if (currWorth < prevWorth){
                 potentialBuy = true;
             }
         } catch (Exception e){

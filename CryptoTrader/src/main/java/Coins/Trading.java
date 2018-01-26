@@ -1,6 +1,11 @@
 package Coins;
 
+import DataHandling.BinanceAdapters.BinancePriceDataAccessor;
 import org.knowm.xchange.currency.Currency;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Writer;
 
 import static java.lang.System.out;
 
@@ -16,7 +21,12 @@ public class Trading {
     public static boolean buy(String currency, double quantity){
         //@TODO put in the actual buy commands
         try {
-            out.println("[+] I just bought " + quantity + " " + currency);
+            Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+            String output = "[+] I just bought " + quantity + " " + currency + " for "
+                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*quantity + " BTC";
+            out.println(output);
+            fw.append("\n"+output);
+            fw.close();
             return true;
         } catch (Exception e) {
             //failed buy attempt
@@ -28,7 +38,12 @@ public class Trading {
     public static boolean sell(String currency, double quantity){
         //@TODO put in the actual buy commands
         try {
-            out.println("[+] I just sold " + quantity + " " + currency);
+            String output = ("[+] I just sold " + quantity + " " + currency
+                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*quantity + " BTC");
+            out.println(output);
+            Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+            fw.append("\n"+output);
+            fw.close();
             return true;
         } catch (Exception e) {
             //failed sell attempt
