@@ -23,7 +23,8 @@ public class Cardano {
     private double buyPrice = 0;
 
     private final Currency curr = Currency.ADA;
-    private final double THRESHHOLD = .01;
+    private final double TOP_THRESHHOLD = .01;
+    private final double BOTTOM_THRESHHOLD = .5;
 
     private String API_KEY;
     private String API_SECRET;
@@ -85,7 +86,7 @@ public class Cardano {
             //we have skin in the game
             if (buyPrice > 0){
                 //if we are at threshold sell
-                if ((value > buyPrice+(buyPrice*THRESHHOLD)) || (value < buyPrice+(buyPrice*THRESHHOLD))){
+                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD)) || (value < buyPrice+(buyPrice*BOTTOM_THRESHHOLD))){
                     sell(value);
                 }
                 return;
