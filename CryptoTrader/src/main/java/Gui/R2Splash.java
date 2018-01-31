@@ -13,7 +13,7 @@ public class R2Splash {
         GridLayout test   = new GridLayout(3,3);
         JLabel iconHolder = new JLabel("", new ImageIcon("RSquared_Logo.png"), SwingConstants.CENTER);
         JLabel programText = new JLabel("RSquared Cryptocurrency Trading App");
-        programText.setFont(new Font(programText.getFont(), Font.PLAIN, 36));
+        programText.setFont(new Font("ARIAL", Font.PLAIN, 36));
         double hWidth  = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
         double hHeight = Toolkit.getDefaultToolkit().getScreenSize().getHeight();
         JPanel test2 = new JPanel();

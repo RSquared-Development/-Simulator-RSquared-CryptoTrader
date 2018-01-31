@@ -106,7 +106,7 @@ public class Cardano {
                 potentialBuy = false;
                 return;
             }
-            
+
             //price is down
             else if (currWorth < prevWorth){
                 potentialBuy = true;
