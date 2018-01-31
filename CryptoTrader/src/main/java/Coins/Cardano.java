@@ -7,6 +7,7 @@ import org.knowm.xchange.currency.Currency;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.Writer;
 
 import static java.lang.System.out;
@@ -17,11 +18,12 @@ public class Cardano {
     private double amount;
 
     private boolean potentialBuy = false;
-    private boolean potentialSell = false;
     private double prevWorth;
     private double currWorth;
+    private double buyPrice = 0;
 
     private final Currency curr = Currency.ADA;
+    private final double THRESHHOLD = .01;
 
     private String API_KEY;
     private String API_SECRET;
@@ -64,7 +66,6 @@ public class Cardano {
     public void initTrade(){
         getAmount();
         potentialBuy = false;
-        potentialSell = false;
 
         try {
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr).doubleValue();
@@ -79,13 +80,24 @@ public class Cardano {
             prevWorth = currWorth;
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr).doubleValue();
             out.println("\n\n\n Potential buy = " + potentialBuy);
-            out.println("Potential Sell = " + potentialSell);
+            double value = BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue();
+
+            //we have skin in the game
+            if (buyPrice > 0){
+                //if we are at threshold sell
+                if ((value > buyPrice+(buyPrice*THRESHHOLD)) || (value < buyPrice+(buyPrice*THRESHHOLD))){
+                    sell(value);
+                }
+                return;
+            }
+
 
             //potential buy and the price is up
             if (potentialBuy && currWorth > prevWorth){
-                double buy = (GUITest.amountBTC*.25)/(BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue());
+                double buy = (GUITest.amountBTC*.25)/(value);
                 trader.buy("ada", buy);
                 amount += buy;
+                buyPrice = value;
                 GUITest.amountBTC-= GUITest.amountBTC*.25;
                 out.println("AmountBTC: "+GUITest.amountBTC);
                 Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
@@ -94,23 +106,7 @@ public class Cardano {
                 potentialBuy = false;
                 return;
             }
-            //potential sell and the price is down
-            else if (potentialSell && currWorth < prevWorth && amount > 0){
-                trader.sell("ada", amount);
-                GUITest.amountBTC+=BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*amount;
-                out.println("AmountBTC: "+GUITest.amountBTC);
-                Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
-                fw.append("\nAmountBTC: "+GUITest.amountBTC);
-                fw.close();
-                amount = 0;
-                potentialSell = false;
-                return;
-            }
-            //price is up
-            if (currWorth > prevWorth){
-                potentialSell = true;
-                return;
-            }
+            
             //price is down
             else if (currWorth < prevWorth){
                 potentialBuy = true;
@@ -121,5 +117,21 @@ public class Cardano {
     }
     public void stopTrading(){
         //@TODO tell it to stop trading
+    }
+
+    private void sell(double value){
+        trader.sell("ada", amount);
+        GUITest.amountBTC+=value*amount;
+        out.println("AmountBTC: "+GUITest.amountBTC);
+        Writer fw = null;
+        try {
+            fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+            fw.append("\nAmountBTC: "+GUITest.amountBTC);
+            fw.close();
+            amount = 0;
+            buyPrice = 0;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
