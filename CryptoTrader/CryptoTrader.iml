@@ -12,6 +12,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.tensorflow:tensorflow:1.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.tensorflow:libtensorflow:1.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.tensorflow:libtensorflow_jni:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.knowm.xchange:xchange-bitstamp:4.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.knowm.xchange:xchange-core:4.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.mmazi:rescu:2.0.1" level="project" />
