@@ -202,13 +202,16 @@ public class GUITest {
         });
     }
 
-    public static void main(String[] args) throws BinanceApiException, CryptoTraderException, IOException {
+    public static void main(String[] args) throws BinanceApiException, CryptoTraderException, IOException, InterruptedException {
+        R2Splash.showSplash();
         init();
         frame = new JFrame("RSqaured");
         frame.setIconImage(favicon);
         frame.setContentPane(new GUITest().Outter);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        Thread.sleep(3000);
+        R2Splash.hideSplash();
         frame.setVisible(true);
     }
 
