@@ -86,7 +86,7 @@ public class Cardano {
             //we have skin in the game
             if (buyPrice > 0){
                 //if we are at threshold sell
-                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD)) || (value < buyPrice+(buyPrice*BOTTOM_THRESHHOLD))){
+                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD))){
                     sell(value);
                 }
                 return;

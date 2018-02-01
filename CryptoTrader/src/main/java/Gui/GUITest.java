@@ -166,10 +166,10 @@ public class GUITest {
                 cs.litecoinCheckBox.setEnabled(false);
 
                 // enable the stop button so you can stop it of course
-
                 button_Stop.setEnabled(true);
+
                 double startTime = (double) System.currentTimeMillis();
-                double threshold = 60000;
+                double threshold = 30000;
 
                 try {
                     Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
