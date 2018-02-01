@@ -10,26 +10,32 @@ public class R2Splash {
 
 
     public static void showSplash() {
-        GridLayout test   = new GridLayout(3,3);
-        JLabel iconHolder = new JLabel("", new ImageIcon("RSquared_Logo.png"), SwingConstants.CENTER);
-        JLabel programText = new JLabel("RSquared Cryptocurrency Trading App");
-        iconHolder.setVerticalAlignment(JLabel.CENTER);
-        programText.setVerticalAlignment(JLabel.CENTER);
-        programText.setFont(new Font("ARIAL", Font.PLAIN, 36));
-        double hWidth  = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
-        double hHeight = Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-        JPanel test2 = new JPanel();
+
+        JPanel content = new JPanel()
+        {
+            public void paintComponent(Graphics g)
+            {
+                Image img = new ImageIcon("Splash image.png").getImage();
+                Dimension size = new Dimension(img.getWidth(null), img.getHeight(null));
+                setPreferredSize(size);
+                setMinimumSize(size);
+                setMaximumSize(size);
+                setSize(size);
+                setLayout(null);
+                g.drawImage(img, 0, 0, null);
+            }
+        };
         favicon = Toolkit.getDefaultToolkit().getImage("RSquared_Logo.png");
-        test2.add(iconHolder);
-        test2.add(programText);
-        splashScreen.setContentPane(test2);
+        double hWidth = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+        double hHeight = Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+        splashScreen.setContentPane(content);
 
         //favicon = Toolkit.getDefaultToolkit().getImage("RSquared_Logo.png");
         //splashScreen.getContentPane().add( iconHolder);
         //splashScreen.getContentPane().add(new JLabel("RSquared Cryptocurrency Trading App"));
         //splashScreen.getContentPane().add(new JLabel("Automate your trades today",SwingConstants.));
         //splashScreen.getContentPane().add(new JLabel("RESTRICTED ALPHA"), SwingConstants.RIGHT);
-        splashScreen.setBounds(((int)hWidth)/2-360, (((int)hHeight-100)/2), 720, 200);
+        splashScreen.setBounds(((int)hWidth)/2-(240), (((int)hHeight)/2-160), 480, 320);
         splashScreen.setIconImage(favicon);
         splashScreen.setVisible(true);
 
