@@ -33,7 +33,7 @@ public class BinancePriceDataAccessor {
         return null;
 
     }
-    public static BigDecimal getValueInBTC(Currency c) throws IOException {
+    public static double getValueInBTC(Currency c) throws IOException {
 
         CurrencyPair pair= new CurrencyPair(c,Currency.BTC);
         // This line creates a way to interface with binance
@@ -48,10 +48,10 @@ public class BinancePriceDataAccessor {
         // This will get the prices from the exchange for the given currencyPair
         // Can throw IOException
         OrderBook binanceOrderBook      = binanceMDS.getOrderBook(pair);
+        System.out.println("\n\n" + binanceOrderBook.getAsks().get(binanceOrderBook.getAsks().size()-1).getLimitPrice().doubleValue() + "\n\n");
 
 
-
-        return binanceOrderBook.getAsks().get(binanceOrderBook.getAsks().size()-1).getLimitPrice();
+        return binanceOrderBook.getAsks().get(binanceOrderBook.getAsks().size()-1).getLimitPrice().doubleValue();
 
     }
 

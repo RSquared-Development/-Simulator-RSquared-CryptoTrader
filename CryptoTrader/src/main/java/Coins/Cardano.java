@@ -69,7 +69,7 @@ public class Cardano {
         potentialBuy = false;
 
         try {
-            currWorth = BinancePriceDataAccessor.getValueInBTC(curr).doubleValue();
+            currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
         } catch (Exception e){
             out.println(e);
         }
@@ -79,9 +79,9 @@ public class Cardano {
         //@TODO fill in the algorithm here
         try {
             prevWorth = currWorth;
-            currWorth = BinancePriceDataAccessor.getValueInBTC(curr).doubleValue();
+            currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
             out.println("\n\n\n Potential buy = " + potentialBuy);
-            double value = BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue();
+            double value = BinancePriceDataAccessor.getValueInBTC(Currency.ADA);
 
             //we have skin in the game
             if (buyPrice > 0){

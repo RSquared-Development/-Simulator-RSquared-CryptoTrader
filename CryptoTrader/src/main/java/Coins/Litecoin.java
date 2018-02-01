@@ -53,10 +53,10 @@ public class Litecoin {
         Boolean potentialSell = false;
 
         try {
-            Double curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC).doubleValue();
+            Double curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC);
             while (true){
                 Double oldVal = curVal;
-                curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC).doubleValue();
+                curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC);
                 while (true) {
                     if (oldVal < curVal) {
                         //worth went up

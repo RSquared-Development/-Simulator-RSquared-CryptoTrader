@@ -23,7 +23,7 @@ public class Trading {
         try {
             Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
             String output = "[+] I just bought " + quantity + " " + currency + " for "
-                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*quantity + " BTC";
+                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA)*quantity + " BTC";
             out.println(output);
             fw.append("\n"+output);
             fw.close();
@@ -39,7 +39,7 @@ public class Trading {
         //@TODO put in the actual buy commands
         try {
             String output = ("[+] I just sold " + quantity + " " + currency
-                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA).doubleValue()*quantity + " BTC");
+                    + BinancePriceDataAccessor.getValueInBTC(Currency.ADA)*quantity + " BTC");
             out.println(output);
             Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
             fw.append("\n"+output);
