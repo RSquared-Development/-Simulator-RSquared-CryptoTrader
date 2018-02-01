@@ -35,7 +35,7 @@ public class R2Splash {
         //splashScreen.getContentPane().add(new JLabel("RSquared Cryptocurrency Trading App"));
         //splashScreen.getContentPane().add(new JLabel("Automate your trades today",SwingConstants.));
         //splashScreen.getContentPane().add(new JLabel("RESTRICTED ALPHA"), SwingConstants.RIGHT);
-        splashScreen.setBounds(((int)hWidth)/2-(960+240), (((int)hHeight)/2-160), 480, 320);
+        splashScreen.setBounds(((int)hWidth)/2-(240), (((int)hHeight)/2-160), 480, 320);
         splashScreen.setIconImage(favicon);
         splashScreen.setVisible(true);
 
