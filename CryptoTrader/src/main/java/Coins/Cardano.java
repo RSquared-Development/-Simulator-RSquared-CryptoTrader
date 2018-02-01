@@ -96,7 +96,7 @@ public class Cardano {
             //potential buy and the price is up
             if (potentialBuy && currWorth > prevWorth){
                 double buy = (GUITest.amountBTC*.25)/(value);
-                trader.buy("ada", buy);
+                trader.buy("ada", buy, value);
                 amount += buy;
                 buyPrice = value;
                 GUITest.amountBTC-= GUITest.amountBTC*.25;
@@ -118,10 +118,15 @@ public class Cardano {
     }
     public void stopTrading(){
         //@TODO tell it to stop trading
+        try {
+            sell(BinancePriceDataAccessor.getValueInBTC(Currency.ADA));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void sell(double value){
-        trader.sell("ada", amount);
+        trader.sell("ada", amount, value);
         GUITest.amountBTC+=value*amount;
         out.println("AmountBTC: "+GUITest.amountBTC);
         Writer fw = null;

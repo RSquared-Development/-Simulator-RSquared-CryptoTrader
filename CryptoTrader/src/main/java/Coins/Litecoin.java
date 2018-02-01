@@ -2,20 +2,34 @@ package Coins;
 
 import DataHandling.BinanceAdapters.BinancePriceDataAccessor;
 import DataHandling.DataHandler;
+import Gui.GUITest;
 import org.knowm.xchange.currency.Currency;
 
 import javax.xml.crypto.Data;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 
 import static java.lang.System.out;
 
 public class Litecoin {
-    boolean trading;
-    String stratedgy;
-    double amount;
+    private boolean trading;
+    private String stratedgy;
+    private double amount;
+
+    private boolean potentialBuy = false;
+    private double prevWorth;
+    private double currWorth;
+    private double buyPrice = 0;
+
+    private final Currency curr = Currency.LTC;
+    private final double TOP_THRESHHOLD = .01;
+    private final double BOTTOM_THRESHHOLD = .5;
 
     private String API_KEY;
     private String API_SECRET;
+    Trading trader;
 
     public Litecoin(String username){
         stratedgy = null;
@@ -23,14 +37,15 @@ public class Litecoin {
         amount = 0;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
+        trader = new Trading(API_KEY, API_SECRET);
     }
 
     public Litecoin(String username, String stratedgy){
         this.stratedgy = stratedgy;
         trading = false;
-        amount = 0;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
+        trader = new Trading(API_KEY, API_SECRET);
     }
 
     public String getStratedgy() {
@@ -46,37 +61,84 @@ public class Litecoin {
         return amount;
     }
 
-    public void startTrading(){
-        Trading trader = new Trading(API_KEY, API_SECRET);
+    public Currency getCurr() {
+        return curr;
+    }
+
+    public void initTrade(){
         getAmount();
-        Boolean potentialBuy = false;
-        Boolean potentialSell = false;
+        potentialBuy = false;
 
         try {
-            Double curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC);
-            while (true){
-                Double oldVal = curVal;
-                curVal = BinancePriceDataAccessor.getValueInBTC(Currency.LTC);
-                while (true) {
-                    if (oldVal < curVal) {
-                        //worth went up
-
-                        //but it just went down so we are buying
-                        if (potentialBuy){
-                            potentialBuy = false;
-                            trader.buy("LTC", 1);
-                        } else{
-
-                        }
-                    }
-                }
-            }
-        } catch (IOException e){
+            currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
+        } catch (Exception e){
             out.println(e);
         }
+    }
 
+    public void checkTrade(){
+        //@TODO fill in the algorithm here
+        try {
+            prevWorth = currWorth;
+            currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
+            out.println("\n\n\n Potential buy = " + potentialBuy);
+            double value = BinancePriceDataAccessor.getValueInBTC(Currency.LTC);
+
+            //we have skin in the game
+            if (buyPrice > 0){
+                //if we are at threshold sell
+                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD))){
+                    sell(value);
+                }
+                return;
+            }
+
+
+            //potential buy and the price is up
+            if (potentialBuy && currWorth > prevWorth){
+                double buy = (GUITest.amountBTC*.25)/(value);
+                trader.buy("ltc", buy, value);
+                amount += buy;
+                buyPrice = value;
+                GUITest.amountBTC-= GUITest.amountBTC*.25;
+                out.println("AmountBTC: "+GUITest.amountBTC);
+                Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+                fw.append("\nAmountBTC: "+GUITest.amountBTC);
+                fw.close();
+                potentialBuy = false;
+                return;
+            }
+
+            //price is down
+            else if (currWorth < prevWorth){
+                potentialBuy = true;
+            }
+        } catch (Exception e){
+            out.println(e);
+        }
     }
     public void stopTrading(){
         //@TODO tell it to stop trading
+        try {
+            sell(BinancePriceDataAccessor.getValueInBTC(Currency.LTC));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void sell(double value){
+        trader.sell("ltc", amount, value);
+        GUITest.amountBTC+=value*amount;
+        out.println("AmountBTC: "+GUITest.amountBTC);
+        Writer fw = null;
+        try {
+            fw = new BufferedWriter(new FileWriter("TestingData.log", true));
+            fw.append("\nAmountBTC: "+GUITest.amountBTC);
+            fw.close();
+            amount = 0;
+            buyPrice = 0;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

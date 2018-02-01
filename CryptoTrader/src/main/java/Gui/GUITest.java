@@ -75,7 +75,7 @@ public class GUITest {
         gs = new GUITest();
         btc = new Bitcoin();
         ada = new Cardano(username);
-        bnb = new BinanceCoin();
+        bnb = new BinanceCoin(username);
         ltc = new Litecoin(username);
         amountBTC = 1;
     }
@@ -184,16 +184,16 @@ public class GUITest {
                     while (!stop) {
                         if (((double) System.currentTimeMillis()) - startTime >= threshold) {
                             if (tradeBTC) {
-
+                                out.println("dont do btc plez");
                             }
                             if (tradeADA) {
                                 ada.checkTrade();
                             }
                             if (tradeBNB) {
-
+                                bnb.checkTrade();
                             }
                             if (tradeLTC) {
-
+                                ltc.checkTrade();
                             }
                             startTime = (double) System.currentTimeMillis();
                         }
