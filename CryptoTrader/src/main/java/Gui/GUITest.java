@@ -176,7 +176,7 @@ public class GUITest {
                 button_Stop.setEnabled(true);
 
                 double startTime = (double) System.currentTimeMillis();
-                double threshold = 30000;
+                double threshold = 300000;
 
                 try {
                     Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));

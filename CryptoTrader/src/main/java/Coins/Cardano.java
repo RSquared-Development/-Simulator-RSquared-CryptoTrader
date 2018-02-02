@@ -81,20 +81,11 @@ public class Cardano {
             prevWorth = currWorth;
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
             out.println("\n\n\n Potential buy = " + potentialBuy);
-            double value = BinancePriceDataAccessor.getValueInBTC(Currency.ADA);
+            double value = currWorth;
 
-            //we have skin in the game
-            if (buyPrice > 0){
-                //if we are at threshold sell
-                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD))){
-                    sell(value);
-                }
-                return;
-            }
+            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr);
 
-
-            //potential buy and the price is up
-            if (potentialBuy && currWorth > prevWorth){
+            if (wat.equals("buy")){
                 double buy = (GUITest.amountBTC*.25)/(value);
                 trader.buy("ada", buy, value);
                 amount += buy;
@@ -106,14 +97,11 @@ public class Cardano {
                 fw.close();
                 potentialBuy = false;
                 return;
-            }
-
-            //price is down
-            else if (currWorth < prevWorth){
-                potentialBuy = true;
+            } else if (wat.equals("sell")){
+                sell(value);
             }
         } catch (Exception e){
-            out.println(e);
+            out.println("ERROR");
         }
     }
     public void stopTrading(){
@@ -126,6 +114,9 @@ public class Cardano {
     }
 
     private void sell(double value){
+        //don't sell if amount = 0
+        if (amount == 0) return;
+
         trader.sell("ada", amount, value);
         GUITest.amountBTC+=value*amount;
         out.println("AmountBTC: "+GUITest.amountBTC);

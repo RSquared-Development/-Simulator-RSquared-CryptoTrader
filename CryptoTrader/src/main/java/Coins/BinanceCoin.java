@@ -13,7 +13,6 @@ import java.io.Writer;
 import static java.lang.System.out;
 
 public class BinanceCoin {
-    private boolean trading;
     private String stratedgy;
     private double amount;
 
@@ -23,8 +22,6 @@ public class BinanceCoin {
     private double buyPrice = 0;
 
     private final Currency curr = Currency.BNB;
-    private final double TOP_THRESHHOLD = .01;
-    private final double BOTTOM_THRESHHOLD = .5;
 
     private String API_KEY;
     private String API_SECRET;
@@ -32,7 +29,6 @@ public class BinanceCoin {
 
     public BinanceCoin(String username){
         stratedgy = null;
-        trading = false;
         amount = 0;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
@@ -41,7 +37,6 @@ public class BinanceCoin {
 
     public BinanceCoin(String username, String stratedgy){
         this.stratedgy = stratedgy;
-        trading = false;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
         trader = new Trading(API_KEY, API_SECRET);
@@ -77,24 +72,16 @@ public class BinanceCoin {
 
     public void checkTrade(){
         //@TODO fill in the algorithm here
+
         try {
             prevWorth = currWorth;
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
             out.println("\n\n\n Potential buy = " + potentialBuy);
-            double value = BinancePriceDataAccessor.getValueInBTC(Currency.BNB);
+            double value = currWorth;
 
-            //we have skin in the game
-            if (buyPrice > 0){
-                //if we are at threshold sell
-                if ((value > buyPrice+(buyPrice*TOP_THRESHHOLD))){
-                    sell(value);
-                }
-                return;
-            }
+            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr);
 
-
-            //potential buy and the price is up
-            if (potentialBuy && currWorth > prevWorth){
+            if (wat.equals("buy")){
                 double buy = (GUITest.amountBTC*.25)/(value);
                 trader.buy("bnb", buy, value);
                 amount += buy;
@@ -106,15 +93,14 @@ public class BinanceCoin {
                 fw.close();
                 potentialBuy = false;
                 return;
-            }
-
-            //price is down
-            else if (currWorth < prevWorth){
-                potentialBuy = true;
+            } else if (wat.equals("sell")){
+                sell(value);
             }
         } catch (Exception e){
-            out.println(e);
+            out.println("ERROR");
         }
+
+
     }
     public void stopTrading(){
         //@TODO tell it to stop trading
@@ -126,6 +112,9 @@ public class BinanceCoin {
     }
 
     private void sell(double value){
+        //don't sell if amount = 0
+        if (amount == 0) return;
+
         trader.sell("bnb", amount, value);
         GUITest.amountBTC+=value*amount;
         out.println("AmountBTC: "+GUITest.amountBTC);
