@@ -5,8 +5,12 @@ import DataHandling.Encryption.Crypt;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.mindrot.jbcrypt.BCrypt;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.security.KeyPair;
@@ -22,7 +26,7 @@ public class UserInformationHandler {
 
         jArr.add("Username: " + u);
         jArr.add("Password: " + BCrypt.hashpw(p, BCrypt.gensalt(12)));
-        jArr.add("Api; "      + new String(Crypt.encryptRSA(keys.getPublic(),a)));
+        jArr.add("Api: "      + new String(Crypt.encryptRSA(keys.getPublic(),a)));
         jArr.add("Secret: "   + new String(Crypt.encryptRSA(keys.getPublic(),pa)));
         jArr.add("pKey: "     + Crypt.encrypt64(keys.getPublic().toString()));
         jArr.add("prKey: "    + Crypt.encrypt64(keys.getPrivate().toString()));
@@ -43,25 +47,30 @@ public class UserInformationHandler {
 
 
     }
-    public static boolean checkUserInformation(String u, String p) {
+    public static boolean checkUserInformation(String u, String p) throws Exception {
 
-        JsonParser jp = new JsonParser();
+        JSONParser parser       = new JSONParser();
+        try{
 
-        try {
+            Object     object   = parser.parse(new FileReader("account.json"));
+            JSONObject user     = (JSONObject) object;
+            JSONArray  userInfo = (JSONArray) user.get("User");
 
-            Object     o  = jp.parse(new FileReader("account.json"));
-            JsonObject jo = jp.parse(new FileReader("account.json"));
-            JsonArray  ja = jo.getAsJsonArray("User");
 
-            System.out.println(un);
-
+            // Simplest way to check user information
+            // 1.) Check Username and if they don't match return false
+            // 2.) Check Password and return if they do or do not match
+            if(!(userInfo.get(0).toString().split(": ")[1].equals(u))) return false;
+            else return(BCrypt.checkpw(Crypt.decrypt64(p),userInfo.get(1).toString().split(": ")[1]));
         } catch (Exception e) {
 
-            System.out.println("something went wrong :/\n" + e.toString());
+            System.out.println("Something went wrong :/\n" + e.toString());
 
         }
-        return false;
 
+        return false;
     }
+
+    //public static
 
 }
