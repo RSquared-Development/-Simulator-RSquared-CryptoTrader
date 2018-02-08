@@ -25,8 +25,8 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16729220"/>
-          <font name="Verdana" size="30" style="0"/>
+          <background color="-16747077"/>
+          <font name="Khmer OS" size="30" style="0"/>
           <foreground color="-16777216"/>
           <text value="Account"/>
         </properties>
@@ -38,8 +38,8 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16750009"/>
-          <font name="Verdana" size="30" style="0"/>
+          <background color="-16752483"/>
+          <font name="Khmer OS" size="30" style="0"/>
           <foreground color="-16777216"/>
           <text value="Home"/>
         </properties>
@@ -51,8 +51,8 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16729220"/>
-          <font name="Verdana" size="30" style="0"/>
+          <background color="-16747077"/>
+          <font name="Khmer OS" size="30" style="0"/>
           <foreground color="-16777216"/>
           <text value="Settings"/>
         </properties>
@@ -87,7 +87,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <font name="Verdana" size="20"/>
+                  <font name="Khmer OS" size="20"/>
                 </properties>
               </component>
               <component id="39712" class="javax.swing.JButton" binding="button_Stop">
@@ -96,7 +96,7 @@
                 </constraints>
                 <properties>
                   <background color="-16747077"/>
-                  <font name="Verdana" size="30"/>
+                  <font name="Khmer OS" size="30"/>
                   <foreground color="-16777216"/>
                   <text value="Stop"/>
                 </properties>
@@ -107,7 +107,7 @@
                 </constraints>
                 <properties>
                   <background color="-16747077"/>
-                  <font name="Verdana" size="30"/>
+                  <font name="Khmer OS" size="30"/>
                   <foreground color="-16777216"/>
                   <text value="Start"/>
                 </properties>
@@ -119,8 +119,9 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <background color="-9079691"/>
                   <editable value="false"/>
-                  <font name="Verdana" size="48" style="1"/>
+                  <font name="Khmer OS" size="48" style="1"/>
                   <text value="Account Net Worth: 17.46578 BTC"/>
                 </properties>
               </component>
