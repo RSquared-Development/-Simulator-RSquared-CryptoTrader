@@ -21,6 +21,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -70,7 +71,15 @@ public class BinancePriceDataAccessor {
         File name = new File("lastPrice.json");
 
         // Check to see if the file is there, if it is not there, it will report a zero percent change and write current prices (in BTC) into it
-        if(!name.exists()) generateJsonFile();
+        if(!name.exists()) {
+            for(Currency c: CurrencyInformation.SUPPORTED_CURRENCIES) {
+                
+                deltas.put(c.getSymbol(), 0.0);
+                System.out.println(c.getSymbol());
+                
+            }
+            generateJsonFile();
+        }
         else {
 
 
@@ -80,18 +89,31 @@ public class BinancePriceDataAccessor {
             ArrayList<Double> oldVals = new ArrayList();
             ArrayList<Integer> index  = new ArrayList();
 
+            System.out.println(jObj.toString());
 
             int j = 0;
             for(Currency i : CurrencyInformation.SUPPORTED_CURRENCIES) {
 
-                if(jObj.has(i.getSymbol())) oldVals.add(((JsonArray)jObj.get(i.getSymbol())).get(0).getAsDouble());
-                index.add(j);
-                j++;
+                JsonArray temp = (JsonArray)jObj.get(i.getSymbol());
+                
+                if(jObj.has(i.getSymbol()) && !i.getSymbol().equals("BTC")) {
+                    System.out.println(i.getSymbol() + ": " + Double.parseDouble(temp.get(0).toString()));
+                    oldVals.add(Double.parseDouble(temp.get(0).toString()));
+                    index.add(j);
+                    j++;
+                }
+                
 
             }
+            System.out.println(oldVals);
+            System.out.println("\n\n--END--\n\n");
             for (int i = 0; i < oldVals.size(); i++) {
 
-                deltas.put(CurrencyInformation.SUPPORTED_CURRENCIES[index.get(i)].getSymbol(), getDelta(oldVals, CurrencyInformation.SUPPORTED_CURRENCIES[index.get(i)], i));
+                System.out.println(getSymbol(i,index));
+                if(getSymbol(i,index).equals("XLT")) deltas.put(getSymbol(i, index), getDelta(oldVals, Currency.LTC, i));
+                if(!getSymbol(i,index).equals("BTC"))deltas.put(getSymbol(i, index), getDelta(oldVals, CurrencyInformation.SUPPORTED_CURRENCIES[index.get(i)], i));
+                
+                //deltas.put(getSymbol(i, index), 1.0);
 
             }
             name.delete();
@@ -104,9 +126,14 @@ public class BinancePriceDataAccessor {
 
     }
 
+    private static String getSymbol(int i, ArrayList<Integer> index) {
+        //System.out.println(Arrays.toString(CurrencyInformation.SUPPORTED_CURRENCIES[i]));
+        return CurrencyInformation.SUPPORTED_CURRENCIES[i].getSymbol();
+        
+    }
     private static Double getDelta(ArrayList<Double> oldVals, Currency c, int i) throws Exception {
 
-        return (getValueInBTC(c)-oldVals.get(i))/oldVals.get(i);
+        return 1 - Math.abs((getValueInBTC(c)-oldVals.get(i))/oldVals.get(i));
 
     }
 
