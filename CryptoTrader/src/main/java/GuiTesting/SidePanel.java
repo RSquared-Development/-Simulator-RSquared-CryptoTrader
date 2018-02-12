@@ -94,16 +94,22 @@ public class SidePanel extends javax.swing.JPanel {
     private void jButton_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_HomeActionPerformed
         // TODO add your handling code here:
         System.out.println("Button1");
+        boolean[] constant = {true, false, false};
+        MainWindow.setContent(constant);
     }//GEN-LAST:event_jButton_HomeActionPerformed
 
     private void jButton_SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SettingsActionPerformed
         // TODO add your handling code here:
         System.out.println("Button2");
+        boolean[] constant = {false, true, false};
+        MainWindow.setContent(constant);
     }//GEN-LAST:event_jButton_SettingsActionPerformed
 
     private void jButton_AcctSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AcctSettingsActionPerformed
         // TODO add your handling code here:
         System.out.println("Button3");
+        boolean[] constant = {false, false, true};
+        MainWindow.setContent(constant);
     }//GEN-LAST:event_jButton_AcctSettingsActionPerformed
 
 
