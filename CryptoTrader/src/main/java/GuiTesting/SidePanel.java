@@ -27,56 +27,89 @@ public class SidePanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
+        jButton_Home = new javax.swing.JButton();
+        jButton_Settings = new javax.swing.JButton();
+        jButton_AcctSettings = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 102, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        jToggleButton1.setBackground(new java.awt.Color(0, 102, 204));
-        jToggleButton1.setText("jToggleButton1");
-        jToggleButton1.setBorder(null);
-        jToggleButton1.setBorderPainted(false);
-        jToggleButton1.setContentAreaFilled(false);
-        jToggleButton1.setFocusPainted(false);
+        jButton_Home.setBackground(new java.awt.Color(0, 153, 255));
+        jButton_Home.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
+        jButton_Home.setText("Home");
+        jButton_Home.setBorder(null);
+        jButton_Home.setBorderPainted(false);
+        jButton_Home.setContentAreaFilled(false);
+        jButton_Home.setFocusPainted(false);
+        jButton_Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_HomeActionPerformed(evt);
+            }
+        });
 
-        jToggleButton2.setBackground(new java.awt.Color(0, 102, 204));
-        jToggleButton2.setText("jToggleButton1");
-        jToggleButton2.setBorder(null);
-        jToggleButton2.setBorderPainted(false);
-        jToggleButton2.setContentAreaFilled(false);
-        jToggleButton2.setFocusPainted(false);
+        jButton_Settings.setBackground(new java.awt.Color(0, 153, 255));
+        jButton_Settings.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
+        jButton_Settings.setText("Settings");
+        jButton_Settings.setBorder(null);
+        jButton_Settings.setBorderPainted(false);
+        jButton_Settings.setContentAreaFilled(false);
+        jButton_Settings.setFocusPainted(false);
+        jButton_Settings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_SettingsActionPerformed(evt);
+            }
+        });
 
-        jToggleButton3.setBackground(new java.awt.Color(0, 102, 204));
-        jToggleButton3.setText("jToggleButton1");
-        jToggleButton3.setBorder(null);
-        jToggleButton3.setBorderPainted(false);
-        jToggleButton3.setContentAreaFilled(false);
-        jToggleButton3.setFocusPainted(false);
+        jButton_AcctSettings.setBackground(new java.awt.Color(0, 153, 255));
+        jButton_AcctSettings.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
+        jButton_AcctSettings.setText("Account");
+        jButton_AcctSettings.setBorder(null);
+        jButton_AcctSettings.setBorderPainted(false);
+        jButton_AcctSettings.setContentAreaFilled(false);
+        jButton_AcctSettings.setFocusPainted(false);
+        jButton_AcctSettings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_AcctSettingsActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToggleButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-            .addComponent(jToggleButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton_Home, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton_Settings, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton_AcctSettings, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jButton_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_Settings, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
+                .addComponent(jButton_AcctSettings, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_HomeActionPerformed
+        // TODO add your handling code here:
+        System.out.println("Button1");
+    }//GEN-LAST:event_jButton_HomeActionPerformed
+
+    private void jButton_SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SettingsActionPerformed
+        // TODO add your handling code here:
+        System.out.println("Button2");
+    }//GEN-LAST:event_jButton_SettingsActionPerformed
+
+    private void jButton_AcctSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AcctSettingsActionPerformed
+        // TODO add your handling code here:
+        System.out.println("Button3");
+    }//GEN-LAST:event_jButton_AcctSettingsActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
+    private javax.swing.JButton jButton_AcctSettings;
+    private javax.swing.JButton jButton_Home;
+    private javax.swing.JButton jButton_Settings;
     // End of variables declaration//GEN-END:variables
 }

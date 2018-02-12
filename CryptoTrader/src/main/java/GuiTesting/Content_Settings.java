@@ -9,12 +9,12 @@ package GuiTesting;
  *
  * @author rubenr
  */
-public class TopBar extends javax.swing.JPanel {
+public class Content_Settings extends javax.swing.JPanel {
 
     /**
-     * Creates new form TopBar
+     * Creates new form Content_Home
      */
-    public TopBar() {
+    public Content_Settings() {
         initComponents();
     }
 
@@ -26,8 +26,6 @@ public class TopBar extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
-        setBackground(new java.awt.Color(0, 0, 204));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
