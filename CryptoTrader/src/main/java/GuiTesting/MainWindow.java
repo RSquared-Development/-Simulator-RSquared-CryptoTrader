@@ -5,12 +5,15 @@
  */
 package GuiTesting;
 
+import java.awt.Point;
+
 /**
  *
  * @author rubenr
  */
 public class MainWindow extends javax.swing.JFrame {
 
+    static Point compCoords;
     /**
      * Creates new form MainWindow
      */
@@ -76,6 +79,8 @@ public class MainWindow extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
