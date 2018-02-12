@@ -110,9 +110,7 @@ public class MainWindow extends javax.swing.JFrame {
     
     public static void setContent(boolean[] content){
     
-        //home.setVisible(content[0]);
-        settings.setVisible(content[1]);
-        //account.setVisible(content[2]);
+        //s
         
         
     }
