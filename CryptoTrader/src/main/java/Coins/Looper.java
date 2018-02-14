@@ -2,7 +2,6 @@ package Coins;
 
 import Gui.GUITest;
 
-import javax.smartcardio.Card;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.Writer;

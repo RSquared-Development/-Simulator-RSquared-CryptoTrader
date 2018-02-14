@@ -83,7 +83,7 @@ public class Cardano {
             out.println("\n\n\n Potential buy = " + potentialBuy);
             double value = currWorth;
 
-            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr);
+            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr, BinancePriceDataAccessor.getDailyDelta().get("ADA"));
 
             if (wat.equals("buy")){
                 double buy = (GUITest.amountBTC*.25)/(value);

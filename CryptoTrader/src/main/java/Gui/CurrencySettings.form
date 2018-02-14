@@ -65,7 +65,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="ba9f1" binding="content_Home" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="ba9f1" binding="content_Home" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -81,7 +81,7 @@
             <children>
               <component id="ada9" class="javax.swing.JTextField" binding="textField_CurrencySettings">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
                   </grid>
                 </constraints>
@@ -95,47 +95,107 @@
               </component>
               <vspacer id="7ec78">
                 <constraints>
-                  <grid row="1" column="2" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="4" row-span="6" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <component id="13763" class="javax.swing.JCheckBox" binding="bitCoinCheckBox" default-binding="true">
+              <component id="9f5a1" class="javax.swing.JCheckBox" binding="cardanoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="ADA"/>
+                </properties>
+              </component>
+              <component id="767b5" class="javax.swing.JCheckBox" binding="TRXCheckBox" default-binding="true">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-9079691"/>
                   <font name="Khmer OS" size="36" style="0"/>
-                  <text value="BitCoin"/>
+                  <text value="TRX"/>
                 </properties>
               </component>
-              <component id="9f5a1" class="javax.swing.JCheckBox" binding="cardanoCheckBox" default-binding="true">
+              <component id="90f2f" class="javax.swing.JCheckBox" binding="ICXCheckBox" default-binding="true">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-9079691"/>
                   <font name="Khmer OS" size="36" style="0"/>
-                  <text value="Cardano"/>
+                  <text value="ICX"/>
+                </properties>
+              </component>
+              <component id="5e857" class="javax.swing.JCheckBox" binding="VENCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="VEN"/>
+                </properties>
+              </component>
+              <component id="b551" class="javax.swing.JCheckBox" binding="XRPCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="XRP"/>
                 </properties>
               </component>
               <component id="228ec" class="javax.swing.JCheckBox" binding="binanceCheckBox" default-binding="true">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-9079691"/>
                   <font name="Khmer OS" size="36" style="0"/>
-                  <text value="Binance"/>
+                  <text value="BNB"/>
+                </properties>
+              </component>
+              <component id="e4260" class="javax.swing.JCheckBox" binding="ETHCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="ETH"/>
+                </properties>
+              </component>
+              <component id="48bc4" class="javax.swing.JCheckBox" binding="ETCCheckBox">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="ETC"/>
+                </properties>
+              </component>
+              <component id="c8bf9" class="javax.swing.JCheckBox" binding="NEOCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9079691"/>
+                  <font name="Khmer OS" size="36" style="0"/>
+                  <text value="NEO"/>
                 </properties>
               </component>
               <component id="952bd" class="javax.swing.JCheckBox" binding="litecoinCheckBox" default-binding="true">
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-9079691"/>
                   <font name="Khmer OS" size="36" style="0"/>
-                  <text value="Litecoin"/>
+                  <text value="LTC"/>
                 </properties>
               </component>
             </children>

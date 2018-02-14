@@ -5,7 +5,6 @@ import DataHandling.DataHandler;
 import Gui.GUITest;
 import org.knowm.xchange.currency.Currency;
 
-import javax.xml.crypto.Data;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,8 +12,7 @@ import java.io.Writer;
 
 import static java.lang.System.out;
 
-public class Litecoin {
-    private boolean trading;
+public class Ripple {
     private String stratedgy;
     private double amount;
 
@@ -23,26 +21,22 @@ public class Litecoin {
     private double currWorth;
     private double buyPrice = 0;
 
-    private final Currency curr = Currency.LTC;
-    private final double TOP_THRESHHOLD = .01;
-    private final double BOTTOM_THRESHHOLD = .5;
+    private final Currency curr = Currency.XRP;
 
     private String API_KEY;
     private String API_SECRET;
     Trading trader;
 
-    public Litecoin(String username){
+    public Ripple(String username){
         stratedgy = null;
-        trading = false;
         amount = 0;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
         trader = new Trading(API_KEY, API_SECRET);
     }
 
-    public Litecoin(String username, String stratedgy){
+    public Ripple(String username, String stratedgy){
         this.stratedgy = stratedgy;
-        trading = false;
         API_KEY = DataHandler.openAccountSettings(username)[2];
         API_SECRET = DataHandler.openAccountSettings(username)[3];
         trader = new Trading(API_KEY, API_SECRET);
@@ -78,17 +72,18 @@ public class Litecoin {
 
     public void checkTrade(){
         //@TODO fill in the algorithm here
+
         try {
             prevWorth = currWorth;
             currWorth = BinancePriceDataAccessor.getValueInBTC(curr);
             out.println("\n\n\n Potential buy = " + potentialBuy);
             double value = currWorth;
 
-            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr, BinancePriceDataAccessor.getDailyDelta().get("LTC"));
+            String wat = DataChecker.checkCoin(potentialBuy, prevWorth, currWorth, buyPrice, curr, BinancePriceDataAccessor.getDailyDelta().get("XRP"));
 
             if (wat.equals("buy")){
                 double buy = (GUITest.amountBTC*.25)/(value);
-                trader.buy("ltc", buy, value);
+                trader.buy("xrp", buy, value);
                 amount += buy;
                 buyPrice = value;
                 GUITest.amountBTC-= GUITest.amountBTC*.25;
@@ -104,11 +99,13 @@ public class Litecoin {
         } catch (Exception e){
             out.println("ERROR");
         }
+
+
     }
     public void stopTrading(){
         //@TODO tell it to stop trading
         try {
-            sell(BinancePriceDataAccessor.getValueInBTC(Currency.LTC));
+            sell(BinancePriceDataAccessor.getValueInBTC(Currency.BNB));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -118,7 +115,7 @@ public class Litecoin {
         //don't sell if amount = 0
         if (amount == 0) return;
 
-        trader.sell("ltc", amount, value);
+        trader.sell("xrp", amount, value);
         GUITest.amountBTC+=value*amount;
         out.println("AmountBTC: "+GUITest.amountBTC);
         Writer fw = null;

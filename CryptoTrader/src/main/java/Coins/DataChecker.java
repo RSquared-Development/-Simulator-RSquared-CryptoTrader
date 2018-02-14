@@ -17,7 +17,7 @@ public class DataChecker {
     private static final double BOTTOM_THRESHHOLD = .1;
 
     //can return buy sell or hold
-    public static String checkCoin(boolean potentialBuy, double prevWorth, double currWorth, double buyPrice, Currency currency){
+    public static String checkCoin(boolean potentialBuy, double prevWorth, double currWorth, double buyPrice, Currency currency, double delta){
         try {
             double value = BinancePriceDataAccessor.getValueInBTC(currency);
 
@@ -31,8 +31,8 @@ public class DataChecker {
             }
 
 
-            //potential buy and the price is up
-            if (potentialBuy && currWorth > prevWorth){
+            //potential buy and the price is up & daily change is between 1% and 10%
+            if (potentialBuy && currWorth > prevWorth && delta > .01 && delta < .1){
                 return "buy";
             }
 
