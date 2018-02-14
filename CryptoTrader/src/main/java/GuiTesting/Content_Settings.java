@@ -14,6 +14,7 @@ public class Content_Settings extends javax.swing.JPanel {
     /**
      * Creates new form Content_Home
      */
+    boolean _3 = false;
     public Content_Settings() {
         initComponents();
     }
@@ -66,7 +67,14 @@ public class Content_Settings extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        SidePanel.resetColors();
+        if(!_3) {
+            SidePanel.setActiveButton(3);
+            _3=true;
+        }
+        else {
+            SidePanel.setActiveButton(1);
+            _3=false;
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

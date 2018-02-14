@@ -51,33 +51,15 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        content_Settings = new javax.swing.JPanel();
-        content_Settings2 = new GuiTesting.Content_Settings();
-        sidePanel1 = new GuiTesting.SidePanel();
         content_Home = new javax.swing.JPanel();
         sidePanel4 = new GuiTesting.SidePanel();
         content_Home1 = new GuiTesting.Content_Home();
         content_Accounts = new javax.swing.JPanel();
         sidePanel5 = new GuiTesting.SidePanel();
         content_Accounts1 = new GuiTesting.Content_Accounts();
-
-        content_Settings.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout content_SettingsLayout = new javax.swing.GroupLayout(content_Settings);
-        content_Settings.setLayout(content_SettingsLayout);
-        content_SettingsLayout.setHorizontalGroup(
-            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(content_SettingsLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(sidePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(content_Settings2, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        content_SettingsLayout.setVerticalGroup(
-            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(content_Settings2, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
-            .addComponent(sidePanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        content_Settings = new javax.swing.JPanel();
+        sidePanel6 = new GuiTesting.SidePanel();
+        content_Settings1 = new GuiTesting.Content_Settings();
 
         content_Home.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -114,6 +96,23 @@ public class MainWindow extends javax.swing.JFrame {
             .addComponent(content_Accounts1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        content_Settings.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout content_SettingsLayout = new javax.swing.GroupLayout(content_Settings);
+        content_Settings.setLayout(content_SettingsLayout);
+        content_SettingsLayout.setHorizontalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_SettingsLayout.createSequentialGroup()
+                .addComponent(sidePanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, 868, Short.MAX_VALUE))
+        );
+        content_SettingsLayout.setVerticalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sidePanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
+            .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1270, 720));
         setResizable(false);
@@ -145,7 +144,7 @@ public class MainWindow extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("System".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -171,20 +170,26 @@ public class MainWindow extends javax.swing.JFrame {
     
     public static void setContent(boolean[] content){
     
+        SidePanel.resetColors();
         if(content[0]) {
             frame.setContentPane(home);
             frame.pack();
+            
             frame.setVisible(true);
+            SidePanel.setActiveButton(1);
         }
         else if(content[1]) {
             frame.setContentPane(settings);
             frame.pack();
+            
             frame.setVisible(true);
+            SidePanel.setActiveButton(2);
         }
         else if(content[2]) {
             frame.setContentPane(account);
             frame.pack();
             frame.setVisible(true);
+            SidePanel.setActiveButton(3);
         }
         
         
@@ -197,9 +202,9 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel content_Home;
     private GuiTesting.Content_Home content_Home1;
     private javax.swing.JPanel content_Settings;
-    private GuiTesting.Content_Settings content_Settings2;
-    private GuiTesting.SidePanel sidePanel1;
+    private GuiTesting.Content_Settings content_Settings1;
     private GuiTesting.SidePanel sidePanel4;
     private GuiTesting.SidePanel sidePanel5;
+    private GuiTesting.SidePanel sidePanel6;
     // End of variables declaration//GEN-END:variables
 }

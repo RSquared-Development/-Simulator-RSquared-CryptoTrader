@@ -20,12 +20,54 @@ public class SidePanel extends javax.swing.JPanel {
     private static JButton homeButton;
     private static JButton settingsButton;
     private static JButton accountsButton;
+
+    static void setActiveButton(int set) {
+        
+        switch(set) {
+            
+            case 1: resetColors();
+                System.out.println("ran home");
+                homeButton.setBackground(new Color(20,123,255));
+                settingsButton.setBackground(new Color(0,153,255));
+                accountsButton.setBackground(new Color(0,153,255));
+                homeButton.setContentAreaFilled(true);
+                settingsButton.setContentAreaFilled(false);
+                accountsButton.setContentAreaFilled(false);
+                break;
+            case 2: resetColors();
+                System.out.println("ran settings");
+                homeButton.setBackground(new Color(20,123,255));
+                settingsButton.setBackground(new Color(20,123,255));
+                accountsButton.setBackground(new Color(20,123,255));
+                settingsButton.setContentAreaFilled(true);
+                homeButton.setContentAreaFilled(false);
+                accountsButton.setContentAreaFilled(false);
+                break;
+            case 3: resetColors();
+                System.out.println("ran Accounts");
+                homeButton.setBackground(new Color(20,123,255));
+                settingsButton.setBackground(new Color(20,123,255));
+                accountsButton.setBackground(new Color(20,123,255));
+                accountsButton.setContentAreaFilled(true);
+                settingsButton.setContentAreaFilled(false);
+                homeButton.setContentAreaFilled(false);
+                break;
+            default: resetColors();
+                break;
+            
+        }
+        
+    }
     
     public SidePanel() {
         initComponents();
+        
         homeButton = jButton_Home;
         settingsButton = jButton_Settings;
         accountsButton = jButton_AcctSettings;
+        homeButton.setBackground(new Color(20,123,255));
+        settingsButton.setBackground(new Color(20,123,255));
+        accountsButton.setBackground(new Color(20,123,255));
     }
 
     /**
@@ -99,7 +141,12 @@ public class SidePanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     public static void resetColors() {
-        homeButton.setBackground(Color.red);
+        homeButton.setBackground(new Color(0,153,255));
+        settingsButton.setBackground(new Color(0,153,255));
+        accountsButton.setBackground(new Color(0,153,255));
+        homeButton.setContentAreaFilled(false);
+        settingsButton.setContentAreaFilled(false);
+        accountsButton.setContentAreaFilled(false);
         
     }
     
