@@ -6,6 +6,8 @@
 package GuiTesting;
 
 import java.awt.Point;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -18,14 +20,26 @@ public class MainWindow extends javax.swing.JFrame {
      * Creates new form MainWindow
      */
     
-    private static Content_Settings settings;
+    private static JPanel home;
+    private static JPanel settings;
+    private static JPanel account;
+    private static JFrame frame;
+
     
     public MainWindow() {
         initComponents();
-        settings = content_Settings;
         
-        settings.setVisible(false);
+        
         //static accessors
+        frame = this;
+        home     = content_Home;
+        settings = content_Settings;
+        account  = content_Accounts;
+        frame.setContentPane(content_Home);
+        frame.pack();
+        frame.setVisible(true);
+        
+        
     }
 
     /**
@@ -37,40 +51,81 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        sidePanel2 = new GuiTesting.SidePanel();
-        content_Settings = new GuiTesting.Content_Settings();
+        content_Settings = new javax.swing.JPanel();
+        sidePanel3 = new GuiTesting.SidePanel();
+        content_Settings1 = new GuiTesting.Content_Settings();
+        content_Home = new javax.swing.JPanel();
+        sidePanel4 = new GuiTesting.SidePanel();
+        content_Home1 = new GuiTesting.Content_Home();
+        content_Accounts = new javax.swing.JPanel();
+        sidePanel5 = new GuiTesting.SidePanel();
+        content_Accounts1 = new GuiTesting.Content_Accounts();
+
+        content_Settings.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout content_SettingsLayout = new javax.swing.GroupLayout(content_Settings);
+        content_Settings.setLayout(content_SettingsLayout);
+        content_SettingsLayout.setHorizontalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_SettingsLayout.createSequentialGroup()
+                .addComponent(sidePanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        content_SettingsLayout.setVerticalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sidePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        content_Home.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout content_HomeLayout = new javax.swing.GroupLayout(content_Home);
+        content_Home.setLayout(content_HomeLayout);
+        content_HomeLayout.setHorizontalGroup(
+            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_HomeLayout.createSequentialGroup()
+                .addComponent(sidePanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(content_Home1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        content_HomeLayout.setVerticalGroup(
+            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sidePanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(content_Home1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        content_Accounts.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout content_AccountsLayout = new javax.swing.GroupLayout(content_Accounts);
+        content_Accounts.setLayout(content_AccountsLayout);
+        content_AccountsLayout.setHorizontalGroup(
+            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_AccountsLayout.createSequentialGroup()
+                .addComponent(sidePanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(content_Accounts1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        content_AccountsLayout.setVerticalGroup(
+            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sidePanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
+            .addComponent(content_Accounts1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1270, 720));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(sidePanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(content_Settings, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(content_Settings, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 1270, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 720, Short.MAX_VALUE)
         );
 
         pack();
@@ -115,14 +170,35 @@ public class MainWindow extends javax.swing.JFrame {
     
     public static void setContent(boolean[] content){
     
-        //s
+        if(content[0]) {
+            frame.setContentPane(home);
+            frame.pack();
+            frame.setVisible(true);
+        }
+        else if(content[1]) {
+            frame.setContentPane(settings);
+            frame.pack();
+            frame.setVisible(true);
+        }
+        else if(content[2]) {
+            frame.setContentPane(account);
+            frame.pack();
+            frame.setVisible(true);
+        }
+        
         
         
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private GuiTesting.Content_Settings content_Settings;
-    private javax.swing.JPanel jPanel1;
-    private GuiTesting.SidePanel sidePanel2;
+    private javax.swing.JPanel content_Accounts;
+    private GuiTesting.Content_Accounts content_Accounts1;
+    private javax.swing.JPanel content_Home;
+    private GuiTesting.Content_Home content_Home1;
+    private javax.swing.JPanel content_Settings;
+    private GuiTesting.Content_Settings content_Settings1;
+    private GuiTesting.SidePanel sidePanel3;
+    private GuiTesting.SidePanel sidePanel4;
+    private GuiTesting.SidePanel sidePanel5;
     // End of variables declaration//GEN-END:variables
 }
