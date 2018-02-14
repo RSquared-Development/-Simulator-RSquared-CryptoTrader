@@ -14,7 +14,7 @@ public class Looper implements Runnable{
     private AtomicBoolean keepRunning;
 
     double startTime; double threshold; boolean tradeADA; boolean tradeBNB; boolean tradeLTC; boolean tradeBTC;
-    Cardano ada; BinanceCoin bnb; Litecoin ltc;
+    Cardano ada; BinanceCoin bnb; Litecoin ltc; Ethereum eth; EthereumClassic etc; Icon icx; NEO neo; Ripple xrp; Tron trx; VeChain ven;
 
     public Looper() {
         keepRunning = new AtomicBoolean(false);
@@ -24,7 +24,9 @@ public class Looper implements Runnable{
         keepRunning.set(false);
     }
 
-    public void setStuff(double startTime, double threshold, boolean tradeADA, boolean tradeBNB, boolean tradeLTC, Cardano ada, BinanceCoin bnb, Litecoin ltc) {
+    public void setStuff(double startTime, double threshold,
+                         boolean tradeADA, boolean tradeBNB, boolean tradeLTC, boolean tradeETH, boolean tradeETC, boolean tradeICX, boolean tradeNEO, boolean tradeXRP, boolean tradeTRX, boolean tradeVEN,
+                         Cardano ada, BinanceCoin bnb, Litecoin ltc, Ethereum eth, EthereumClassic etc, Icon icx, NEO neo, Ripple xrp, Tron trx, VeChain ven) {
         this.startTime = startTime;
         this.threshold = threshold;
         this.tradeADA = tradeADA;

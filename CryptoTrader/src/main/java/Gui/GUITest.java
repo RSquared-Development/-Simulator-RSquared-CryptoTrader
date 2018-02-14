@@ -1,6 +1,7 @@
 package Gui;
 
 import Coins.*;
+import Coins.Icon;
 import DataHandling.DataHandler;
 import Exceptions.CryptoTraderException;
 import com.intellij.uiDesigner.core.GridConstraints;
@@ -53,6 +54,13 @@ public class GUITest {
     private static Cardano ada;
     private static BinanceCoin bnb;
     private static Litecoin ltc;
+    private static Ethereum eth;
+    private static EthereumClassic etc;
+    private static Icon icx;
+    private static NEO neo;
+    private static Ripple xrp;
+    private static Tron trx;
+    private static VeChain ven;
 
     //windows
     static CurrencySettings cs;
@@ -138,17 +146,20 @@ public class GUITest {
         button_Start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                boolean tradeBTC = false;
                 boolean tradeADA = false;
                 boolean tradeBNB = false;
                 boolean tradeLTC = false;
+                boolean tradeTRX = false;
+                boolean tradeICX = false;
+                boolean tradeNEO = false;
+                boolean tradeVEN = false;
+                boolean tradeXRP = false;
+                boolean tradeETH = false;
+                boolean tradeETC = false;
 
                 accountNetWorth17TextField.setText(amountBTC + "");
 
-                if (cs.bitCoinCheckBox.isSelected()) {
-                    out.println("Wow! were trading Bitcoin!");
-                    tradeBTC = true;
-                }
+
                 if (cs.cardanoCheckBox.isSelected()) {
                     out.println("Wow! were trading Cardano!");
                     tradeADA = true;
@@ -164,6 +175,41 @@ public class GUITest {
                     tradeLTC = true;
                     ltc.initTrade();
                 }
+                if (cs.TRXCheckBox.isSelected()) {
+                    out.println("Wow! were trading TRX!");
+                    tradeTRX = true;
+                    trx.initTrade();
+                }
+                if (cs.ICXCheckBox.isSelected()) {
+                    out.println("Wow! were trading ICX!");
+                    tradeICX = true;
+                    icx.initTrade();
+                }
+                if (cs.NEOCheckBox.isSelected()) {
+                    out.println("Wow! were trading NEO!");
+                    tradeNEO = true;
+                    neo.initTrade();
+                }
+                if (cs.VENCheckBox.isSelected()) {
+                    out.println("Wow! were trading VEN!");
+                    tradeVEN = true;
+                    ven.initTrade();
+                }
+                if (cs.XRPCheckBox.isSelected()) {
+                    out.println("Wow! were trading XRP!");
+                    tradeXRP = true;
+                    xrp.initTrade();
+                }
+                if (cs.ETHCheckBox.isSelected()) {
+                    out.println("Wow! were trading ETH!");
+                    tradeETH = true;
+                    eth.initTrade();
+                }
+                if (cs.ETCCheckBox.isSelected()) {
+                    out.println("Wow! were trading ETC!");
+                    tradeETC = true;
+                    etc.initTrade();
+                }
 
                 // disable start button and checkboxes so things dont mess up
                 button_Start.setEnabled(false);
@@ -171,6 +217,12 @@ public class GUITest {
                 cs.cardanoCheckBox.setEnabled(false);
                 cs.binanceCheckBox.setEnabled(false);
                 cs.litecoinCheckBox.setEnabled(false);
+                cs.TRXCheckBox.setEnabled(false);
+                cs.ICXCheckBox.setEnabled(false);
+                cs.NEOCheckBox.setEnabled(false);
+                cs.XRPCheckBox.setEnabled(false);
+                cs.ETCCheckBox.setEnabled(false);
+                cs.ETHCheckBox.setEnabled(false);
 
                 // enable the stop button so you can stop it of course
                 button_Stop.setEnabled(true);
@@ -186,7 +238,7 @@ public class GUITest {
                     out.println("oof");
                 }
 
-                looper.setStuff(startTime, threshold, tradeADA, tradeBNB, tradeLTC, ada, bnb, ltc);
+                looper.setStuff(startTime, threshold, tradeADA, tradeBNB, tradeLTC, tradeETH, tradeETC, tradeICX, tradeNEO, tradeXRP, tradeTRX, tradeVEN, ada, bnb, ltc, eth, etc, icx, neo, xrp, trx, ven);
 
                 thread = new Thread(looper);
                 thread.start();
