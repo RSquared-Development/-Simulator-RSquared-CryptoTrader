@@ -48,7 +48,6 @@ public class SidePanel extends javax.swing.JPanel {
         jButton_Home.setText("Home");
         jButton_Home.setBorder(null);
         jButton_Home.setBorderPainted(false);
-        jButton_Home.setContentAreaFilled(false);
         jButton_Home.setFocusPainted(false);
         jButton_Home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +60,6 @@ public class SidePanel extends javax.swing.JPanel {
         jButton_Settings.setText("Settings");
         jButton_Settings.setBorder(null);
         jButton_Settings.setBorderPainted(false);
-        jButton_Settings.setContentAreaFilled(false);
         jButton_Settings.setFocusPainted(false);
         jButton_Settings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +72,6 @@ public class SidePanel extends javax.swing.JPanel {
         jButton_AcctSettings.setText("Account");
         jButton_AcctSettings.setBorder(null);
         jButton_AcctSettings.setBorderPainted(false);
-        jButton_AcctSettings.setContentAreaFilled(false);
         jButton_AcctSettings.setFocusPainted(false);
         jButton_AcctSettings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

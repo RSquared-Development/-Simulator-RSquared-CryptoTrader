@@ -52,8 +52,8 @@ public class MainWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         content_Settings = new javax.swing.JPanel();
-        sidePanel3 = new GuiTesting.SidePanel();
-        content_Settings1 = new GuiTesting.Content_Settings();
+        content_Settings2 = new GuiTesting.Content_Settings();
+        sidePanel1 = new GuiTesting.SidePanel();
         content_Home = new javax.swing.JPanel();
         sidePanel4 = new GuiTesting.SidePanel();
         content_Home1 = new GuiTesting.Content_Home();
@@ -68,14 +68,15 @@ public class MainWindow extends javax.swing.JFrame {
         content_SettingsLayout.setHorizontalGroup(
             content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(content_SettingsLayout.createSequentialGroup()
-                .addComponent(sidePanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(sidePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(content_Settings2, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         content_SettingsLayout.setVerticalGroup(
             content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(content_Settings2, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+            .addComponent(sidePanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         content_Home.setBackground(new java.awt.Color(0, 153, 255));
@@ -196,8 +197,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel content_Home;
     private GuiTesting.Content_Home content_Home1;
     private javax.swing.JPanel content_Settings;
-    private GuiTesting.Content_Settings content_Settings1;
-    private GuiTesting.SidePanel sidePanel3;
+    private GuiTesting.Content_Settings content_Settings2;
+    private GuiTesting.SidePanel sidePanel1;
     private GuiTesting.SidePanel sidePanel4;
     private GuiTesting.SidePanel sidePanel5;
     // End of variables declaration//GEN-END:variables
