@@ -8,6 +8,7 @@ package GuiTesting;
 import java.awt.Point;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import Gui.R2Splash;
 
 /**
  *
@@ -160,10 +161,13 @@ public class MainWindow extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        R2Splash.showSplash();
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainWindow().setVisible(true);
+                R2Splash.hideSplash();
             }
         });
     }
