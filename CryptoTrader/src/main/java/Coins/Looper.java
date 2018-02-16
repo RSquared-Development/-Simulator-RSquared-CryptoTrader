@@ -13,7 +13,8 @@ import static java.lang.System.out;
 public class Looper implements Runnable{
     private AtomicBoolean keepRunning;
 
-    double startTime; double threshold; boolean tradeADA; boolean tradeBNB; boolean tradeLTC; boolean tradeBTC;
+    double startTime; double threshold;
+    boolean tradeADA; boolean tradeBNB; boolean tradeLTC; boolean tradeBTC; boolean tradeETH; boolean tradeETC; boolean tradeICX; boolean tradeNEO; boolean tradeXRP; boolean tradeTRX; boolean tradeVEN;
     Cardano ada; BinanceCoin bnb; Litecoin ltc; Ethereum eth; EthereumClassic etc; Icon icx; NEO neo; Ripple xrp; Tron trx; VeChain ven;
 
     public Looper() {
@@ -55,6 +56,27 @@ public class Looper implements Runnable{
                 }
                 if (tradeLTC) {
                     ltc.checkTrade();
+                }
+                if (tradeETC){
+                    etc.checkTrade();
+                }
+                if (tradeETH){
+                    eth.checkTrade();
+                }
+                if (tradeICX){
+                    icx.checkTrade();
+                }
+                if (tradeNEO){
+                    neo.checkTrade();
+                }
+                if (tradeTRX){
+                    trx.checkTrade();
+                }
+                if (tradeVEN){
+                    ven.checkTrade();
+                }
+                if (tradeXRP){
+                    xrp.checkTrade();
                 }
 
                 out.print("\n\n\n[*] I JUST RAN THROUGH THE LOOP");

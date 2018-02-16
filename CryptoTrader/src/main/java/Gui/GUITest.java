@@ -84,6 +84,13 @@ public class GUITest {
         ada = new Cardano(username);
         bnb = new BinanceCoin(username);
         ltc = new Litecoin(username);
+        eth = new Ethereum(username);
+        etc = new EthereumClassic(username);
+        icx = new Icon(username);
+        neo = new NEO(username);
+        xrp = new Ripple(username);
+        trx = new Tron(username);
+        ven = new VeChain(username);
         amountBTC = 1;
     }
 
@@ -129,16 +136,30 @@ public class GUITest {
 
                 //enable/disable stuff
                 button_Start.setEnabled(true);
-                cs.getBitCoinCheckBox().setEnabled(true);
                 cs.cardanoCheckBox.setEnabled(true);
                 cs.binanceCheckBox.setEnabled(true);
                 cs.litecoinCheckBox.setEnabled(true);
+                cs.TRXCheckBox.setEnabled(true);
+                cs.ICXCheckBox.setEnabled(true);
+                cs.NEOCheckBox.setEnabled(true);
+                cs.XRPCheckBox.setEnabled(true);
+                cs.ETCCheckBox.setEnabled(true);
+                cs.ETHCheckBox.setEnabled(true);
+                cs.VENCheckBox.setEnabled(true);
 
                 //sell everything
                 btc.stopTrading();
                 ada.stopTrading();
                 bnb.stopTrading();
                 ltc.stopTrading();
+                eth.stopTrading();
+                etc.stopTrading();
+                icx.stopTrading();
+                neo.stopTrading();
+                xrp.stopTrading();
+                trx.stopTrading();
+                ven.stopTrading();
+
 
                 button_Stop.setEnabled(false);
             }
@@ -213,7 +234,6 @@ public class GUITest {
 
                 // disable start button and checkboxes so things dont mess up
                 button_Start.setEnabled(false);
-                cs.bitCoinCheckBox.setEnabled(false);
                 cs.cardanoCheckBox.setEnabled(false);
                 cs.binanceCheckBox.setEnabled(false);
                 cs.litecoinCheckBox.setEnabled(false);
@@ -223,12 +243,13 @@ public class GUITest {
                 cs.XRPCheckBox.setEnabled(false);
                 cs.ETCCheckBox.setEnabled(false);
                 cs.ETHCheckBox.setEnabled(false);
+                cs.VENCheckBox.setEnabled(false);
 
                 // enable the stop button so you can stop it of course
                 button_Stop.setEnabled(true);
 
                 double startTime = (double) System.currentTimeMillis();
-                double threshold = 300000;
+                double threshold = 30000;
 
                 try {
                     Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));

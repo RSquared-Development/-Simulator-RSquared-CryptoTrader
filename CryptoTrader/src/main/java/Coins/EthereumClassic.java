@@ -105,7 +105,7 @@ public class EthereumClassic {
     public void stopTrading(){
         //@TODO tell it to stop trading
         try {
-            sell(BinancePriceDataAccessor.getValueInBTC(Currency.BNB));
+            sell(BinancePriceDataAccessor.getValueInBTC(curr));
         } catch (IOException e) {
             e.printStackTrace();
         }
