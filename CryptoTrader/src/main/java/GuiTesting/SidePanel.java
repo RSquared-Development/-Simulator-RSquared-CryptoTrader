@@ -28,25 +28,19 @@ public class SidePanel extends javax.swing.JPanel {
             case 1: resetColors();
                 System.out.println("ran home");
                 homeButton.setBackground(new Color(20,123,255));
-                settingsButton.setBackground(new Color(0,153,255));
-                accountsButton.setBackground(new Color(0,153,255));
                 homeButton.setContentAreaFilled(true);
                 settingsButton.setContentAreaFilled(false);
                 accountsButton.setContentAreaFilled(false);
                 break;
             case 2: resetColors();
                 System.out.println("ran settings");
-                homeButton.setBackground(new Color(20,123,255));
                 settingsButton.setBackground(new Color(20,123,255));
-                accountsButton.setBackground(new Color(20,123,255));
                 settingsButton.setContentAreaFilled(true);
                 homeButton.setContentAreaFilled(false);
                 accountsButton.setContentAreaFilled(false);
                 break;
             case 3: resetColors();
                 System.out.println("ran Accounts");
-                homeButton.setBackground(new Color(20,123,255));
-                settingsButton.setBackground(new Color(20,123,255));
                 accountsButton.setBackground(new Color(20,123,255));
                 accountsButton.setContentAreaFilled(true);
                 settingsButton.setContentAreaFilled(false);
@@ -66,8 +60,8 @@ public class SidePanel extends javax.swing.JPanel {
         settingsButton = jButton_Settings;
         accountsButton = jButton_AcctSettings;
         homeButton.setBackground(new Color(20,123,255));
-        settingsButton.setBackground(new Color(20,123,255));
-        accountsButton.setBackground(new Color(20,123,255));
+        settingsButton.setBackground(new Color(0,153,255));
+        accountsButton.setBackground(new Color(0,153,255));
     }
 
     /**
@@ -132,11 +126,11 @@ public class SidePanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
-                .addComponent(jButton_Settings, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton_AcctSettings, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE))
+                .addComponent(jButton_Settings, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton_AcctSettings, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

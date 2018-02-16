@@ -52,91 +52,268 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        content_Accounts = new javax.swing.JPanel();
-        sidePanel5 = new GuiTesting.SidePanel();
-        content_Accounts1 = new GuiTesting.Content_Accounts();
-        content_Settings = new javax.swing.JPanel();
-        sidePanel6 = new GuiTesting.SidePanel();
-        content_Settings1 = new GuiTesting.Content_Settings();
         content_Home = new javax.swing.JPanel();
-        sidePanel1 = new GuiTesting.SidePanel();
+        jPanel_Home = new javax.swing.JPanel();
+        buttonHomeHome = new javax.swing.JButton();
+        buttonSettingsHome = new javax.swing.JButton();
+        buttonAccountsHome = new javax.swing.JButton();
+        content_Accounts = new javax.swing.JPanel();
+        jPanel_AcctInfo = new javax.swing.JPanel();
+        buttonHomeAccts = new javax.swing.JButton();
+        buttonAccountsAccts = new javax.swing.JButton();
+        buttonSettingsAccts = new javax.swing.JButton();
+        content_Settings = new javax.swing.JPanel();
+        buttonHomeAccts2 = new javax.swing.JButton();
+        buttonAccountsAccts2 = new javax.swing.JButton();
+        buttonSettingsAccts2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
-
-        content_Accounts.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout content_AccountsLayout = new javax.swing.GroupLayout(content_Accounts);
-        content_Accounts.setLayout(content_AccountsLayout);
-        content_AccountsLayout.setHorizontalGroup(
-            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(content_AccountsLayout.createSequentialGroup()
-                .addComponent(sidePanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(content_Accounts1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        content_AccountsLayout.setVerticalGroup(
-            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
-            .addComponent(content_Accounts1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        content_Settings.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout content_SettingsLayout = new javax.swing.GroupLayout(content_Settings);
-        content_Settings.setLayout(content_SettingsLayout);
-        content_SettingsLayout.setHorizontalGroup(
-            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(content_SettingsLayout.createSequentialGroup()
-                .addComponent(sidePanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, 868, Short.MAX_VALUE))
-        );
-        content_SettingsLayout.setVerticalGroup(
-            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
-            .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jToolBar2 = new javax.swing.JToolBar();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
 
         content_Home.setBackground(new java.awt.Color(0, 153, 255));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanel_HomeLayout = new javax.swing.GroupLayout(jPanel_Home);
+        jPanel_Home.setLayout(jPanel_HomeLayout);
+        jPanel_HomeLayout.setHorizontalGroup(
+            jPanel_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 833, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel_HomeLayout.setVerticalGroup(
+            jPanel_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 719, Short.MAX_VALUE)
         );
+
+        buttonHomeHome.setBackground(new java.awt.Color(20, 123, 255));
+        buttonHomeHome.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonHomeHome.setText("Home");
+        buttonHomeHome.setBorder(null);
+        buttonHomeHome.setBorderPainted(false);
+        buttonHomeHome.setFocusPainted(false);
+        buttonHomeHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHomeHomeActionPerformed(evt);
+            }
+        });
+
+        buttonSettingsHome.setBackground(new java.awt.Color(0, 153, 255));
+        buttonSettingsHome.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonSettingsHome.setText("Settings");
+        buttonSettingsHome.setBorder(null);
+        buttonSettingsHome.setBorderPainted(false);
+        buttonSettingsHome.setFocusPainted(false);
+        buttonSettingsHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSettingsHomeActionPerformed(evt);
+            }
+        });
+
+        buttonAccountsHome.setBackground(new java.awt.Color(0, 153, 255));
+        buttonAccountsHome.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonAccountsHome.setText("Accounts");
+        buttonAccountsHome.setBorder(null);
+        buttonAccountsHome.setBorderPainted(false);
+        buttonAccountsHome.setFocusPainted(false);
+        buttonAccountsHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAccountsHomeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout content_HomeLayout = new javax.swing.GroupLayout(content_Home);
         content_Home.setLayout(content_HomeLayout);
         content_HomeLayout.setHorizontalGroup(
             content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(content_HomeLayout.createSequentialGroup()
-                .addComponent(sidePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(buttonHomeHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonSettingsHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonAccountsHome, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel_Home, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         content_HomeLayout.setVerticalGroup(
             content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, content_HomeLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(sidePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel_Home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(content_HomeLayout.createSequentialGroup()
+                        .addComponent(buttonHomeHome, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonSettingsHome, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonAccountsHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+
+        content_Accounts.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout jPanel_AcctInfoLayout = new javax.swing.GroupLayout(jPanel_AcctInfo);
+        jPanel_AcctInfo.setLayout(jPanel_AcctInfoLayout);
+        jPanel_AcctInfoLayout.setHorizontalGroup(
+            jPanel_AcctInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 833, Short.MAX_VALUE)
+        );
+        jPanel_AcctInfoLayout.setVerticalGroup(
+            jPanel_AcctInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 719, Short.MAX_VALUE)
+        );
+
+        buttonHomeAccts.setBackground(new java.awt.Color(0, 153, 255));
+        buttonHomeAccts.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonHomeAccts.setText("Home");
+        buttonHomeAccts.setBorder(null);
+        buttonHomeAccts.setBorderPainted(false);
+        buttonHomeAccts.setFocusPainted(false);
+        buttonHomeAccts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHomeAcctsActionPerformed(evt);
+            }
+        });
+
+        buttonAccountsAccts.setBackground(new java.awt.Color(20, 123, 255));
+        buttonAccountsAccts.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonAccountsAccts.setText("Accounts");
+        buttonAccountsAccts.setBorder(null);
+        buttonAccountsAccts.setBorderPainted(false);
+        buttonAccountsAccts.setFocusPainted(false);
+
+        buttonSettingsAccts.setBackground(new java.awt.Color(0, 153, 255));
+        buttonSettingsAccts.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonSettingsAccts.setText("Settings");
+        buttonSettingsAccts.setBorder(null);
+        buttonSettingsAccts.setBorderPainted(false);
+        buttonSettingsAccts.setFocusPainted(false);
+        buttonSettingsAccts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSettingsAcctsActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout content_AccountsLayout = new javax.swing.GroupLayout(content_Accounts);
+        content_Accounts.setLayout(content_AccountsLayout);
+        content_AccountsLayout.setHorizontalGroup(
+            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_AccountsLayout.createSequentialGroup()
+                .addGroup(content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(buttonHomeAccts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonAccountsAccts, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                    .addComponent(buttonSettingsAccts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel_AcctInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        content_AccountsLayout.setVerticalGroup(
+            content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, content_AccountsLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(content_AccountsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel_AcctInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(content_AccountsLayout.createSequentialGroup()
+                        .addComponent(buttonHomeAccts, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonSettingsAccts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonAccountsAccts, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+
+        content_Settings.setBackground(new java.awt.Color(0, 153, 255));
+
+        buttonHomeAccts2.setBackground(new java.awt.Color(0, 153, 255));
+        buttonHomeAccts2.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonHomeAccts2.setText("Home");
+        buttonHomeAccts2.setBorder(null);
+        buttonHomeAccts2.setBorderPainted(false);
+        buttonHomeAccts2.setFocusPainted(false);
+        buttonHomeAccts2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonHomeAccts2ActionPerformed(evt);
+            }
+        });
+
+        buttonAccountsAccts2.setBackground(new java.awt.Color(20, 123, 255));
+        buttonAccountsAccts2.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonAccountsAccts2.setText("Accounts");
+        buttonAccountsAccts2.setBorder(null);
+        buttonAccountsAccts2.setBorderPainted(false);
+        buttonAccountsAccts2.setFocusPainted(false);
+
+        buttonSettingsAccts2.setBackground(new java.awt.Color(0, 153, 255));
+        buttonSettingsAccts2.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 18)); // NOI18N
+        buttonSettingsAccts2.setText("Settings");
+        buttonSettingsAccts2.setBorder(null);
+        buttonSettingsAccts2.setBorderPainted(false);
+        buttonSettingsAccts2.setFocusPainted(false);
+        buttonSettingsAccts2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSettingsAccts2ActionPerformed(evt);
+            }
+        });
+
+        jToolBar2.setRollover(true);
+
+        jToggleButton1.setText("Binance");
+        jToggleButton1.setFocusable(false);
+        jToggleButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar2.add(jToggleButton1);
+
+        jToggleButton2.setText("Bitstamp");
+        jToggleButton2.setFocusable(false);
+        jToggleButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar2.add(jToggleButton2);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jToolBar2, javax.swing.GroupLayout.DEFAULT_SIZE, 831, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jToolBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 692, Short.MAX_VALUE))
+        );
+
+        jScrollPane1.setViewportView(jPanel2);
+
+        javax.swing.GroupLayout content_SettingsLayout = new javax.swing.GroupLayout(content_Settings);
+        content_Settings.setLayout(content_SettingsLayout);
+        content_SettingsLayout.setHorizontalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_SettingsLayout.createSequentialGroup()
+                .addGroup(content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(buttonHomeAccts2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonAccountsAccts2, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                    .addComponent(buttonSettingsAccts2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1))
+        );
+        content_SettingsLayout.setVerticalGroup(
+            content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, content_SettingsLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(content_SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, content_SettingsLayout.createSequentialGroup()
+                        .addComponent(buttonHomeAccts2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonSettingsAccts2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonAccountsAccts2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
         setResizable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1239, Short.MAX_VALUE)
+            .addGap(0, 1238, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,6 +322,39 @@ public class MainWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonHomeAcctsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHomeAcctsActionPerformed
+        // TODO add your handling code here:
+        goHome();
+    }//GEN-LAST:event_buttonHomeAcctsActionPerformed
+
+    private void buttonSettingsAcctsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSettingsAcctsActionPerformed
+        // TODO add your handling code here:
+        goToSettings();
+    }//GEN-LAST:event_buttonSettingsAcctsActionPerformed
+
+    private void buttonHomeHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHomeHomeActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_buttonHomeHomeActionPerformed
+
+    private void buttonSettingsHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSettingsHomeActionPerformed
+        // TODO add your handling code here:
+        goToSettings();
+    }//GEN-LAST:event_buttonSettingsHomeActionPerformed
+
+    private void buttonAccountsHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAccountsHomeActionPerformed
+        // TODO add your handling code here:
+        goToAccounts();
+    }//GEN-LAST:event_buttonAccountsHomeActionPerformed
+
+    private void buttonHomeAccts2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHomeAccts2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonHomeAccts2ActionPerformed
+
+    private void buttonSettingsAccts2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSettingsAccts2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonSettingsAccts2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,6 +396,8 @@ public class MainWindow extends javax.swing.JFrame {
         });
     }
     
+   
+    
     public static void setContent(boolean[] content){
     
         SidePanel.resetColors();
@@ -215,14 +427,42 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonAccountsAccts;
+    private javax.swing.JButton buttonAccountsAccts2;
+    private javax.swing.JButton buttonAccountsHome;
+    private javax.swing.JButton buttonHomeAccts;
+    private javax.swing.JButton buttonHomeAccts2;
+    private javax.swing.JButton buttonHomeHome;
+    private javax.swing.JButton buttonSettingsAccts;
+    private javax.swing.JButton buttonSettingsAccts2;
+    private javax.swing.JButton buttonSettingsHome;
     private javax.swing.JPanel content_Accounts;
-    private GuiTesting.Content_Accounts content_Accounts1;
     private javax.swing.JPanel content_Home;
     private javax.swing.JPanel content_Settings;
-    private GuiTesting.Content_Settings content_Settings1;
     private javax.swing.JPanel jPanel2;
-    private GuiTesting.SidePanel sidePanel1;
-    private GuiTesting.SidePanel sidePanel5;
-    private GuiTesting.SidePanel sidePanel6;
+    private javax.swing.JPanel jPanel_AcctInfo;
+    private javax.swing.JPanel jPanel_Home;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JToolBar jToolBar2;
     // End of variables declaration//GEN-END:variables
+
+    private void goHome() {
+        frame.setContentPane(home);
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    private void goToSettings() {
+        frame.setContentPane(settings);
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    private void goToAccounts() {
+        frame.setContentPane(account);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }
