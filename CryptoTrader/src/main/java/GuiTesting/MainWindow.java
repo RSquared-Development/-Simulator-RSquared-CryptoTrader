@@ -52,32 +52,15 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        content_Home = new javax.swing.JPanel();
-        sidePanel4 = new GuiTesting.SidePanel();
-        content_Home1 = new GuiTesting.Content_Home();
         content_Accounts = new javax.swing.JPanel();
         sidePanel5 = new GuiTesting.SidePanel();
         content_Accounts1 = new GuiTesting.Content_Accounts();
         content_Settings = new javax.swing.JPanel();
         sidePanel6 = new GuiTesting.SidePanel();
         content_Settings1 = new GuiTesting.Content_Settings();
-
-        content_Home.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout content_HomeLayout = new javax.swing.GroupLayout(content_Home);
-        content_Home.setLayout(content_HomeLayout);
-        content_HomeLayout.setHorizontalGroup(
-            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(content_HomeLayout.createSequentialGroup()
-                .addComponent(sidePanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(content_Home1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        content_HomeLayout.setVerticalGroup(
-            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(content_Home1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        content_Home = new javax.swing.JPanel();
+        sidePanel1 = new GuiTesting.SidePanel();
+        jPanel2 = new javax.swing.JPanel();
 
         content_Accounts.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -114,19 +97,50 @@ public class MainWindow extends javax.swing.JFrame {
             .addComponent(content_Settings1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        content_Home.setBackground(new java.awt.Color(0, 153, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 833, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout content_HomeLayout = new javax.swing.GroupLayout(content_Home);
+        content_Home.setLayout(content_HomeLayout);
+        content_HomeLayout.setHorizontalGroup(
+            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(content_HomeLayout.createSequentialGroup()
+                .addComponent(sidePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        content_HomeLayout.setVerticalGroup(
+            content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, content_HomeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(content_HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sidePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1270, 720));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
         setResizable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1270, Short.MAX_VALUE)
+            .addGap(0, 1239, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 719, Short.MAX_VALUE)
         );
 
         pack();
@@ -204,10 +218,10 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel content_Accounts;
     private GuiTesting.Content_Accounts content_Accounts1;
     private javax.swing.JPanel content_Home;
-    private GuiTesting.Content_Home content_Home1;
     private javax.swing.JPanel content_Settings;
     private GuiTesting.Content_Settings content_Settings1;
-    private GuiTesting.SidePanel sidePanel4;
+    private javax.swing.JPanel jPanel2;
+    private GuiTesting.SidePanel sidePanel1;
     private GuiTesting.SidePanel sidePanel5;
     private GuiTesting.SidePanel sidePanel6;
     // End of variables declaration//GEN-END:variables
