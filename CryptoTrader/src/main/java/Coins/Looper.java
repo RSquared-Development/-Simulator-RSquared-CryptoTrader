@@ -33,10 +33,24 @@ public class Looper implements Runnable{
         this.tradeADA = tradeADA;
         this.tradeBNB = tradeBNB;
         this.tradeLTC = tradeLTC;
+        this.tradeETH = tradeETH;
+        this.tradeETC = tradeETC;
+        this.tradeICX = tradeICX;
+        this.tradeNEO = tradeNEO;
+        this.tradeXRP = tradeXRP;
+        this.tradeTRX = tradeTRX;
+        this.tradeVEN = tradeVEN;
         tradeBTC = false;
         this.ada = ada;
         this.bnb = bnb;
         this.ltc = ltc;
+        this.eth = eth;
+        this.etc = etc;
+        this.icx = icx;
+        this.neo = neo;
+        this.xrp = xrp;
+        this.trx = trx;
+        this.ven = ven;
 
     }
 

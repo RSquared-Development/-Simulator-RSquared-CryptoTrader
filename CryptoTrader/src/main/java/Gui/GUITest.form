@@ -79,24 +79,13 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <component id="54d7d" class="javax.swing.JTable" binding="table_Transactions">
-                <constraints>
-                  <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <enabled value="false"/>
-                  <font name="Khmer OS" size="20"/>
-                </properties>
-              </component>
               <component id="39712" class="javax.swing.JButton" binding="button_Stop">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16747077"/>
-                  <font name="Khmer OS" size="30"/>
+                  <font size="72"/>
                   <foreground color="-16777216"/>
                   <text value="Stop"/>
                 </properties>
@@ -107,7 +96,7 @@
                 </constraints>
                 <properties>
                   <background color="-16747077"/>
-                  <font name="Khmer OS" size="30"/>
+                  <font size="72"/>
                   <foreground color="-16777216"/>
                   <text value="Start"/>
                 </properties>
@@ -121,7 +110,7 @@
                 <properties>
                   <background color="-9079691"/>
                   <editable value="false"/>
-                  <font name="Khmer OS" size="48" style="1"/>
+                  <font size="72" style="1"/>
                   <text value="Account Net Worth: 17.46578 BTC"/>
                 </properties>
               </component>

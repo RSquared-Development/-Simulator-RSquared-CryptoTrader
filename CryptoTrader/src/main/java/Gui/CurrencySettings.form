@@ -195,6 +195,7 @@
                 <properties>
                   <background color="-9079691"/>
                   <font name="Khmer OS" size="36" style="0"/>
+                  <selected value="true"/>
                   <text value="LTC"/>
                 </properties>
               </component>

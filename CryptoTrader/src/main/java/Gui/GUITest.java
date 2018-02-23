@@ -35,7 +35,6 @@ public class GUITest {
     private JButton button_Stop;
     private JButton button_Start;
     private JPanel content;
-    private JTable table_Transactions;
     private static Image favicon;
     private JTextField accountNetWorth17TextField;
 
@@ -249,7 +248,7 @@ public class GUITest {
                 button_Stop.setEnabled(true);
 
                 double startTime = (double) System.currentTimeMillis();
-                double threshold = 30000;
+                double threshold = 300000;
 
                 try {
                     Writer fw = new BufferedWriter(new FileWriter("TestingData.log", true));
@@ -417,21 +416,16 @@ public class GUITest {
         content_Home.setVisible(true);
         content.add(content_Home, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         content_Home.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(-16777216)), null));
-        table_Transactions = new JTable();
-        table_Transactions.setEnabled(false);
-        Font table_TransactionsFont = this.$$$getFont$$$("Khmer OS", -1, 20, table_Transactions.getFont());
-        if (table_TransactionsFont != null) table_Transactions.setFont(table_TransactionsFont);
-        content_Home.add(table_Transactions, new GridConstraints(1, 0, 2, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         button_Stop = new JButton();
         button_Stop.setBackground(new Color(-16747077));
-        Font button_StopFont = this.$$$getFont$$$("Khmer OS", -1, 30, button_Stop.getFont());
+        Font button_StopFont = this.$$$getFont$$$(null, -1, 72, button_Stop.getFont());
         if (button_StopFont != null) button_Stop.setFont(button_StopFont);
         button_Stop.setForeground(new Color(-16777216));
         button_Stop.setText("Stop");
         content_Home.add(button_Stop, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         button_Start = new JButton();
         button_Start.setBackground(new Color(-16747077));
-        Font button_StartFont = this.$$$getFont$$$("Khmer OS", -1, 30, button_Start.getFont());
+        Font button_StartFont = this.$$$getFont$$$(null, -1, 72, button_Start.getFont());
         if (button_StartFont != null) button_Start.setFont(button_StartFont);
         button_Start.setForeground(new Color(-16777216));
         button_Start.setText("Start");
@@ -439,7 +433,7 @@ public class GUITest {
         accountNetWorth17TextField = new JTextField();
         accountNetWorth17TextField.setBackground(new Color(-9079691));
         accountNetWorth17TextField.setEditable(false);
-        Font accountNetWorth17TextFieldFont = this.$$$getFont$$$("Khmer OS", Font.BOLD, 48, accountNetWorth17TextField.getFont());
+        Font accountNetWorth17TextFieldFont = this.$$$getFont$$$(null, Font.BOLD, 72, accountNetWorth17TextField.getFont());
         if (accountNetWorth17TextFieldFont != null) accountNetWorth17TextField.setFont(accountNetWorth17TextFieldFont);
         accountNetWorth17TextField.setText("Account Net Worth: 17.46578 BTC");
         content_Home.add(accountNetWorth17TextField, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));

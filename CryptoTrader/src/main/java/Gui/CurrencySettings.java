@@ -236,6 +236,7 @@ public class CurrencySettings {
         litecoinCheckBox.setBackground(new Color(-9079691));
         Font litecoinCheckBoxFont = this.$$$getFont$$$("Khmer OS", Font.PLAIN, 36, litecoinCheckBox.getFont());
         if (litecoinCheckBoxFont != null) litecoinCheckBox.setFont(litecoinCheckBoxFont);
+        litecoinCheckBox.setSelected(true);
         litecoinCheckBox.setText("LTC");
         content_Home.add(litecoinCheckBox, new GridConstraints(1, 2, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }

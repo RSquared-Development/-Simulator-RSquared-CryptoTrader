@@ -95,6 +95,10 @@ public class VeChain {
                 return;
             } else if (wat.equals("sell")){
                 sell(value);
+            } else if (wat.equals("potBuyTrue")){
+                potentialBuy = true;
+            } else if (wat.equals("potBuyFalse")){
+                potentialBuy = false;
             }
         } catch (Exception e){
             out.println("ERROR");

@@ -32,13 +32,17 @@ public class DataChecker {
 
 
             //potential buy and the price is up & daily change is between 1% and 10%
+            out.println("\n\nDELTA: "+delta+"\n\n");
             if (potentialBuy && currWorth > prevWorth && delta > .01 && delta < .1){
                 return "buy";
             }
 
             //price is down
             else if (currWorth < prevWorth){
-                return "hold";
+                return "potBuyTrue";
+            }
+            else {
+                return "potBuyFalse";
             }
         } catch (Exception e){
             out.println(e);
