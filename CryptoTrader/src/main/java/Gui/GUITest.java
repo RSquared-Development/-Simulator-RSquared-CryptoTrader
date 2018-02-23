@@ -269,7 +269,7 @@ public class GUITest {
     public static void main(String[] args) throws BinanceApiException, CryptoTraderException, IOException, InterruptedException {
         R2Splash.showSplash();
         init();
-        frame = new JFrame("RSqaured");
+        frame = new JFrame("RSqaured **SIMULATOR**");
         frame.setIconImage(favicon);
         frame.setContentPane(new GUITest().Outter);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
