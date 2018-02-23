@@ -90,6 +90,7 @@ public class GUITest {
         xrp = new Ripple(username);
         trx = new Tron(username);
         ven = new VeChain(username);
+        cs.litecoinCheckBox.setSelected(true);
         amountBTC = 1;
     }
 
